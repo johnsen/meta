@@ -1,0 +1,14 @@
+Package: openstudio-video
+Source: openstudio
+Version: 0.1
+Architecture: all
+Maintainer: Rosea Grammostola
+Installed-Size: 56
+Depends: openstudio-tasks (= 0.1)
+Recommends: blender
+Suggests: lives, qjadeo
+Section: misc
+Priority: optional
+Description: Openstudio Video packages
+ This metapackage will install Video software for use in
+ openstudio.

@@ -1,0 +1,6 @@
+# extra non-CD dev packages
+
+darcs
+cvs
+
+python-doc

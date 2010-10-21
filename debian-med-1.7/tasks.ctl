@@ -1,0 +1,15 @@
+priority-high:bio
+priority-high:bio-dev
+priority-low:cms
+priotity-none:data
+priority-high:epi
+priotity-none:his
+priority-high:imaging
+priority-high:imaging-dev
+priotity-none:laboratory
+priority-high:pharmacy
+priority-high:physics
+priority-high:practice
+priority-high:statistics
+priority-med:tools
+priority-med:typesetting

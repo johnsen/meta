@@ -1,0 +1,3249 @@
+Task: Biology
+Description: Debian Med micro-biology packages
+ This metapackage will install Debian packages related to molecular biology,
+ structural biology and bioinformatics for use in life sciences.
+
+X-Begin-Category: Phylogenetic analysis
+
+Depends: altree
+Remark: altree 1.1.0 should be not be packaged
+ According to Vincent Danjean <vdanjean.ml@free.fr> version 1.1.0 should not
+ be packaged for two reasons:
+ .
+  1. New dependencies (libtamuanova-perl, nanova and libnanova-perl) which
+     need to be packaged.
+  2. There are still bugs in the new method added in altree 1.1.0 and the doc
+     is not updated.
+ .
+ See http://lists.debian.org/debian-med/2009/08/msg00104.html for further
+ details.
+
+Depends: fastdnaml, njplot, tree-puzzle | tree-ppuzzle
+
+Depends: treeviewx
+X-Published-Authors: FIXME
+X-Published-Title: FIXME
+Published-In: Computer Applications in the Bioscience 12:357-358
+Published-Year: 1996
+
+X-End-Category: Phylogenetic analysis
+
+Depends:     molphy, phylip
+Why:         Phylogenetic analysis (Non-free, thus only suggested).
+
+X-Comment: treetool is removed from Debian because it is not maintained upstream since
+ 1995 and cause the Xserver to freeze under Squeeze
+
+Depends:     fastlink, loki, plink, r-cran-qtl
+Why:         Genetics
+
+X-Begin-Category: Sequence alignments and related programs.
+
+Depends:     amap-align, boxshade, gff2aplot, muscle, sim4, sibsim4, wise
+
+Depends: bwa
+Published-Title: Fast and accurate short read alignment with Burrows-Wheeler transform
+Published-Authors: Li, Heng and Durbin, Richard
+Published-In: Bioinformatics 25(14):1754-1760
+Published-Year: 2009
+Published-URL: http://bioinformatics.oxfordjournals.org/cgi/content/abstract/25/14/1754
+
+Depends: mummer
+Published-Title: Versatile and open software for comparing large genomes
+Published-Authors: Stefan Kurtz, Adam Phillippy, Arthur L. Delcher, Michael Smoot, Martin Shumway, Corina Antonescu, Steven L. Salzberg
+Published-In: Genome Biol. 5(2):R12
+Published-Year: 2004
+Published-URL: http://www.ncbi.nlm.nih.gov/pubmed/14759262
+Published-DOI: 10.1186/gb-2004-5-2-r12
+Published-PubMed: 14759262
+
+Depends: blast2
+Published-Title: Basic local alignment search tool
+Published-Authors: S.F. Altschul, W. Gish, W. Miller, E.W. Myers, D.J. Lipman
+Published-In: J Mol Biol. 215(3):403-410
+Published-Year: 1990
+Published-URL: http://www.ncbi.nlm.nih.gov/pubmed/2231712
+
+Depends: mafft
+Published-Title: Multiple alignment of DNA sequences with MAFFT
+Published-Authors: K. Katoh, G. Asimenos, H. Toh
+Published-In: Methods Mol Biol. 537:39-64
+Published-Year: 2009
+Published-URL: http://www.ncbi.nlm.nih.gov/pubmed/19378139
+Published-PubMed: 19378139
+
+Depends: t-coffee
+Published-Title: T-Coffee: A novel method for multiple sequence alignments
+Published-Authors: C. Notredame, D. Higgins, J. Heringa
+Published-In: Journal of Molecular Biology 302(1):205-217
+Published-Year: 2000
+Published-URL: http://www.ncbi.nlm.nih.gov/pubmed/10964570
+Published-PubMed: 10964570
+
+Depends: kalign
+Published-Title: Kalign--an accurate and fast multiple sequence alignment algorithm
+Published-Authors: Lassmann T, Sonnhammer EL.
+Published-In: BMC Bioinformatics, 6:298
+Published-Year: 2005
+Published-URL: http://www.ncbi.nlm.nih.gov/pubmed/16343337
+Published-PubMed: 16343337
+
+Depends: hmmer
+Published-Title: Multiple Alignment Using Hidden Markov Models.
+Published-Authors: S. R. Eddy.
+Published-In: Proc. Third Int. Conf. Intelligent Systems for Molecular Biology, 114-120.
+Published-Year: 1995
+Published-URL: ftp://selab.janelia.org/pub/publications/Eddy95b/Eddy95b-preprint.pdf
+
+Depends: exonerate
+Published-Title: Automated generation of heuristics for biological sequence comparison
+Published-Authors: G.C. Slater, E. Birney
+Published-In: BMC Bioinformatics 6:31
+Published-Year: 2005
+Published-URL: http://www.biomedcentral.com/1471-2105/6/31/abstract
+Published-doi: 10.1186/1471-2105-6-31
+
+Depends: dialign
+Published-Authors: Burkhard Morgenstern
+Published-Title: DIALIGN 2: improvement of the segment-to-segment approach to multiple sequence alignment.
+Published-In: Bioinformatics 15(3):211-218
+Published-Year: 1999
+Published-URL: http://www.ncbi.nlm.nih.gov/pubmed/10222408
+
+Depends: dialign-tx
+Published-Authors: Amarendran R. Subramanian, Michael Kaufmann, Burkhard Morgenstern
+Published-Title: Improvement of the segment-based approach for multiple sequence alignment by combining greedy and progressive alignment strategies
+Published-In: Algorithms for Molecular Biology 3:6
+Published-Year: 2008
+Published-URL: http://www.ncbi.nlm.nih.gov/pubmed/18505568
+
+Depends: poa
+Published-Authors: C. Grasso, C. Lee
+Published-Title: Combining partial order alignment and progressive multiple sequence alignment increases alignment speed and scalability to very large alignment problems
+Published-In: Bioinformatics 20(10):1546-1556. 
+Published-Year: 2004
+
+Depends: probcons
+Published-Authors: C. B. Do, M. S. P. Mahabhashyam, M. Brudno, S. Batzoglou
+Published-In: Genome Research 15: 330-340
+Published-Year: 2005
+
+Depends: proda
+Published-Authors: T. M. Phuong, C. B. Do, R. C. Edgar, S. Batzoglou
+Published-Title: Multiple alignment of protein sequences with repeats and rearrangements
+Published-In: Nucleic Acids Research 34(20), 5932-5942
+Published-Year: 2006
+
+Depends: seaview
+Published-Authors: N. Galtier, M. Gouy, C. Gautier
+Published-Title: SeaView and Phylo_win, two graphic tools for sequence alignment and molecular phylogeny
+Published-In: Comput. Applic. Biosci. 12:543-548
+Published-Year: 1996
+
+Depends: sigma-align
+X-Published-Authors: FIXME
+X-Published-Title: FIXME
+Published-In: BMC Bioinformatics 16;7:143
+Published-Year: 2006
+
+Depends: emboss
+Published-Authors: P. Rice, I. Longden, A. Bleasby
+Published-Title: EMBOSS: the European Molecular Biology Open Software Suite.
+Published-In: Trends Genet., 16(6):276-277
+Published-Year: 2000
+Published-URL: http://www.ncbi.nlm.nih.gov/pubmed/10827456
+
+Depends: embassy-domalign, embassy-domainatrix, embassy-domsearch, embassy-phylip
+Suggests:    emboss-explorer
+Why:         The EMBOSS sequence analysis suite and its galaxy.
+
+Depends:     arb, clustalx
+Why:         Sequence alignments and related programs (Non-free, thus only suggested).
+
+Depends: clustalw
+Published-Authors: M. Larkin, et al.
+Published-Title: Clustal W and Clustal X version 2.0
+Published-In: Bioinformatics 23(21):2947-2948 
+Published-Year: 2007
+
+Depends: clustalw-mpi
+Comment: Originally the dependency was clustalw | clustalw-mpi but currently it is
+ not possible to specify an "OR relation" and tag the Published-* fields to only one
+ of them.
+
+X-End-Category: Sequence alignments and related programs.
+
+Depends:     last-align, maq, ssake, velvet
+Why:         Tools related to high-throughput sequencing.
+
+X-Begin-Category: Analysis of RNA sequences.
+
+Depends: infernal
+Published-Authors: Nawrocki, Eric P. and Kolbe, Diana L. and Eddy, Sean R.
+Published-Title: Infernal 1.0: inference of RNA alignments
+Published-In: Bioinformatics 15;25(10):1335-7
+Published-Year: 2009
+Published-URL: http://bioinformatics.oxfordjournals.org/cgi/content/full/25/10/1335
+
+Depends: rnahybrid
+Published-Authors: Marc Rehmsmeier, Peter Steffen, Matthias Höchsmann, Robert Giegerich
+Published-Title: Fast and effective prediction of microRNA/target duplexes RNA
+Published-In: 10:1507-1517
+Published-Year: 2004
+X-Category: Target duplex prediction
+
+X-End-Category: Analysis of RNA sequences.
+
+X-Begin-Category: Molecular modelling and molecular dynamics
+
+Depends:     adun.app
+Published-Title: Framework Based Design of a New All-Purpose Molecular Simulation Application: The Adun Simulator
+Published-Authors: M.A. Johnston, I.F. Galván, J. Villà-Freixa
+Published-In: J. Comp. Chem
+Published-Year: 2005
+Published-URL: http://www3.interscience.wiley.com/cgi-bin/abstract/112094040/ABSTRACT
+Published-DOI: 10.1002/jcc.20312
+
+Depends:     garlic, gamgi, gdpc, ghemical, gromacs, pymol, r-other-bio3d, massxpert
+Comment:     r-other-bio3d depends from r-cran-rocr which is also maintained by Debian Med team
+
+Depends: rasmol
+
+X-End-Category: Molecular modelling and molecular dynamics
+
+Depends:     plasmidomics
+Why:         Presentation
+
+X-Begin-Category: Tools for the molecular biologist.
+
+Depends:     gff2ps, ncbi-epcr, ncbi-tools-bin, ncbi-tools-x11, perlprimer, readseq, tigr-glimmer
+
+Depends: melting
+Published-Authors: Nicolas Le Novère
+Published-Title: MELTING, computing the melting temperature of nucleic acid duplex
+Published-In: Bioinformatics, 17: S.1226-1227
+Published-Year: 2001
+
+Suggests: melting-gui
+Comment: I think it makes sense to point users to GUI applications as well as to
+ the console applications - in this case melting (Andreas Tille)
+
+Depends: mipe
+Published-Authors: Aerts J & Veenendaal T.
+Published-Title: MIPE - a XML-format to facilitate the storage and exchange of PCR-related data
+Published-In: Online Journal of Bioinformatics 6(2): 114-120
+Published-Year: 2005
+
+Depends: primer3
+Published-Authors: S. Rozen, H. Skaletsky
+Published-Title: Primer3 on the WWW for general users and for biologist programmers
+Published-In: Methods Mol Biol. 132:365-86
+Published-Year: 2000
+
+X-End-Category: Tools for the molecular biologist.
+
+Suggests:    mozilla-biofox
+Why:         Tools for the molecular biologist. Because of the dependency from firefox we only suggest this package to not bloat the system of the user.
+
+Depends:     glam2
+Why:         Motif search
+Published-Title: Discovering sequence motifs with arbitrary insertions and deletions
+Published-Authors: MC Frith, NFW Saunders, B Kobe, TL Bailey 
+Published-In: PLoS Computational Biology
+Published-Year: 2008
+Published-DOI: 10.1371/journal.pcbi.1000071
+
+Depends:     sequenceconverter.app
+
+Depends: raster3d
+
+Depends: phyml
+
+Depends: autodock
+Registration: http://autodock.scripps.edu/downloads/autodock-registration
+Why:         Molecular modelling and molecular dynamics.
+Published-Title: AutoDock4 and AutoDockTools4: Automated docking with selective receptor flexibility
+Published-Authors: G.M. Morris, R. Huey, W. Lindstrom, M.F. Sanner, R.K. Belew, D.S. Goodsell, A.J. Olson
+Published-In: J. Comput. Chem.
+Published-Year: 2009
+Published-URL: http://www.ncbi.nlm.nih.gov/pubmed/19399780
+
+PMID: 19399780
+Published-Authors: T. M. Phuong, C. B. Do, R. C. Edgar, S. Batzoglou
+Published-Title: Multiple alignment of protein sequences with repeats and rearrangements
+Published-In: Nucleic Acids Research 34(20), 5932-5942
+Published-Year: 2006
+
+
+Depends: autodocktools
+Comment: The package autodocktools depends from the mgltools-* packages mentioned
+         above, so they will be installed even if they would not be mentioned in
+         the list of Depends in the metapackage med-bio.  But leaving them out here
+         would hide them from the tasks and bugs list as well from the sectioning in
+         http://qa.debian.org/developer.php?login=debian-med-packaging@lists.alioth.debian.org&ordering=3
+         so they are mentioned here in addition to autodocktools.
+ .
+         This was changed by adding Enhances field to the packages in question.
+Published-Title: AutoDock4 and AutoDockTools4: Automated docking with selective receptor flexibility
+Published-Authors: G.M. Morris, R. Huey, W. Lindstrom, M.F. Sanner, R.K. Belew, D.S. Goodsell, A.J. Olson
+Published-In: J. Comput. Chem.
+Published-Year: 2009
+Published-URL: http://www.ncbi.nlm.nih.gov/pubmed/19399780
+
+
+Depends: mustang
+Published-Authors: A. S. Konagurthu, J. C. Whisstock, P. J. Stuckey, A. M. Lesk
+Published-Title: MUSTANG: A multiple structural alignment algorithm
+Published-In: Proteins: Structure, Function, and Bioinformatics. 64(3):559-574
+Published-Year: 2006
+
+Depends: theseus
+
+Depends: staden-io-lib-utils
+
+Depends: samtools
+
+Depends: r-bioc-hilbertvis
+Published-Authors: Simon Anders
+Published-Title: Visualization of genomic data with the Hilbert curve 
+Published-In: Bioinformatics 25(10):1231-1235
+Published-Year: 2009
+Published-DOI: 10.1093/bioinformatics/btp152
+
+Depends: r-other-mott-happy
+Published-Authors: Richard Mott, Christopher J. Talbot, Maria G. Turri, Allan C. Collins, Jonathan Flint
+Published-Title: A method for fine mapping quantitative trait loci in outbred animal stocks
+Published-In: Proc. Natl. Acad. Sci. USA
+Published-Year: 2000
+Published-DOI: 10.1073/pnas.230304397
+
+Depends: r-other-valdar-bagphenotype.library
+
+Depends: alien-hunter
+Published-Title: Interpolated variable order motifs for identification of horizontally acquired DNA:
+ revisiting the Salmonella pathogenicity islands
+Published-Authors: GS Vernikos and J. Parkhill
+Published-In: Bioinformatics
+Published-Year: 2006
+Published-URL: http://www.ncbi.nlm.nih.gov/pubmed/16837528
+Published-DOI: 10.1093/bioinformatics/btl369
+Published-PubMed: 16837528 
+
+Suggests: seqan-apps
+
+Depends: ncoils
+
+Depends: gentle
+
+Depends: gmap
+Published-Title: GMAP: a genomic mapping and alignment program for mRNA and EST sequences  
+Published-Authors: Thomas D. Wu, Colin K. Watanabe 
+Published-In: Bioinformatics
+Published-Year: 2005
+Published-URL: http://bioinformatics.oupjournals.org/cgi/content/full/21/9/1859
+
+Depends: igv
+
+Depends: picard-tools
+
+Depends: acedb-other-dotter, acedb-other-belvu, acedb-other
+
+Depends: python-cogent
+
+Depends: r-other-genabel
+Homepage: http://mga.bionet.nsc.ru/nlru/GenABEL/
+Responsible: Steffen Moeller <steffen_moeller@gmx.de>
+License: GPL 2+
+WNPP: 492044
+Vcs-Svn: svn://svn.debian.org/svn/debian-med/trunk/packages/R/r-other-genabel/trunk/
+Pkg-Description: genome-wide SNP association analysis
+ A package for genome-wide association analysis between quantitative
+ or binary traits and single-nucleiotide polymorphisms (SNPs).
+
+Depends: meme
+Homepage: http://meme.nbcr.net/meme/
+Responsible: Steffen Moeller <moeller@debian.org>
+License: non-free for commercial purpose (http://meme.nbcr.net/meme/COPYRIGHT.html)
+Vcs-Svn: svn://svn.debian.org/svn/debian-med/trunk/packages/meme/trunk/
+Pkg-Description: motif discovery and search
+ MEME is a tool for discovering motifs in a group of related DNA or protein
+ sequences.  A motif is a sequence pattern that occurs repeatedly in a group
+ of related protein or DNA sequences. MEME represents motifs as position-dependent
+ letter-probability matrices which describe the probability of each possible
+ letter at each position in the pattern. Individual MEME motifs do not contain
+ gaps. Patterns with variable-length gaps are split by MEME into two or more
+ separate motifs.
+ .
+ MEME takes as input a group of DNA or protein sequences (the training set)
+ and outputs as many motifs as requested. MEME uses statistical modeling
+ techniques to automatically choose the best width, number of occurrences,
+ and description for each motif.
+
+Depends: vienna-rna
+Homepage: http://www.tbi.univie.ac.at/~ivo/RNA/
+Responsible: Steffen Moeller <moeller@debian.org>
+License: non-free but redistributable
+WNPP: 451193
+X-Category: Secondary structure of nucleic acids
+Pkg-Description: RNA sequence analysis
+ The Vienna RNA Package consists of a C code library and several
+ stand-alone programs for the prediction and comparison of RNA secondary
+ structures.
+
+Depends: cytoscape
+Homepage: http://cytoscape.org/
+Responsible: Mike Smoot <mes@aescon.com>
+License: LGPL
+WNPP: 465331
+Pkg-Description: visualizing molecular interaction networks
+ Cytoscape is a bioinformatics software platform for visualizing molecular
+ interaction networks and integrating these interactions with gene expression
+ profiles and other state data.  Additional features are available as plugins.
+
+Depends: ballview
+Published-Title: BALLView: a tool for research and education in molecular modeling.
+Published-Authors: A. Moll, A. Hildebrandt, H.P.Lenhof, O. Kohlbacher
+Published-In: Bioinformatics, 22(3):365-6
+Published-Year: 2006
+Published-URL: http://www.ncbi.nlm.nih.gov/pubmed/16332707
+
+Depends: python-pynast
+Published-Title: PyNAST: a flexible tool for aligning sequences to a template alignment
+Published-Authors: J. Gregory Caporaso, Kyle Bittinger, Frederic D. Bushman, Todd Z. DeSantis, Gary L. Andersen, and Rob Knight
+Published-In: Bioinformatics 26: 266-267
+Published-Year: 2010
+Published-DOI: 10.1093/bioinformatics/btp636
+
+Depends: raxml
+Homepage: http://icwww.epfl.ch/~stamatak/index-Dateien/Page443.htm
+License: GPL
+X-Category: Phylogenetic analysis
+X-Importance: Inference of large trees
+Pkg-Description: Randomized Axelerated Maximum Likelihood
+ RAxML is a program for sequential and parallel Maximum Likelihood-based
+ inference of large phylogenetic trees. It has originally been derived
+ from fastDNAml.
+ .
+ There are freely accessible web-servers available for RAxML at
+ http://phylobench.vital-it.ch/raxml-bb/ and
+ http://8ball.sdsc.edu:8889/cipres-web/Bootstrap.do .
+
+Depends: axparafit
+Homepage: http://icwww.epfl.ch/~stamatak/AxParafit.html
+Responsible: David Paleino <d.paleino@gmail.com>
+License: GPL
+Vcs-Svn: svn://svn.debian.org/svn/debian-med/trunk/packages/axparafit/trunk/
+WNPP: 464323
+Pkg-Description: optimized statistical analysis of host-parasite coevolution
+ AxParafit is a highly optimized version of Pierre Legendre's Parafit
+ program for statistical analysis of host-parasite coevolution.
+ AxParafit has been parallelized with MPI (Message Passing Interface)
+ for compute clusters and was used to carry out the largest
+ co-evolutionary analysis to date for the paper describing the software.
+
+Depends: axpcoords
+Homepage: http://icwww.epfl.ch/~stamatak/AxParafit.html
+Responsible: David Paleino <d.paleino@gmail.com>
+License: GPL
+WNPP: 464323
+Pkg-Description: LAPACK-based implementation of DistPCoA
+ AxPcoords is a fast, LAPACK-based implementation of DistPCoA (see
+ http://www.bio.umontreal.ca/Casgrain/en/labo/distpcoa.html)
+ which is another program by Pierre Legendre, it conducts a principal
+ coordinates analysis.
+ This program is required for the pipeline that conducts a full host-parasite
+ co-phylogenetic analysis in combination with AxParafit.
+
+Depends: copycat
+Homepage: http://www-ab.informatik.uni-tuebingen.de/software/copycat/welcome.html
+License: Use of the program is free for academic purposes at an academic institute. For all other uses, please contact the authors.
+Pkg-Description: fast access to cophylogenetic analyses
+ CopyCat provides an easy and fast access to cophylogenetic analyses.
+ It incorporates a wrapper for the program ParaFit, which conducts a
+ statistical test for the presence of congruence between host and
+ parasite phylogenies. CopyCat offers various features, such as the
+ creation of customized host-parasite association data and the
+ computation of phylogenetic host/parasite trees based on the NCBI taxonomy.
+
+Depends: btk-core
+Homepage: http://sourceforge.net/projects/btk/
+Responsible: Morten Kjeldgaard <mok@bioxray.au.dk>
+License: GPL
+WNPP: 459753
+Pkg-Description: biomolecule Toolkit C++ library
+ The Biomolecule Toolkit is a library for modeling biological
+ macromolecules such as proteins, DNA and RNA. It provides a C++ interface
+ for common tasks in structural biology to facilitate the development of
+ molecular modeling, design and analysis tools.
+
+Depends: tacg
+Homepage: http://sourceforge.net/projects/tacg
+Responsible: Charles Plessy <plessy@debian.org>
+License: GPL and others
+WNPP: 461504
+X-Category: Motif detection
+X-Importance: powerful
+Vcs-Svn: svn://svn.debian.org/svn/debian-med/trunk/packages/tacg/trunk/
+Pkg-Description: command line program for finding patterns in nucleic acids
+ tacg is a character-based, command line tool for unix-like operating systems
+ for pattern-matching in nucleic acids and performing some of the basic protein
+ manipulations. It was originally designed for restriction enzyme analysis of
+ DNA, but has been extended to other types of matching. It now handles
+ degenerate sequence input in a variety of matching approaches, as well as
+ patterns with errors, regular expressions and TRANSFAC-formatted matrices.
+ .
+ It was designed to be a grep for DNA and like the original grep, its
+ capabilities have grown so that now the author has to keep calling up the help
+ page to figure out which flags (now ~50) mean what. tacg is NOT a GUI
+ application in any sense. However, it's existance as a strictly command-line
+ tool lends itself well to Webification and wrapping by various GUI tools and
+ it is now distributed with a web interface form and a Perl CGI handler.
+ Additionally, it can easily be integrated into editors that support shell
+ commands such as nedit.
+ .
+ The use of tacg may be cited as: Mangalam, HJ. (2002) tacg, a grep for DNA.
+ BMC Bioinformatics. 3:8  http://www.biomedcentral.com/1471-2105/3/8
+
+Depends: treeplot
+Responsible: Charles Plessy <plessy@debian.org>
+License: GPL
+WNPP: 461508
+X-Category: Phylogenetic analysis
+X-Importance: Tree export to graphical formats
+Pkg-URL: http://www-id.imag.fr/Laboratoire/Membres/Danjean_Vincent/deb.html#treeplot
+Pkg-Description: Phylogenetic tree file converter
+ Treeplot is a conversion tool, from "Phylip" phylogenetic tree file to
+ Postscript (.ps), Adobe Illustrator (.ai), Scalable Vector Graphic
+ (.svg), Computer Graphic Metafile(.cgm), Hewlet Packard Graphic Language
+ (.hpgl), xfig file (.fig), gif image file(.gif), PBM Portable aNy Map
+ file (.pnm)
+ .
+ The upstream author Olivier Langella says: 'I think that "treeplot"
+ is outdated. "Treeviewx" is an equivalent that works great and it is
+ already packaged. ... you can replace "treeplot" with
+ "populations". I would be pleased if "populations" became a Debian
+ package.'  So this package should probably be delisted in favour of
+ populations (see http://lists.debian.org/debian-med/2008/03/msg00124.html).
+
+Depends: treevolve
+Homepage: http://evolve.zoo.ox.ac.uk/software.html?id=Treevolve
+Responsible: Charles Plessy <plessy@debian.org>
+License: has to be verified
+WNPP: 461510
+Pkg-URL: http://www-id.imag.fr/Laboratoire/Membres/Danjean_Vincent/deb.html#treevolve
+Pkg-Description: simulation of evolution of DNA sequences
+ treevolve will simulate the evolution of DNA sequences under a
+ coalescent model, which allows exponential population growth,
+ population subdivision according to an island model, migration and
+ recombination. In addition different periods of population dynamics
+ can be enforced at different times. For example, a period of
+ exponential growth can be followed by a period of stasis where the
+ population is subdivided into demes. Multiple sets of such simulated
+ sequence data can then be compared to sequence data sampled from a
+ population of interest using suitable statistics, and various
+ evolutionary hypotheses concerning the evolution of this population
+ tested.
+ .
+ Citation: Population dynamics of HIV-1 inferred from gene sequences
+ Grassly NC, Harvey PH & Holmes EC (1999) Genetics 151, 427-438.
+
+Depends: asap
+Homepage: http://asap.ahabs.wisc.edu/software/asap/
+Responsible: Andreas Tille <tille@debian.org>
+License: GPL
+Pkg-Description: organize the data associated with a genome
+ Developments in genome-wide approaches to biological research have
+ yielded greatly increased quantities of data, necessitating the cooperation
+ of communities of scientists focusing on shared sets of data. ASAP
+ leverages the internet and database technologies to meet these needs.
+ ASAP is designed to organize the data associated with a genome from the
+ early stages of sequence annotation through genetic and biochemical
+ characterization, providing a vehicle for ongoing updates of the annotation
+ and a repository for genome-scale experimental data. Development was
+ motivated by the need to more directly involve a greater community of
+ researchers, with their collective expertise, in keeping the genome
+ annotation current and to provide a synergistic link between up-to-date
+ annotation and functional genomic data. The system is continually under
+ development at the Genome Evolution Lab with the stable, in-use, publicly
+ available University of Wisconsin installation updated regularly.
+ .
+ Software development on ASAP began in early 2002, and ASAP has been
+ continually improved up until the present day. A longstanding goal of
+ the ASAP project was to make the source code of ASAP available so that
+ other installations of ASAP could be implemented. As future ASAP
+ installations come to pass, ASAP will be further extended to be
+ inter-operable between sites.
+X-Category: Annotation
+
+Depends: emboss-kaptain
+Homepage: http://userpage.fu-berlin.de/~sgmd/download.html
+Responsible: Charles Plessy <plessy@debian.org>
+License: GPL-2+
+WNPP: 466682
+Pkg-Description: graphical interface to EMBOSS using Kaptain
+ EMBOSS.kaptn is a graphical user interface (GUI) for more than 200
+ programms of the EMBOSS sequence analysis package. It uses Kaptain, a
+ universal front-end for command line applications. EMBOSS is a
+ collection of high-quality free Open Source software for sequence
+ analysis.  With EMBOSS.kaptn it integrates nicely into X window based
+ desktops like KDE.
+
+Depends: agdbnet
+Homepage: http://pubmlst.org/software/database/agdbnet/
+Responsible: Andreas Tille <tille@debian.org>
+License: GPL
+WNPP: 500106
+Vcs-Svn: svn://svn.debian.org/svn/debian-med/trunk/packages/agdbnet/trunk/
+Pkg-Description: antigen sequence database software for web-based bacterial typing
+ AgdbNet is antigen sequence database software for web-based bacterial
+ typing. The software facilitates simultaneous BLAST querying of multiple
+ loci using either nucleotide or peptide sequences. It's written in Perl
+ and runs on Linux/UNIX systems.
+ .
+ Databases are described by XML files and can have any number of loci, which
+ may be defined by nucleotide and/or peptide sequences. The databases can
+ optionally have integral isolate tables so that information about representative
+ isolates can be retrieved or they may be configured to query external isolate
+ databases, such as those hosted on PubMLST.org.
+ .
+ The software is used on a number of public bacterial typing databases:
+  * Neisseria PorA variable regions | PorB | FetA
+  * Campylobacter flaA
+  * Streptococcus equi seM
+
+Depends: martj
+Homepage: http://www.ebi.ac.uk/biomart/
+Responsible: Steffen Moeller <moeller@debian.org>
+License: GPL
+Vcs-Svn: svn://svn.debian.org/svn/debian-med/trunk/packages/martj/trunk/
+Pkg-Description: distributed data integration system for biological data
+ BioMart is a simple, distributed data integration system with
+ powerful query capabilities. The BioMart data model has been applied
+ to the following data sources: UniProt Proteomes, Macromolecular
+ Structure Database (MSD), Ensembl, Vega, and dbSNP.
+
+Depends: cluster3
+Homepage: http://bonsai.ims.u-tokyo.ac.jp/~mdehoon/software/cluster/software.htm#ctv
+License: non-free
+WNPP: 286167
+Responsible: Steffen Moeller <moeller@debian.org>
+Vcs-Svn: svn://svn.debian.org/svn/debian-med/trunk/packages/cluster3/trunk/
+Pkg-Description: find clustering solutions for genome data
+ Cluster 3.0 is an enhanced version of Cluster, which was originally
+ developed by Michael Eisen while at Stanford University. The main
+ improvement consists of the k-means algorithm, which now includes
+ multiple trials to find the best clustering solution. This is crucial
+ for the k-means algorithm to be reliable. The routine for self-organizing
+ maps was extended to include 2D rectangular geometries. The Euclidean
+ distance and the city-block distance were added to the available
+ measures of similarity.
+
+Depends: jmol
+Homepage: http://jmol.sourceforge.net/
+Responsible: Michael Banck <mbanck@debian.org>
+X-Old-Responsible: Vincent Fourmond <fourmond@debian.org>
+License: LGPL
+WNPP: 512930
+Vcs-Svn: svn://svn.debian.org/svn/debichem/unstable/jmol/
+Pkg-Description: viewer for chemical structures in 3D
+ Jmol is a Java molecular viewer for three-dimensional chemical structures.
+ Features include reading a variety of file types and output from quantum
+ chemistry programs, and animation of multi-frame files and computed normal
+ modes from quantum programs.  It includes with features for chemicals,
+ crystals, materials and biomolecules.
+  * The JmolApplet is a web browser applet that can be integrated into
+    web pages.
+  * The Jmol application is a standalone Java application that runs on
+    the desktop.
+  * The JmolViewer is a development tool kit that can be integrated into
+    other Java applications.
+X-Comment:
+ For more detailed information about packaging status please see
+ http://lists.debian.org/debian-med/2008/03/msg00097.html before
+ you might download the source packages http://debian.wgdd.de/temp/jmol/
+
+Depends: jtreeview
+Homepage: http://jtreeview.sourceforge.net/
+Responsible: Steffen Moeller <moeller@debian.org>
+License: GPL
+WNPP: 243771
+X-Category: Visualisation
+Vcs-Svn: svn://svn.debian.org/svn/debian-med/trunk/packages/treeview/trunk/
+Pkg-Description: Java re-implementation of Michael Eisen's TreeView
+ TreeView creates a matrix-like display of expression data, known as
+ Eisen clustering. The original implementation was a Windows program
+ named TreeView by Michael Eisen. This TreeView package, sometimes also
+ referred to as jTreeView, was rewritten in Java under a free license,
+ the original implementation also comes with the source code, but controls
+ commercial distribution. And it did not run on Unix.
+ .
+ Java TreeView is an extensible viewer for microarray data in
+ PCL or CDT format.
+
+Depends: smile
+Homepage: http://www-igm.univ-mlv.fr/~marsan/smile_english.html
+Responsible: Steffen Moeller <moeller@debian.org>
+WNPP: 221492
+License: GPL
+Vcs-Svn: svn://svn.debian.org/svn/debian-med/trunk/packages/smile/trunk/
+Pkg-Description: infer motifs in a set of sequences
+ SMILE is a tool that infers motifs in a set of sequences, according to some
+ criteria. It was first made to infer exceptional sites as binding sites in
+ DNA sequences. Since the 1.4 version, it allows to infer motifs written on
+ any alphabet (even degenerate) in any kind of sequences.
+ .
+ The specificity of SMILE is to allow to deal with what we call structured
+ motifs, which are motifs associated by some distance constraints.
+
+Depends: cactus
+Homepage: http://www.cactuscode.org/Community/Biology.html
+License: GPL
+Pkg-Description:
+ Cactus is an open source problem solving environment designed for scientists
+ and engineers. Its modular structure easily enables parallel computation
+ across different architectures and collaborative code development between
+ different groups.
+ .
+ Cactus provides easy access to many cutting edge software technologies being
+ developed in the academic research community, including the Globus
+ Metacomputing Toolkit, HDF5 parallel file I/O, the PETSc scientific library,
+ adaptive mesh refinement, web interfaces, and advanced visualization tools.
+
+Depends: contralign
+Homepage: http://contra.stanford.edu/contralign/
+License: Public Domain
+Pkg-Description: parameter learning framework for protein pairwise sequence alignment
+ CONTRAlign is an extensible and fully automatic parameter learning
+ framework for protein pairwise sequence alignment based on pair
+ conditional random fields. The CONTRAlign framework enables the
+ development of feature-rich alignment models which generalize well to
+ previously unseen sequences and avoid overfitting by controlling model
+ complexity through regularization.
+
+Depends: galaxy
+Homepage: http://g2.trac.bx.psu.edu/
+License: MIT
+WNPP: 432472
+Pkg-Description: manipulate sequences and annotation files
+ Galaxy is a web-based tool allowing users to perform operations which
+ are usually done with command-line interface. Using galaxy, one can
+ manipulate sequences and annotation files in many formats. Galaxy has
+ strong ties with the UCSC genome browser, and makes it easy to
+ visualise modified annotation files as a custom track.
+
+Depends: genographer
+Homepage: http://hordeum.oscs.montana.edu/genographer/
+License: GPL
+Pkg-Description: read data and reconstruct them into a gel image
+ This program will read in data from an ABI 3700, 3100, 377 or 373,
+ CEQ 2000 or SCF and reconstruct them into a gel image which is
+ straightened and sized. Bins can be defined easily and viewed as
+ thumbnails, which allows for a fairly quick and easy way of scoring a gel.
+ .
+ The program is written in Java and uses the Java 1.3 API. Therefore,
+ it should run on any machine that can run java.
+
+Depends: molekel
+Homepage: http://bioinformatics.org/molekel/wiki/Main/HomePage
+License: GPL
+Pkg-Description: multiplatform molecular visualization
+ Molekel is an opensource (GPL) multiplatform molecular visualization
+ program being developed at the Swiss National Supercomputing Centre
+ (CSCS).
+
+Depends: pftools
+Homepage: ftp://us.expasy.org/databases/prosite/tools/ps_scan/sources
+License: GPL
+Pkg-Description: tools to handle patterns from PROSITE
+ ps_scan is a perl program used to scan one or several patterns, rules
+ and/or profiles from PROSITE against one or several protein sequences
+ in Swiss-Prot or FASTA format. It requires two compiled external
+ programs from the PFTOOLS, which are also distributed with the sources.
+
+Depends: proalign
+Homepage: http://evol-linux1.ulb.ac.be/ueg/ProAlign/
+License: GPL
+Responsible: Charles Plessy <plessy@debian.org>
+WNPP: 378290
+Pkg-Description: Probabilistic multiple alignment program
+ ProAlign performs probabilistic sequence alignments using hidden Markov
+ models (HMM). It includes a graphical interface (GUI) allowing to (i)
+ perform alignments of nucleotide or amino-acid sequences, (ii) view the
+ quality of solutions, (iii) filter the unreliable alignment regions and
+ (iv) export alignments to other softwares.
+ .
+ ProAlign uses a progressive method, such that multiple alignment is
+ created stepwise by performing pairwise alignments in the nodes of a
+ guide tree. Sequences are described with vectors of character
+ probabilities, and each pairwise alignment reconstructs the ancestral
+ (parent) sequence by computing the probabilities of different
+ characters according to an evolutionary model. It has been published in
+ Bioinformatics. 2003 Aug 12;19(12):1505-13.
+
+Depends: ssaha
+Homepage: http://www.sanger.ac.uk/Software/analysis/SSAHA/
+License: GPL
+Responsible: Charles Plessy <plessy@debian.org>
+WNPP: 425111
+Pkg-Description: Sequence Search and Alignment by Hashing Algorithm
+ SSAHA is a software tool for very fast matching and alignment of DNA
+ sequences. It achieves its fast search speed by converting sequence
+ information into a `hash table' data structure, which can then be
+ searched very rapidly for matches. It was published by Ning Z,
+ Cox AJ, Mullikin JC in Genome Res. 2001;11;1725-9.
+ .
+ SSAHA is the only free software of its category (fast search of nearly
+ indentical sequences). The popular alternative, BLAT, is restricted to
+ non-commercial use.
+ .
+ Unfortunately the source of its successor ssaha2
+ http://www.sanger.ac.uk/Software/analysis/SSAHA2/
+ does not seem to be available.
+
+Depends: ngila
+Homepage: http://scit.us/projects/ngila/
+License: GPLv3
+Responsible: Charles Plessy <plessy@debian.org>
+WNPP: 439996
+Pkg-Description: global pairwise alignments with logarithmic and affine gap costs
+ Ngila is an application that will find the best alignment of a pair
+ of sequences using log-affine gap costs, which are the most
+ biologically realistic gap costs.
+ .
+ Ngila implements the Miller and Myers (1988) algorithm in order to
+ find a least costly global alignment of two sequences given homology
+ costs and a gap cost. Two versions of the algorithm are
+ included: holistic and divide-and-conquer. The former is faster but
+ the latter utilizes less memory. Ngila starts with the
+ divide-and-conquer method but switches to the holistic method for
+ subsequences smaller than a user-established threshold. This improves
+ its speed without substantially increasing memory requirements. Ngila
+ also allows users to assign costs to end gaps that are smaller than
+ costs for internal gaps. This is important for aligning using the
+ free-end-gap method.
+ .
+ Ngila is published in Cartwright RA Bioinformatics 2007
+ 23(11):1427-1428; doi:10.1093/bioinformatics/btm095
+
+Depends: tm-align
+Homepage: http://zhang.bioinformatics.ku.edu/TM-align/
+License: free to change and redistribute
+Responsible: Steffen Moeller <moeller@debian.org>
+WNPP: 447505
+Pkg-Description: structural protein alignment
+ TM-align is a structural alignment program for comparing two proteins
+ whose sequences can be different. TM-align will first find the best
+ equivalent residues of two proteins based on the structure similarity
+ and then output a TM-score.
+ .
+ TM-align performs a structural alignment of protein sequences. It is
+ said to be 10 times faster than DALI and no worse in accuracy.
+
+Depends: dazzle
+Homepage: http://www.biojava.org/dazzle
+Responsible: Steffen Moeller <moeller@debian.org>
+License: LGPL
+Vcs-Svn: svn://svn.debian.org/svn/debian-med/trunk/packages/dazzle/trunk/
+Pkg-Description: Java-based DAS server
+ Dazzle is a general purpose server for the Distributed Annotation System
+ (DAS) protocol. It is implemented as a Java servlet, using the BioJava
+ APIs. Dazzle is a modular system which uses small "datasource" plugins to
+ provide access to a range of databases. Several general-purpose plugins
+ are included in the package, and it it straightforward to develop new
+ plugins to connect to your own databases.
+ .
+ Information on DAS is available from http://www.biodas.org/
+
+Depends: ecell
+Homepage: http://www.e-cell.org/
+Responsible: Steffen Moeller <moeller@debian.org>
+WNPP: 241195
+License: GPL
+Vcs-Svn: svn://svn.debian.org/svn/debian-med/trunk/packages/ecell/trunk/
+Pkg-Description: Concept and environment for constructing virtual cells on computers
+ The E-Cell Project is an international research project aiming at
+ developing necessary theoretical supports, technologies and software
+ platforms to allow precise whole cell simulation.
+ .
+ The E-Cell System is an object-oriented software suite for modeling,
+ simulation, and analysis of large scale complex systems such as
+ biological cells, architected by Kouichi Takahashi and written by
+ a team of developers.
+ .
+ The core part of the system, E-Cell Simulation Environment version 3,
+ allows many components driven by multiple algorithms with different
+ timescales to coexist.
+ .
+ E-Cell System consists of the following three major parts:
+  * E-Cell Simulation Environment (or E-Cell SE)
+  * E-Cell Modeling Environment (or E-Cell ME)
+  * E-Cell Analysis Toolkit.
+
+Depends: haploview
+Homepage: http://www.broad.mit.edu/mpg/haploview/
+Responsible: Steffen Moeller <moeller@debian.org>
+WNPP: 311421
+License: DFSG free
+Vcs-Svn: svn://svn.debian.org/svn/debian-med/trunk/packages/haploview/trunk/
+Pkg-Description: Analysis and visualization of LD and haplotype maps
+ This tools assists in the analysis of the nucleotide
+ variation in a population. Such investigations are performed
+ to determine genes and genetic pathways that are associated
+ with diseases. This is an early stage in the quest for new drugs.
+
+Depends: bio-mauve
+Homepage: http://asap.ahabs.wisc.edu/mauve/
+Responsible: Andreas Tille <tille@debian.org>
+License: GPL
+Language: C++ and Java
+X-Category: Multiple genome alignment
+X-Importance: efficient
+Pkg-Description: multiple genome alignment
+ Mauve is a system for efficiently constructing multiple genome alignments
+ in the presence of large-scale evolutionary events such as rearrangement
+ and inversion. Multiple genome alignment provides a basis for research
+ into comparative genomics and the study of evolutionary dynamics.  Aligning
+ whole genomes is a fundamentally different problem than aligning short
+ sequences.
+ .
+ Mauve has been developed with the idea that a multiple genome aligner
+ should require only modest computational resources. It employs algorithmic
+ techniques that scale well in the amount of sequence being aligned. For
+ example, a pair of Y. pestis genomes can be aligned in under a minute,
+ while a group of 9 divergent Enterobacterial genomes can be aligned in
+ a few hours.
+ .
+ Mauve computes and interactively visualizes genome sequence comparisons.
+ Using FastA or GenBank sequence data, Mauve constructs multiple genome
+ alignments that identify large-scale rearrangement, gene gain, gene loss,
+ indels, and nucleotide substutition.
+ .
+ Mauve is developed at the University of Wisconsin.
+ .
+ Note: There are instructions for compiling Mauve from source available at
+ http://asap.ahabs.wisc.edu/mauve/mauve-developer-guide/compiling-mauvealigner-from-source.html
+
+Depends: mauvealigner
+Homepage: http://asap.ahabs.wisc.edu/mauve/
+Responsible: Andreas Tille <tille@debian.org>
+License: GPL
+Pkg-URL: http://people.debian.org/~tille/packages/mauvealigner/
+Vcs-Svn: svn://svn.debian.org/svn/debian-med/trunk/packages/mauvealign/trunk/
+Pkg-Description: multiple genome alignment algorithms
+ The mauveAligner and progressiveMauve alignment algorithms have been
+ implemented as command-line programs included with the downloadable Mauve
+ software.  When run from the command-line, these programs provide options
+ not yet available in the graphical interface.
+ .
+ Mauve is a system for efficiently constructing multiple genome alignments
+ in the presence of large-scale evolutionary events such as rearrangement
+ and inversion. Multiple genome alignment provides a basis for research
+ into comparative genomics and the study of evolutionary dynamics.  Aligning
+ whole genomes is a fundamentally different problem than aligning short
+ sequences.
+ .
+ Mauve has been developed with the idea that a multiple genome aligner
+ should require only modest computational resources. It employs algorithmic
+ techniques that scale well in the amount of sequence being aligned. For
+ example, a pair of Y. pestis genomes can be aligned in under a minute,
+ while a group of 9 divergent Enterobacterial genomes can be aligned in
+ a few hours.
+ .
+ Mauve computes and interactively visualizes genome sequence comparisons.
+ Using FastA or GenBank sequence data, Mauve constructs multiple genome
+ alignments that identify large-scale rearrangement, gene gain, gene loss,
+ indels, and nucleotide substutition.
+ .
+ Mauve is developed at the University of Wisconsin.
+
+Depends: gbrowse
+Homepage: http://www.gmod.org/wiki/index.php/GBrowse
+Responsible: Charles Plessy <plessy@debian.org>
+WNPP: 429610
+License: Perl Artistic License, plus additional clauses
+Vcs-Svn: svn://svn.debian.org/svn/debian-med/trunk/packages/gbrowse/trunk/
+X-Category: Genome Browser
+X-Importance: Academic ones are really expensive for commercial use
+Pkg-Description: The Generic Genome Browser from GMOD
+ The Generic Genome Browser is a combination of database and interactive Web
+ page for manipulating and displaying annotations on genomes. Some of its
+ features:
+  * Simultaneous bird's eye and detailed views of the genome.
+  * Scroll, zoom, center.
+  * Attach arbitrary URLs to any annotation.
+  * Order and appearance of tracks are customizable by administrator and end-user.
+  * Search by annotation ID, name, or comment.
+  * Supports third party annotation using GFF formats.
+  * Settings persist across sessions.
+  * DNA and GFF dumps.
+  * Connectivity to different databases, including BioSQL and Chado.
+  * Multi-language support.
+  * Third-party feature loading.
+  * Customizable plug-in architecture (e.g. run BLAST, dump & import many formats,
+    find oligonucleotides, design primers, create restriction maps, edit features)
+
+Depends: mira
+Homepage: http://chevreux.org/projects_mira.html
+Responsible: Charles Plessy <plessy@debian.org>
+WNPP: 435915
+License: GPL
+Vcs-Svn: svn://svn.debian.org/svn/debian-med/trunk/packages/mira/trunk/
+Pkg-Description: Whole Genome Shotgun and EST Sequence Assembler
+ The mira genome fragment assembler is a specialised assembler for
+ sequencing projects classified as 'hard' due to high number of similar
+ repeats. For expressed sequence tags (ESTs) transcripts, miraEST is
+ specialised on reconstructing pristine mRNA transcripts while
+ detecting and classifying single nucleotide polymorphisms (SNP)
+ occuring in different variations thereof.
+ .
+ The assembler is routinely used for such various tasks as mutation
+ detection in different cell types, similarity analysis of transcripts
+ between organisms, and pristine assembly of sequences from various
+ sources for oligo design in clinical microarray experiments.
+Published-Title: Using the miraEST Assembler for Reliable and Automated mRNA Transcript Assembly and SNP Detection in Sequenced ESTs
+Published-Authors: Chevreux B, Pfisterer T, Drescher B, Driesel AJ, Müller WE, Wetter T, Suhai S.
+Published-In: Genome Res. Jun;14(6):1147-59.
+Published-Year: 2004
+Published-doi: 10.1101/gr.1917404
+Published-URL: http://pubmed.org/15140833
+
+Depends: phylographer
+Homepage: http://www.atgc.org/PhyloGrapher/PhyloGrapher_Welcome.html
+Responsible: Charles Plessy <plessy@debian.org>
+WNPP: 426489
+License: GPL
+X-Category: Graphical representation of sequence conservation
+Language: Tcl/Tk
+Vcs-Svn: svn://svn.debian.org/svn/debian-med/trunk/packages/phylographer/trunk/
+Pkg-Description: Graph Visualization Tool
+ PhyloGrapher is a program designed to visualize and study evolutionary
+ relationships within families of homologous genes or proteins
+ (elements).  PhyloGrapher is a drawing tool that generates custom graphs
+ for a given set of elements. In general, it is possible to use
+ PhyloGrapher to visualize any type of relations between elements.
+ Used in conjunction with tcl_blast_parser, PhyloGrapher can represent
+ the results of a BLAST search as a graph.
+ .
+ PhyloGrapher and tcl_blast_parser are useful tools to analyse BLAST
+ biological sequence alignment reports (BLAST is provided by Debian's
+ blast2 package).
+
+Depends: phylowin
+Homepage: http://pbil.univ-lyon1.fr/software/phylowin.html
+WNPP: 395840
+License: unknown
+Pkg-Description: Graphical interface for molecular phylogenetic inference
+ Phylo_win is a graphical colour interface for molecular phylogenetic
+ inference. It performs neighbor-joining, parsimony and maximum
+ likelihood methods and bootstrap with any of them. Many distances can be
+ used including Jukes & Cantor, Kimura, Tajima & Nei, HKY, Galtier & Gouy
+ (1995), LogDet for nucleotidic sequences, Poisson correction for protein
+ sequences, Ka and Ks for codon sequences. Species and sites to include
+ in the analysis are selected by mouse. Reconstructed trees can be drawn,
+ edited, printed, stored and evaluated according to numerous criteria.
+ .
+ This program uses sources files from the Phylip program, which forbids
+ its use for profit.  Therfore, Phylo_win will unfortunately have to be
+ distributed in contrib or non-free.
+Remark: Issuer of previous ITP said:
+ Because I could never figure out the license of Phylo_win, and because the
+ upstream authors released SeaView 4, which provides similar functionalities, I
+ will not package Phylo_win.
+ .
+ Probably it makes sense to remove this project from the prospective packages
+ list.
+
+Depends: seq-gen
+Homepage: http://tree.bio.ed.ac.uk/software/seqgen/
+License: Free
+Pkg-Description: simulate the evolution of nucleotide or amino acid sequences
+ Seq-Gen is a program that will simulate the evolution of nucleotide or
+ amino acid sequences along a phylogeny, using common models of the
+ substitution process. A range of models of molecular evolution are
+ implemented including the general reversible model. State frequencies
+ and other parameters of the model may be given and site-specific rate
+ heterogeneity may also be incorporated in a number of ways. Any number
+ of trees may be read in and the program will produce any number of data
+ sets for each tree. Thus large sets of replicate simulations can be easily
+ created. It has been designed to be a general purpose simulator that
+ incorporates most of the commonly used (and computationally tractable)
+ models of molecular sequence evolution.
+
+Depends: wgs-assembler
+Homepage: http://wgs-assembler.sourceforge.net/
+Responsible: Charles Plessy <plessy@debian.org>
+WNPP: 395843
+License: GPL
+Pkg-Description: Whole-Genome Shotgun Assembler
+ Celera Assembler is scientific software for DNA research. It can
+ reconstruct long sequences of genomic DNA given the fragmentary data
+ produced by whole-genome shotgun sequencing. The Celera Assembler
+ enabled many advances in genomics, including the first genome
+ sequence of a multi-cellular organism and the first diploid sequence
+ of an individual human.
+ .
+ The Celera Assembler is a member of a class of software called
+ whole-genome shotgun assemblers. The Celera Assembler is mature,
+ efficient, open-source software with a long record of contributions
+ to science. Celera Assembler is written mostly in C for unix
+ operating systems. Although it requires large compute resources to
+ resolve complex genomes, it can assemble bacterial genomes on a
+ laptop.
+ .
+ This important software is an "open source" project. Originally
+ developed at Celera Genomics, it was released under the GNU Public
+ License and deposited on a public repository (Source Forge) in
+ 2004. Scientists around the world can download, build, and run the
+ software without restriction. In addition, they can inspect the
+ source code and alter it at their own sites. Workers at JCVI and a
+ few other institutes regularly submit their code alterations to the
+ public repository.
+ .
+ JCVI has made many important contributions to Celera
+ Assembler. Scientists and engineers at JCVI are extending the code to
+ handle more and more polymorphic data sets, including environmental
+ samples. In collaboration with scientists at the University of
+ Maryland, they are adding the capability to assemble pyrosequencing
+ data (as from a 454 FLX machine) in addition to the traditional
+ Sanger sequencing data (as from an ABI 3730 machine). JCVI's efforts
+ provide the cutting edge software that genome scientists around the
+ world will need as they apply DNA sequencing technology to more and
+ more difficult problems of biology.
+ .
+ See also: http://www.jcvi.org/cms/research/software/celera-assembler/overview/
+Note: Genome assembly and large-scale genome alignment (http://www.cbcb.umd.edu/software/)
+
+Depends: gbioseq
+Homepage: http://www.bioinformatics.org/project/?group_id=94
+License: GPL
+Pkg-Description: DNA sequence editor for Linux
+ gBioSeq is in an early stage of development, but it is already running.
+ The goal is to provide an easy to use software to edit DNA sequences under
+ Linux, Windows, MacOsX, using GTK C# (Mono).
+
+Depends: populations
+Homepage: http://bioinformatics.org/~tryphon/populations/
+License: GPL
+Pkg-Description: individuals or populations distances based on allelic frequencies
+ Population genetic software (individuals or populations distances, phylogenetic trees)
+  * haploids, diploids or polyploids genotypes (see input formats)
+  * structured populations (see input files structured populations
+  * No limit of populations, loci, alleles per loci (see input formats)
+  * Distances between individuals (15 different methods)
+  * Distances between populations (15 methods)
+  * Bootstraps on loci OR individuals
+  * Phylogenetic trees (individuals or populations), using Neighbor Joining or UPGMA
+    (PHYLIP tree format)
+  * Allelic diversity
+  * Converts data files from Genepop to different formats (Genepop, Genetix, Msat,
+    Populations...)
+
+Depends: phpphylotree
+Homepage: http://www.bioinformatics.org/project/?group_id=372
+License: GPL
+Pkg-Description: draw phylogenetic trees
+ PhpPhylotree is a web application that is able to draw phylogenetic trees.
+ It produces an SVG (Scalable Vector Graphic) file from phylip/newick tree files.
+
+Depends: tracetuner
+Homepage: http://www.jcvi.org/cms/research/software/tracetuner/overview
+License: GPL; but US Patent #6,681,186
+Pkg-Description: DNA sequencing and trace processing
+ TraceTuner is a DNA sequencing quality value, base calling and trace
+ processing software application originally developed by Paracel,
+ Inc. While providing a flexible interface and capability to adopt the
+ "pure" base calls produced by Phred, KB or any other "original"
+ caller, it offers competitive features not currently available in
+ other tools, such as customized calibration of quality values,
+ advanced heterozygote and mixed base calling and deconvolving the
+ "mixed" electropherograms resulting from the presence of indels into
+ a couple of "pure" electropherograms. Previous versions of TraceTuner
+ were used by Celera Genomics to process over 27 million reads from
+ both Drosophila and human genome projects and by Applied Biosystems,
+ as a component of its SNP detection and genotyping software product
+ SeqScape. TraceTuner implements an advanced peak processing
+ technology for resolving overlapping peaks of the same dye color into
+ individual, or "intrinsic" peaks. This technology was protected by US
+ Patent #6,681,186. Currently, TraceTuner is an open source software,
+ which has been used by J. Craig Venter Institute's DNA Sequencing and
+ Resequencing pipelines.
+ .
+ The TraceTuner Software (Copyright 1999-2003, Paracel, Inc. All
+ rights reserved.) (the "Software") is covered by US Patent #6,681,186 and is
+ being made available free of charge by Applera Corporation subject to the terms
+ and conditions of the GNU General Public License, version 2, as published by the
+ Free Software Foundation (the "GNU General Public License").
+
+Depends: twain
+Homepage: http://cbcb.umd.edu/software/pirate/twain/twain.shtml
+License: Open Source
+Pkg-Description: syntenic genefinder employing a Generalized Pair Hidden Markov Model
+ TWAIN is a new syntenic genefinder which employs a Generalized Pair
+ Hidden Markov Model (GPHMM) to predict genes in two closely related
+ eukaryotic genomes simultaneously.  It utilizes the MUMmer package to
+ perform approximate alignment before applying a GPHMM based on an
+ enhanced version of the TigrScan gene finder.  TWAIN was written by
+ Bill Majoros and Mihaela Pertea while at The Institute for Genomic
+ Research (TIGR).
+ .
+ TWAIN consists of two components: (1) ROSE, the Region Of Synteny
+ Extractor, which identifies contiguous regions likely to contain one
+ or more syntenic genes, and (2) OASIS, a generalized pair hidden
+ Markov model (GPHMM) for predicting genes in the regions identified
+ by ROSE.  The system utilizes approximate alignments constructed by
+ the PROmer and NUCmer programs in the MUMmer package to assess
+ approximate alignment scores efficiently.  More detailed information
+ on the architecture of this system will be made available soon.
+ Slides from a talk at Computational Genomics 2004 are now available.
+Note: Computational Gene Finding (http://www.cbcb.umd.edu/software/)
+
+Depends: rose
+Homepage: http://www.cbcb.umd.edu/software/rose/Rose.html
+License: Open Source
+Pkg-Description: Region-Of-Synteny Extractor
+ ROSE is a program which identifies regions between two genomes which
+ are likely to contain orthologous genes. The two genomes are given as
+ two multi fasta files of DNA sequences. The PROmer program from the
+ MUMmer package needs to be run first between the two genomes, and the
+ resulting delta file is then input to ROSE. If a previous annotation
+ is available for one or both genomes, then the coordinates of the
+ annotated genes from a genome can be optionally given as input in a
+ gff file. The gene coordinates will be used to guide the length of
+ the regions produced by ROSE. By default, when finding a region of
+ consistent alignments, ROSE will add a user-defined margin (1000 bp
+ by default) on either side of that region. When a predicted gene
+ overlaps an alignment we use the gene prediction to extend the
+ boundaries of the output region.
+Note: Computational Gene Finding (http://www.cbcb.umd.edu/software/)
+
+Depends: glimmerhmm
+Homepage: http://www.cbcb.umd.edu/software/glimmerhmm/
+License: Artistic
+Pkg-Description: Eukaryotic Gene-Finding System
+ GlimmerHMM is a new gene finder based on a Generalized Hidden Markov
+ Model (GHMM). Although the gene finder conforms to the overall
+ mathematical framework of a GHMM, additionally it incorporates splice
+ site models adapted from the GeneSplicer program and a decision tree
+ adapted from GlimmerM. It also utilizes Interpolated Markov Models
+ for the coding and noncoding models . Currently, GlimmerHMM's GHMM
+ structure includes introns of each phase, intergenic regions, and
+ four types of exons (initial, internal, final, and single). A basic
+ user manual can be consulted here.
+Note: Computational Gene Finding (http://www.cbcb.umd.edu/software/)
+
+Depends: genezilla
+Homepage: http://www.genezilla.org/
+License: Artistic
+Language: C++
+X-Importance: state-of-art
+X-Category: Gene prediction (through GHMM)
+Pkg-Description: eukaryotic gene finder
+ GeneZilla is a state-of-the-art program for computational prediction
+ of protein-coding genes in eukaryotic DNA, and is based on the
+ Generalized Hidden Markov Model (GHMM) framework, similar to GENSCAN
+ and GENIE. It is highly reconfigurable and includes software for
+ retraining by the end-user. It is written in highly optimized C++ and
+ runs under most UNIX/Linux platforms. The run time and memory
+ requirements are linear in the sequence length, and are in general
+ much better than those of competing systems, due to GeneZilla's novel
+ decoding algorithm. Graph-theoretic representations of the high
+ scoring open reading frames are provided, allowing for exploration of
+ sub-optimal gene models. It utilizes Interpolated Markov Models
+ (IMMs), Maximal Dependence Decomposition (MDD), and includes states
+ for signal peptides, branch points, TATA boxes, CAP sites, and will
+ soon model CpG islands as well.
+ .
+ GeneZilla is an open-source project hosted at bioinformatics.org and
+ currently consists of ~20,000 lines of code.  GeneZilla evolved out
+ of the ab initio eukaryotic gene finder TIGRscan, which was developed
+ at The Institute for Genomic Research over a 3-year period under NIH
+ grants R01-LM06845 and R01-LM007938, and which served as the basis
+ for the comparative gene finder TWAIN.
+Note: Computational Gene Finding (http://www.cbcb.umd.edu/software/)
+
+Depends: exalt
+Homepage: http://www.cbcb.umd.edu/software/exalt/
+License: Artistic
+Pkg-Description: phylogenetic generalized hidden Markov model for predicting alternatively spliced exons
+ ExAlt is a software program designed to predict alternatively spliced
+ overlapping exons in genomic sequence. The program works in several
+ ways depending on the available input. ExAlt can use information of
+ existing gene structure as well as sequence conservation to improve
+ the precision of it's predictions. ExAlt can also make predictions
+ when only a single genomic sequence is available. ExAlt has been
+ extensively tested on Drosophila melanogaster, but can be adapted to
+ run on other species.
+Note: Computational Gene Finding (http://www.cbcb.umd.edu/software/)
+
+Depends: jigsaw
+Homepage: http://www.cbcb.umd.edu/software/jigsaw/
+License: Artistic
+Pkg-Description: gene prediction using multiple sources of evidence
+ JIGSAW is a program designed to use the output from gene finders,
+ splice site prediction programs and sequence alignments to predict
+ gene models. The program provides an automated way to take advantage
+ of the many succsessful methods for computational gene prediction and
+ can provide substantial improvements in accuracy over an individual
+ gene prediction program.
+ .
+ JIGSAW is available for all species. It is tested on Human, Rice
+ (Oryza sativa), Arabidopsis thaliana , Brugia malayi, Cryptococcus
+ neoformans, Entamoeba histolytica, Theileria parva, Aspergillus
+ fumigatus, Plasmodium falciparum and Plasmodium yoelii.
+ .
+ The linear combiner option is now available in the current JIGSAW
+ software distribution. This allows JIGSAW to be run without the use
+ of training data. A weight is assigned to each evidence source, and
+ gene predictions are based on a weighted voting scheme, yielding the
+ best 'consensus' predictions.
+ .
+ Predictions are now available for the ENCODE regions in Human and
+ viewable as custom tracks in the UCSC Human Genome
+ Browser. Predictions available for the Human genome and viewable as
+ custom tracks in the UCSC Human Genome Browser
+Note: Computational Gene Finding (http://www.cbcb.umd.edu/software/)
+
+Depends: genesplicer
+Homepage: http://www.cbcb.umd.edu/software/GeneSplicer/
+License: Artistic
+Pkg-Description: computational method for splice site prediction
+ A fast, flexible system for detecting splice sites in the genomic DNA
+ of various eukaryotes. The system has been trained and tested
+ successfully on Plasmodium falciparum (malaria), Arabidopsis
+ thaliana, human, Drosophila, and rice . Training data sets for human
+ and Arabidopsis thaliana are included. Use the GeneSplicer Web
+ Interface to run GeneSplicer directly, or see below for instructions
+ on downloading the complete system including source code.
+ .
+ There is no independent program to train GeneSplicer, but there is a
+ way to obtain the necessary files by using the training procedure of
+ GlimmerHMM.
+Note: Computational Gene Finding (http://www.cbcb.umd.edu/software/)
+
+Ignore: riso
+Homepage: http://kdbio.inesc-id.pt/~asmc/software/riso.html
+License: not specified
+Pkg-Description: motif discovery tool
+ RISO discovers motifs composed of many binding sites separated by
+ spacers. Each binding site is called a box
+ .
+ The author of SMILE claims at his homepage
+ http://www-igm.univ-mlv.fr/~marsan/smile_english.html that RISO is
+ faster and more powerfull than SMILE which is described itself as
+ "SMILE is a tool that infers motifs in a set of sequences, according
+ to some criterias. It was first made to infer exceptionnal sites as
+ binding sites in DNA sequences. It allows to infer motifs written on
+ any alphabet (even degenerate) in any kind of sequences.  The
+ specificity of SMILE is to allow  to deal with what we call
+ "structured motifs",  which are motifs associated by some distance
+ constraints. In particular, SMILE is able to group under a unique
+ model different occurrences composed of several boxes separated by
+ spacers of different lengths."
+ .
+ The reference to SMILE is made here especially because there is some
+ work done in the Debian Med SVN at
+ http://svn.debian.org/wsvn/debian-med/trunk/packages/smile/trunk/?rev=0&sc=0
+ .
+ On the other hand the SMILE author told us in private mail that he
+ thinks that RISO is dead and SMILE continues to have some importance.
+
+Ignore: smile
+Homepage: http://www-igm.univ-mlv.fr/~marsan/smile_english.html
+License: GPL
+WNPP: 221492
+Responsible: Steffen Moeller <moeller@debian.org>
+Vcs-Svn: svn://svn.debian.org/svn/debian-med/trunk/packages/smile/trunk/
+Pkg-Description: Find statistically significant patterns in sequences
+ Smile determines sequence motifs on the basis of a set of DNA, RNA or
+ protein sequences. The work was originally described in the Journal of
+ Computational Biology (2000) 7:345-362 and has since been developed
+ further.
+  * No hard limit on the number of combinations of motifs to describe
+    subsets of sequences.
+  * The sequence alphabet may be specified.
+  * The use of wildcards is supported.
+  * Better determination of significance of motifs by simulation.
+  * Introduction of a set of sequences with negative controls
+    that should not match automatically determined motifs.
+ .
+ Note: We do not know anybody who actually uses SMILE and thus the
+ packaging effort is stalled.  Feel free to tell us, if you are
+ interested in turning this into an official package.
+
+Depends: mummergpu
+Homepage: http://mummergpu.sourceforge.net/
+License: Artistic
+Pkg-Description: High-throughput sequence alignment using Graphics Processing Units
+ The recent availability of new, less expensive high-throughput DNA
+ sequencing technologies has yielded a dramatic increase in the volume
+ of sequence data that must be analyzed. These data are being
+ generated for several purposes, including genotyping, genome
+ resequencing, metagenomics, and de novo genome assembly
+ projects. Sequence alignment programs such as MUMmer have proven
+ essential for analysis of these data, but researchers will need ever
+ faster, high-throughput alignment tools running on inexpensive
+ hardware to keep up with new sequence technologies.
+ .
+ MUMmerGPU is a low cost, ultra-fast sequence alignment program
+ designed to handle the increasing volume of data produced by new,
+ high-throughput sequencing technologies. MUMmerGPU is a GPGPU drop-in
+ replacement for MUMmer, using the GPUs in common workstations to
+ simultaneously align multiple query sequences against a single
+ reference sequence stored as a suffix tree. By processing the queries
+ in parallel on the highly parallel graphics card, MUMmerGPU achieves
+ more than a 10-fold speedup over a serial CPU version of the sequence
+ alignment kernel, and outperforms MUMmer on a high end CPU by
+ 3.5-fold in total application time when aligning reads from recent
+ sequencing projects using Solexa/Illumina, 454, and Sanger sequencing
+ technologies.
+Note: Genome assembly and large-scale genome alignment (http://www.cbcb.umd.edu/software/)
+
+Depends: amos-assembler
+Homepage: http://amos.sourceforge.net/
+License: Artistic
+Language: Perl
+X-Category: Genome assembling
+Pkg-Description: modular whole genome assembler
+ The AMOS consortium is committed to the development of open-source
+ whole genome assembly software. The project acronym (AMOS) represents
+ our primary goal -- to produce A Modular, Open-Source whole genome
+ assembler. Open-source so that everyone is welcome to contribute and
+ help build outstanding assembly tools, and modular in nature so that
+ new contributions can be easily inserted into an existing assembly
+ pipeline. This modular design will foster the development of new
+ assembly algorithms and allow the AMOS project to continually grow
+ and improve in hopes of eventually becoming a widely accepted and
+ deployed assembly infrastructure. In this sense, AMOS is both a
+ design philosophy and a software system.
+Note: Genome assembly and large-scale genome alignment (http://www.cbcb.umd.edu/software/)
+
+Depends: amoscmp
+Homepage: http://amos.sourceforge.net/docs/pipeline/AMOScmp.html
+License: Artistic
+Pkg-Description: comparative genome assembly package
+ A comparative assembler is a program that can assemble a set of
+ shotgun reads from an organism by mapping them to the finished
+ sequence of a related organism. Thus, a comparative assembler
+ transforms the traditional overlap-layout-consensus approach to
+ alignment-layout-consensus. The AMOScmp package uses the MUMmer
+ program to perform a mapping of the reads to the reference genome,
+ then processes the alignment results with a sophisticated layout
+ program designed to take into account polymorphisms between the two
+ genomes. For a detailed description of the algorithms involved please
+ refer to the paper listed in the References section.
+ .
+ AMOScmp uses as AMOS messages as both the inputs and the outputs (see
+ documentation). Two utilities are provided to process these files:
+ tarchive2amos - a versatile converter from trace archive .seq, .qual,
+ and .xml information into AMOS formatted data; amos2ace - a converter
+ from AMOS formatted data to the .ACE assembly format. In addition,
+ the AMOS::AmosLib Perl module is provided as a tool for users who
+ prefer to write their own conversion utilities. Please see the
+ documentation included with the distribution for more information.
+ .
+ AMOScmp is part of the AMOS package (see
+ http://amos.sourceforge.net/)- a collaborative effort to develop a
+ modular open-source framework for assembly development.
+Note: Genome assembly and large-scale genome alignment (http://www.cbcb.umd.edu/software/)
+
+Depends: minimus
+Homepage: http://amos.sourceforge.net/docs/pipeline/minimus.html
+License: Artistic
+Pkg-Description: AMOS lightweight assembler
+ minimus is an assembly pipeline designed specifically for small
+ data-sets, such as the set of reads covering a specific gene. Note
+ that the code will work for larger assemblies (we have used it to
+ assemble bacterial genomes), however, due to its stringency, the
+ resulting assembly will be highly fragmented. For large and/or
+ complex assemblies the execution of Minimus should be followed by
+ additional processing steps, such as scaffolding.
+ .
+ minimus follows the Overlap-Layout-Consensus paradigm and consists of three main modules:
+  * overlapper - computes the overlaps between the reads using a
+    modified version of the Smith-Waterman local alignment algorithm
+  * tigger - uses the read overlaps to generate the layouts of reads
+    representing individual contigs
+  * make-consensus - refines the layouts produced by the tigger to
+    generate accurate multiple alignments within the reads
+ .
+ minimus uses as AMOS messages as both the inputs and the outputs (see
+ documentation). Two utilities are provided to process these files:
+ tarchive2amos - a versatile converter from trace archive .seq, .qual,
+ and .xml information into AMOS formatted data; amos2ace - a converter
+ from AMOS formatted data to the .ACE assembly format. In addition,
+ the AMOS::AmosLib Perl module is provided as a tool for users who
+ prefer to write their own conversion utilities. Please see the
+ documentation included with the distribution for more information.
+ .
+ minimus is part of the AMOS package - a collaborative effort to
+ develop a modular open-source framework for assembly development.
+Note: Genome assembly and large-scale genome alignment (http://www.cbcb.umd.edu/software/)
+
+Ignore: catissuecore
+Homepage: https://cabig.nci.nih.gov/tools/catissuecore
+License: to be clarified, NCICB Open Source Project Site
+Pkg-Description: biospecimen inventory, tracking, and basic annotation
+ caTissue Core is caBIG's tissue bank repository tool for biospecimen
+ inventory, tracking, and basic annotation. Version 1.2.1 of caTissue
+ permits users to track the collection, storage, quality assurance,
+ and distribution of specimens as well as the derivation and
+ aliquotting of new specimens from an existing ones (e.g. for DNA
+ analysis). It also allows users to find and request specimens that
+ may then be used in molecular, correlative studies.
+ .
+ Intended Audiences: Translational Researchers, Pathologists, Biobank
+ Managers
+Note: A lot of stuff can be found at National Cancer Institute's
+ Center for Bioinformatics (NCICB) Open Source Project Site
+ http://gforge.nci.nih.gov/ which has to be evaluated and put into the
+ right category of our tasks files
+
+Ignore: trapss
+Homepage: https://putt.eng.uiowa.edu/
+License: Creative Commons for Science license
+Pkg-Description: Transcript Annotation Prioritization and Screening System
+ TrAPSS stands for Transcript Annotation Prioritization and Screening
+ System. It is a system comprised of several tools written by
+ researchers at the Coordinated Lab for Computational Genomics in the
+ University of Iowa. The system aims to aid scientists who are
+ searching for the genetic mutation or mutations that are linked to
+ expression of a disease phentotype. The system offers support for
+ almost all areas of a mutation discovery project from the creation
+ and prioritization of a large candidate gene list, to the selection,
+ ordering, and managing of primer pairs, and even support for SSCP
+ assay results. TrAPSS is a currently deployed and often used tool for
+ several laboratories here at the University of Iowa in the College of
+ Medicine. The system is composed of several Java applications, many
+ web-based PHP tools, and a local MySQL database. Even the Java
+ applications are available through a web browser due to Sun's Java
+ Web Start. Director of the CLCG, Professor Terry A. Braun, heads the
+ project along with Dr. Todd Scheetz and Prof. Thomas
+ L. Casavant. Eight developers create and maintain the software:
+ Bartley Brown , Hakeem Almabrazi, Steven Davis and Jason Grundstad;
+ along with three graduate students, Brian O'Leary, John Ritchison and
+ Michael Smith; and one undergraduate student, Matthew Kemp.
+ Importance of TrAPSS
+ .
+ The true importance of TrAPSS is that it is based upon a novel way to
+ examine a large candidate list of genes. Rather than sequentially
+ examining full genes, the scheme often followed in current target
+ identification projects, TrAPSS provides tools that offer the user
+ the opportunity to screen certain small parts of several genes from
+ the candidate list at once. This "parallel" screening idea was
+ envisioned by researchers here at the University of Iowa including
+ Dr. Edwin Stone and Prof. Thomas L. Casavant. Research by graduate
+ students Steven Davis and Brian O'Leary has demonstrated the
+ advantage of the parallel screening method over the sequential
+ sequencing of large candidate lists.
+Note: Found at
+ http://gforge.nci.nih.gov/softwaremap/trove_list.php?form_cat=337
+
+Depends: mage2tab
+Homepage: https://www.cbil.upenn.edu/magewiki/index.php/mage2tab
+License: CBIL Software and Data License (Apache-like)
+WNPP: 476209
+Responsible: Charles Plessy <plessy@debian.org>
+Vcs-Svn: svn://svn.debian.org/svn/debian-med/trunk/packages/mage2tab/trunk/
+Pkg-Description: MAGE-MLv1 converter and visualiser
+ This tool-kit is part of MR_T, a framework for import or export various of
+ MAGE (MicroArray Gene Expression) documents (MAGE-MLv1, MAGE-TAB, SOFT,
+ MINiML) from or into databases like GUS (the Genomics Unified Schema,
+ www.gusdb.org).
+
+Depends: bambus
+Homepage: http://amos.sourceforge.net/docs/bambus/
+License: Artistic
+Pkg-Description: hierarchical approach to building contig scaffolds
+ BAMBUS is the first publicly available scaffolding program. It orders
+ and orients contigs into scaffolds based on various types of linking
+ information. Additionally, BAMBUS allows the users to build scaffolds
+ in a hierarchical fashion by prioritizing the order in which links
+ are used. For more information please check out the online
+ documentation.
+ .
+ Note that currently Bambus is undergoing a transition in order to be
+ integrated with the AMOS package (see http://amos.sourceforge.net/)
+Note: Genome assembly and large-scale genome alignment (http://www.cbcb.umd.edu/software/)
+
+Depends: hawkeye
+Homepage: http://amos.sourceforge.net/hawkeye/
+License: Artistic
+Pkg-Description: Interactive Visual Analytics Tool for Genome Assemblies
+ Genome assembly remains an inexact science. Even when accomplished
+ with the best software available, the assembly of a genome often
+ contains numerous errors, both small and large. Hawkeye is a visual
+ analytics tool for genome assembly analysis and validation, designed
+ to aid in identifying and correcting assembly errors. Hawkeye blends
+ the best practices from information and scientific visualization to
+ facilitate inspection of large-scale assembly data while minimizing
+ the time needed to detect mis-assemblies and make accurate judgments
+ of assembly quality.
+ .
+ All levels of the assembly data hierarchy are made accessible to
+ users, along with summary statistics and common assembly metrics. A
+ ranking component guides investigation towards likely mis-assemblies
+ or interesting features to support the task at hand. Wherever
+ possible, high-level overviews, dynamic filtering, and automated
+ clustering are leveraged to focus attention and highlight anomalies
+ in the data. Hawkeyes effectiveness has been proven on several genome
+ projects, where it has been used both to improve quality and to
+ validate the correctness of complex genomes.
+ .
+ Hawkeye is compatible with most widely used assemblers, including
+ Phrap, ARACHNE, Celera Assembler, Newbler, AMOS, and assemblies
+ deposited in the NCBI Assembly Archive.
+ .
+ Publication: Schatz, M.C., Phillippy, A.M., Shneiderman, B.,
+ Salzberg, S.L. (2007) Hawkeye: a visual analytics tool for genome
+ assemblies. Genome Biology 8:R34.
+Note: Genome assembly and large-scale genome alignment (http://www.cbcb.umd.edu/software/)
+
+Depends: murasaki
+Homepage: http://murasaki.dna.bio.keio.ac.jp/
+License: GPL
+Vcs-Svn: svn://svn.debian.org/svn/debian-med/trunk/packages/murasaki/trunk/
+Pkg-Description: homology detection tool across multiple large genomes
+ Murasaki is a scalable and fast, language theory-based homology
+ detection tool across multiple large genomes. It enable whole-genome
+ scale multiple genome global alignments. Supports unlimited length
+ gapped-seed patterns and unique TF-IDF based filtering.
+ .
+ Murasaki is an anchor alignment software, which is
+  * exteremely fast (17 CPU hours for whole Human x Mouse genome (with
+    40 nodes: 52 wall minutes))
+  * scalable (Arbitrarily parallelizable across multiple nodes using MPI.
+    Even a single node with 16GB of ram can handle over 1Gbp of sequence.)
+  * unlimited pattern length
+  * repeat tolerant
+  * intelligent noise reduction
+
+Depends: gmv
+Homepage: http://murasaki.dna.bio.keio.ac.jp/wiki/index.php?GMV
+License: GPL
+Pkg-Description: comparative genome browser for Murasaki
+ GMV is a comparative genome browser for Murasaki. GMV visualizes
+ anchors from Murasaki, annotation data from GenBank files, and
+ expression / prediction score from GFF files.
+
+Depends: pyrophosphate-tools
+Homepage: http://www-naweb.iaea.org/nafa/ipc/public/d4_pbl_6a.html
+License: not specified
+Pkg-Description: for assembling and searching pyrophosphate sequence data
+ Simple tools for assembling and searching high-density picolitre
+ pyrophosphate sequence data.
+
+Depends: figaro
+Homepage: http://amos.sourceforge.net/Figaro/Figaro.html
+License: Artistic
+Pkg-Description: novel vector trimming software
+ Figaro is a software tool for identifying and removing the vector
+ from raw DNA sequence data without prior knowledge of the vector
+ sequence.  By statistically modeling short oligonucleotide
+ frequencies within a set of reads, Figaro is able to determine which
+ DNA words are most likely associated with vector sequence.  For a
+ description of Figaro's algorithms please see our paper.  Figaro is
+ part of the AMOS suite.
+Note: Genome assembly and large-scale genome alignment (http://www.cbcb.umd.edu/software/)
+
+Depends: mirbase
+Homepage: http://microrna.sanger.ac.uk/
+License: Public Domain
+WNPP: 420938
+Responsible: Charles Plessy <plessy@debian.org>
+Pkg-Description: The microRNA sequence database
+ The miRBase Sequence Database provides a searchable repository
+ for published microRNA sequences and associated annotation,
+ functionality previously provided by the microRNA Registry.  miRBase
+ also contains predicted miRNA target genes in miRBase Targets, and
+ provides a gene naming and nomenclature function in the miRBase
+ Registry.
+ .
+ Release 9.1 of the database contains 4449 entries representing hairpin
+ precursor miRNAs, expressing 4274 mature miRNA products, in primates,
+ rodents, birds, fish, worms, flies, plants and viruses.
+ .
+ This package will install the miRBase database for mySQL, EMBOSS, and/or
+ ncbi-blast if you have the corresponding packages installed.
+ .
+ It is possible that mirbase will not be a package from the main archive, but
+ will be autogenerated as part of a larger data packaging effort.
+
+Depends: elph
+Homepage: http://www.cbcb.umd.edu/software/ELPH/
+License: Artistic
+Pkg-Description: motif finder that can find ribosome binding sites, exon splicing enhancers, or regulatory sites
+ ELPH (Estimated Locations of Pattern Hits) is a general-purpose Gibbs
+ sampler for finding motifs in a set of DNA or protein sequences. The
+ program takes as input a set containing anywhere from a few dozen to
+ thousands of sequences, and searches through them for the most common
+ motif, assuming that each sequence contains one copy of the motif. We
+ have used ELPH to find patterns such as ribosome binding sites (RBSs)
+ and exon splicing enhancers (ESEs). See below for instructions on
+ downloading the complete system, including source code.
+ .
+ An online tool that uses ELPH output for identifying exon splicing
+ enhancers can be found at
+ http://www.cbcb.umd.edu/software/SeeEse/index.html .
+Note: Other sequence analysis tools (http://www.cbcb.umd.edu/software/)
+
+Depends: repeatfinder
+Homepage: http://www.cbcb.umd.edu/software/RepeatFinder/
+License: Artistic
+Pkg-Description: finding repetitive sequences complete and draft genomes
+ Two programs for finding repeats in genomic DNA sequences.  The first
+ program, described in the paper by Volfovsky et al. (2001) Genome
+ Biology is RepeatFinder.  A second program, designed specifically to
+ find repeats likely to confuse a genome assembly, is called
+ ClosureRepeatFinder.  The two programs are quite different and have
+ different purposes; RepeatFinder is intended to be the more
+ comprehensive approach.  Note that RepeatFinder depends on Stefan
+ Kurtz's REPuter.
+Note: Other sequence analysis tools (http://www.cbcb.umd.edu/software/)
+
+Depends: reputer
+Homepage: http://citeseer.ist.psu.edu/kurtz95reputer.html
+License: to be clarified
+Pkg-Description: fast computation of maximal repeats in complete genomes
+ A software tool was implemented that computes exact repeats and
+ palindromes in entire genomes very efficiently.
+Note: Download site (temporarily) not available - try to contact author
+
+Depends: transtermhp
+Homepage: http://transterm.cbcb.umd.edu/index.php
+License: Free
+Pkg-Description: finds rho-independent transcription terminators in bacterial genomes
+ finds rho-independent transcription terminators in bacterial
+ genomes. Each terminator found by the program is assigned a
+ confidence value that estimates its probability of being a true
+ terminator. TransTermHP is described in: C. Kingsford, K. Ayanbule
+ and S.L. Salzberg. Rapid, accurate, computational discovery of
+ Rho-independent transcription terminators illuminates their
+ relationship to DNA uptake. Genome Biology 8:R22 (2007).
+Note: Other sequence analysis tools (http://www.cbcb.umd.edu/software/)
+
+Depends: patman
+Homepage: http://bioinf.eva.mpg.de/patman/
+License: GPL-2+
+WNPP: 482555
+Responsible: Charles Plessy <plessy@debian.org>
+Pkg-Description: rapid alignment of short sequences to large databases
+ Patman searches for short patterns in large DNA databases, allowing
+ for approximate matches. It is optimized for searching for many small
+ pattern at the same time, for example microarray probes.
+
+Depends: uniprime
+Homepage: http://code.google.com/p/uniprime/
+License: GPL-3+
+Responsible: Charles Plessy <plessy@debian.org>
+Pkg-Description: workflow-based platform for universal primer design
+ UniPrime automatically designs large sets of universal primers by simply
+ inputting a GeneID reference. It automatically retrieves and aligns
+ orthologous sequences from GenBank, identifies regions of conservation within
+ the alignment and generates suitable primers that can amplify variable genomic
+ regions. UniPrime differs from previous automatic primer design programs in
+ that all steps of primer design are automated, saved and are phylogenetically
+ limited. We have experimentally verified the efficiency and success of this
+ program. UniPrime is an experimentally validated, fully automated program that
+ generates successful cross-species primers that take into account the
+ biological aspects of the PCR.
+
+Depends: genetrack
+Homepage: http://sysbio.bx.psu.edu/genetrack.html
+License: MIT
+Responsible: Charles Plessy <plessy@debian.org>
+Pkg-Description: genomic data storage and visualization framework
+ GeneTrack is a high performance bioinformatics data storage and analysis
+ system designed to store genome wide information. It is currently used to
+ analyze data obtained via high-throughput rapid sequencing platforms such as
+ the 454 and Solexa as well as tiling array data based on various platforms.
+
+Depends: operondb
+Homepage: http://www.cbcb.umd.edu/cgi-bin/operons/operons.cgi
+License: to be clarified
+Pkg-Description: detect and analyze conserved gene pairs
+ Comparison of complete microbial genomes reveals a large number of
+ conserved gene clusters - sets of genes that have the same order in
+ two or more different genomes. Such gene clusters often, but not
+ always represent a co-transcribed unit, or operon. A method was
+ developed to detect and analyze conserved gene pairs - pairs of genes
+ that are located close on the same DNA strand in two or more
+ bacterial genomes. For each conserved gene pair, an estimate of
+ probability is calculated that the genes belong to the same
+ operon. The algorithm takes into account several alternative
+ possibilities. One is that functionally unrelated genes may have the
+ same order due simply because they were adjacent in a common
+ ancestor. Other possibilities are that genes may be adjacent in two
+ genomes by chance alone, or due to horizontal transfer of the gene
+ pair.
+ .
+ The method is modified from the one described in: Maria D. Ermolaeva,
+ Owen White and Steven L. Salzberg. Prediction of Operons in Microbial
+ Genomes. Nucleic Acids Research, 29, 1216-1221, (2001)
+ .
+ OperonDB was supported by the NIH under grant R01-LM007938 and by the
+ NSF under grant DBI-0234704.
+Note: Other sequence analysis tools (http://www.cbcb.umd.edu/software/);
+ no info about license or downloadable code found, but tried to
+ contact authors.
+
+Depends: trnascan-se
+Homepage: http://lowelab.ucsc.edu/tRNAscan-SE/
+License: GPL
+Pkg-URL: http://bioweb.ucr.edu/debian-local/pool/main/t/trnascan-se/
+X-Category: tRNA discovery
+Pkg-Description: program for improved detection of transfer RNA genes in genomic sequence
+ tRNAscan-SE identifies 99-100% of transfer RNA genes in DNA sequence
+ while giving less than one false positive per 15 gigabases. Two
+ previously described tRNA detection programs are used as fast,
+ first-pass prefilters to identify candidate tRNAs, which are then
+ analyzed by a highly selective tRNA covariance model. This work
+ represents a practical application of RNA covariance models, which
+ are general, probabilistic secondary structure profiles based on
+ stochastic context-free grammars. tRNAscan-SE searches at ~ 30 000
+ bp/s. Additional extensions to tRNAscan-SE detect unusual tRNA
+ homologues such as selenocysteine tRNAs, tRNA-derived repetitive
+ elements and tRNA pseudogenes.
+
+Depends: beast-mcmc
+Homepage: http://beast.bio.ed.ac.uk/
+License: LGPL
+WNPP: 552101
+Responsible: Felix Feyertag <felix.feyertag@gmail.com>
+Vcs-Svn: svn://svn.debian.org/svn/debian-med/trunk/packages/beast-mcmc/trunk/
+Pkg-Description: Bayesian MCMC analysis of molecular sequences
+ BEAST is a cross-platform program for Bayesian MCMC analysis of
+ molecular sequences.  It is entirely orientated towards rooted,
+ time-measured phylogenies inferred using strict or relaxed molecular
+ clock models. It can be used as a method of reconstructing
+ phylogenies but is also a framework for testing evolutionary
+ hypotheses without conditioning on a single tree topology. BEAST uses
+ MCMC to average over tree space, so that each tree is weighted
+ proportional to its posterior probability. We include a simple to use
+ user-interface program for setting up standard analyses and a suit of
+ programs for analysing the results.
+ .
+ The source is avialable at http://code.google.com/p/beast-mcmc/ .
+Remark: Name space pollution
+ There is a Debian package beast which is completely unrelated
+ to this project.
+Published-Title: BEAST: Bayesian evolutionary analysis by sampling trees
+Published-Authors: A. J. Drummond, A. Rambaut
+Published-In: BMC Evolutionary Biology
+Published-Year: 2007
+Published-URL: http://www.biomedcentral.com/1471-2148/7/214/abstract
+Published-DOI: 10.1186/1471-2148-7-214
+Published-PubMed: 17996036
+
+Depends: artemis
+Homepage: http://www.sanger.ac.uk/Software/Artemis/
+License: GPL 2+
+Responsible: BioLinux - Stewart Houten <shou@ceh.ac.uk>
+Pkg-URL: http://nebc.nox.ac.uk/bio-linux/dists/unstable/bio-linux/binary-i386/
+Pkg-Description: genome viewer and annotation tool
+ Artemis is a free genome viewer and annotation tool that allows visualization
+ of sequence features and the results of analyses within the context of the
+ sequence, and its six-frame translation. Artemis is written in Java, and is
+ available for UNIX, Macintosh and Windows systems. It can read EMBL and GENBANK
+ database entries or sequence in FASTA or raw format. Extra sequence features
+ can be in EMBL, GENBANK or GFF format.
+Remark: This package ships with BioLinux http://envgen.nox.ac.uk/biolinux.html
+
+Depends: act
+Homepage: http://www.sanger.ac.uk/Software/ACT/
+License: GPL
+Pkg-URL: http://nebc.nox.ac.uk/bio-linux/dists/unstable/bio-linux/binary-i386/
+Responsible: BioLinux - Stewart Houten <shou@ceh.ac.uk>
+Pkg-Description: DNA Sequence Comparison Viewer
+ ACT (Artemis Comparison Tool) is a DNA sequence comparison viewer
+ based on Artemis. In common with Artemis, ACT is written in Java and
+ runs on UNIX, GNU/Linux, Macintosh and MS Windows systems. It can
+ read complete EMBL and GENBANK entries or sequence in FASTA or raw
+ format. Extra sequence features can be in EMBL, GENBANK or GFF
+ format.
+ .
+ The sequence comparison displayed by ACT is usually the result of
+ running a blastn or tblastx search. See the user manual for more
+ information.
+ .
+ To see ACT in action go to the examples page
+ http://www.sanger.ac.uk/Software/ACT/Examples/
+Remark: This package ships with BioLinux http://envgen.nox.ac.uk/biolinux.html
+
+Comment: If you stumble upon alfresco at
+ http://www.sanger.ac.uk/Software/Alfresco/ - it seems outdated and
+ tarball vanished from the downlowad page.  So this is not for us even
+ if it is linked from Sanger Institute web site.
+
+Comment: If you stumble upon angler at
+ http://www.sanger.ac.uk/Software/Angler/ - it seems outdated because
+ it is not updated since 1997.  I found no license statement and so
+ this is probably also not for us except somebody has real interest
+ and volunteers to clarify the license.
+
+Depends: cdna-db
+Homepage: http://www.sanger.ac.uk/Software/analysis/cdna_db/
+License: Artistic
+Pkg-Description: quality-control checking of finished cDNA clone sequences
+ cdna_db is a software system designed for quality-control checking of
+ finished cDNA clone sequences, and their computational analysis. The
+ combination of a relational db (MySQL) schema, and an
+ object-orientated perl API make it easy to implement high-level
+ analyses of these transcript sequences.
+ .
+ The cdna_db can store cDNA clone sequences, and ESTs and
+ consensus/contig sequences also derived from these clones. These are
+ then used by the system to check cDNA clone sequence identity etc
+ (see deneral_doc.txt). For each clone multiple DNA sequence versions
+ can be stored, if for instance, the finished DNA sequence is revised
+ as part of the sequencing process.
+ .
+ A blast pipeline is implemented together with a job control system
+ (with LSF underlying) so that multiple CPUs can be used in parallel
+ to carry out the blasts of large datasets. The searches can be made
+ incremental, so as more cDNA sequences are added to the databank,
+ just the new clones are blasted.
+ .
+ Utility scripts are provided to delete previous search results, and
+ dump cDNA clones sequences (such as those that passed the QC
+ checking) from the cdna_db.
+
+Depends: das-proserver
+Homepage: http://www.sanger.ac.uk/Software/analysis/proserver/
+License: Same as Perl
+Pkg-Description: lightweight Distributed Annotation System (DAS) server
+ The Distributed Annotation System (DAS) is a data exchange protocol
+ for open sharing of biological information.
+ .
+ ProServer is a very lightweight DAS server written in Perl. It is
+ simple to install and configure and has existing adaptors for a wide
+ variety of data sources. It is also easily extensible allowing
+ adaptors to be written for other data sources. More information about
+ the DAS protocol and what it is useful for is available over at
+ http://biodas.org.
+ .
+ New large scale techniques in biology are producing a rapidly growing
+ amount of public available data. Centralized database resources are
+ confronted with the task how to scale their storage facilities, how
+ to manage frequent updates and how to exchange the data with the
+ community.
+ .
+ The Distributed Annotation System (DAS) addresses these issues. It is
+ frequently being used to openly exchange biological annotations
+ between distributed sites. Data distribution, performed by DAS
+ servers, is separated from visualization, which is done by DAS
+ clients.
+ .
+ DAS is a client-server system in which a client like Ensembl
+ integrates information from multiple servers. It allows a single
+ machine to gather up genome annotation information from multiple
+ distant web sites, collate the information, and display it to the
+ user in a single view. Little coordination is needed among the
+ various information providers.
+ .
+ DAS is heavily used in the genome bioinformatics community. Over the
+ last years we have also seen growing acceptance in the protein
+ sequence and structure communities.
+
+Depends: spice
+Homepage: http://www.efamily.org.uk/software/dasclients/spice/
+License: GPL
+Pkg-Description: Distributed Annotation System (DAS) client
+ The Distributed Annotation System (DAS) is a data exchange protocol
+ for open sharing of biological information.
+ .
+ SPICE is a browser for protein sequences, structures and their
+ annotations. It can display annotations for PDB, UniProt and Ensembl
+ Peptides. All data is retrieved from different sites on the Internet,
+ that make their annotations available using the DAS protocol. It is
+ possible to add new annotations to SPICE, and to compare them with
+ the already available information.
+
+Depends: decipher
+Homepage: http://www.sanger.ac.uk/Software/analysis/decipher/
+License: To be clarified
+Pkg-Description: tracks duplications and deletions of DNA in patients
+ DECIPHER tracks submicroscopic duplications and deletions of DNA in
+ patients together with phenotypes exhibited by those
+ patients. DECIPHER tallies these genetic abnormalities with genes and
+ other features of interest in the affected areas. The aim of DECIPHER
+ is to provide a research tool to aid clinical diagnosis and treatment
+ of these conditions. DECIPHER makes use of DAS technology to
+ integrate with Ensembl, the world's leading genome browser.
+
+Depends: est-db
+Homepage: http://www.sanger.ac.uk/Software/analysis/est_db/
+License: Artistic
+Pkg-Description: Software suite for expressed sequence tag (EST) sequencing
+ The est_db package is a software suite and database system designed
+ to support expressed sequence tag (EST) sequencing projects, and to
+ provide comprehensive bioinformatic analysis of sequenced EST
+ libraries, for gene discovery and other purposes. The database can
+ hold and efficiently process hundreds of thousands of EST sequences,
+ track the cDNA libraries and clones to which they belong, and store
+ the results of their analysis. Should they be available, large
+ compute farms can be used for the analysis.
+ .
+ Extensive bioinformatic analysis can be carried out on the sequenced
+ EST libraries, including similarity (BLAST) searches, protein
+ sequence prediction, and the import of EST clustering and assembly
+ data from external sources. Results are searchable via a web page,
+ with graphic output of the various analyses, enabling one to retrieve
+ information pertaining to a particular cDNA clone, or EST read, as
+ well as view EST clustering results, or graphical representations of
+ BLAST results on the searched EST sequences.
+ .
+ The est_db package is likely to appeal not only to sequencing groups
+ directly employed in EST sequencing, but also to groups interested in
+ performing bespoke analysis of ESTs that may already be publically
+ available, in order to support their ongoing research aims. The
+ package is easily-extensible, via an API designed specifically to
+ handle ESTs and their analysis. It is open source and is made
+ available free of charge, and, where possible, similarly
+ open-licensed components have been used in its development.
+
+Depends: finex
+Homepage: http://www.sanger.ac.uk/Software/analysis/finex/
+License: To be clarified
+Pkg-Description: sequence homology searching
+ The FINEX program allows sequence homology searching techniques to be
+ applied, where the sequence data is replaced with a fingerprint
+ abstracted from the intron/exon boundary phase and the exon length.
+ .
+ Please note FINEX is no longer supported but is available for
+ download.
+
+Depends: hexamer
+Homepage: http://www.sanger.ac.uk/Software/analysis/hexamer/
+License: GPL
+Pkg-Description: scan DNA sequences to look for likely coding regions
+ Hexamer is a program to scan DNA sequences to look for likely coding
+ regions. The principle is to use 6mers, but to avoid deriving any
+ information from base composition. Therefore, the frequencies of each
+ 6mer are normalized by dividing by the total frequency of all 6mers
+ with the same base composition.
+ .
+ There are two programs involved in this process:
+  * hextable
+    hextable makes files of statistics that hexamer uses to scan for
+    likely coding regions.
+    The input of hextable is a fasta file of coding sequences in
+    frame.  The -o file output is an ascii list of 4096 floating point
+    numbers giving log likelihood ratio scores in bits.  The output on
+    stdout is a summary of the information content of the table,
+    indicating how disriminative it is likely to be.
+  * hexamer
+    Uses the .hex file from hextable to scan a DNA sequence for likely
+    coding regions.
+    The input is a fasta DNA file (n.b. that these programs assume all
+    'a','c','g','t'. 'n's found in the sequence files will be
+    converted to 'c'.
+    The output of hexamer is in General Feature Format (GFF) format.
+
+Depends: logomat-m
+Homepage: http://www.sanger.ac.uk/Software/analysis/logomat-m/
+License: As Perl itself
+Pkg-Description: visualize central aspects of Profile Hidden Markov Models (pHMMs)
+ Profile Hidden Markov Models (pHMMs) are a widely used tool for
+ protein family research. We present a method to visualize all of
+ their central aspects graphically, thus generalizing the concept of
+ sequence logos introduced by Schneider and Stephens. For each
+ emitting state of the pHMM, we display a stack of letters. As for
+ sequence logos, the stack height is determined by the deviation of
+ the position's letter emission frequencies from the background
+ frequencies of the letters. As a new feature, the stack width now
+ visualizes both the probability of reaching the state (the hitting
+ probability) and the expected number of letters the state emits
+ during a pass through the model (the expected contribution).
+ .
+ If you use HMM-Logos in your publication, please cite HMM Logos for
+ visualization of protein families.  Schuster-B"ockler B, Schultz J,
+ Rahmann S BMC Bioinformatics. 2004;5;7. PMID: 14736340 DOI:
+ 10.1186/1471-2105-5-7
+
+Depends: coot
+Homepage: http://www.ysbl.york.ac.uk/~emsley/coot/
+License: GPL
+Pkg-Description: protein structure model-building, -completion, -validation
+ The Crystallographic Object-Oriented Toolkit (Coot) displays maps and
+ models and allows model manipulations such as idealization, real space
+ refinement, manual rotation/translation, rigid-body fitting, ligand
+ search, solvation, mutations, rotamers, Ramachandran plots...
+
+Depends: r-ape
+Homepage: http://ape.mpl.ird.fr/
+License: GPL
+Responsible: BioLinux - Stewart Houten <shou@ceh.ac.uk>
+Pkg-URL: http://nebc.nox.ac.uk/bio-linux/dists/unstable/bio-linux/binary-i386/
+Pkg-Description: Analyses of Phylogenetics and Evolution
+ APE (Analyses of Phylogenetics and Evolution) is a package written in R.
+ APE aims to be both a computing tool to analyse phylogenetic and
+ evolutionary data, and an environment to develop and implement new
+ analytical methods.
+Remark: This package ships with BioLinux http://envgen.nox.ac.uk/biolinux.html
+
+Depends: caftools
+Homepage: http://www.sanger.ac.uk/Software/formats/CAF/userguide.shtml
+License: Free for non-commercial purposes
+Responsible: BioLinux - Bela Tiwari <btiwari@ceh.ac.uk>
+Pkg-URL: http://nebc.nox.ac.uk/bio-linux/dists/unstable/bio-linux/binary-i386/
+Pkg-Description: Tools to maintain DNA sequence assemblies
+ This is V2 of the CAF (Common Assembly Format) C-tools.  It comprises
+ a set of libraries and programs for manipulating DNA sequence
+ assemblies using CAF files.
+ .
+ The CAF specification can be found at:
+ http://www.sanger.ac.uk/Software/formats/CAF/
+Remark: The BioLinux distribution http://envgen.nox.ac.uk/biolinux.html
+ maintains a package called bio-linux-assembly-conversion-tools which
+ contains caftools and roche2gap in one package with the following
+ description:
+ .
+ Conversion tools for handling 454 assemblies.
+ .
+ This package contains code from different authors that allow sequence
+ assemblies to be converted into formats such as CAF (Common Assembly
+ Format) or GAP4. This package includes tools to convert assemblies
+ from Newbler's ace format for loading into a gap4 assembly.
+
+Depends: roche454ace2caf
+Homepage: http://genome.imb-jena.de/software/roche454ace2caf/
+License: not specified
+Responsible: BioLinux - Bela Tiwari <btiwari@ceh.ac.uk>
+Pkg-URL: http://nebc.nox.ac.uk/bio-linux/dists/unstable/bio-linux/binary-i386/
+Pkg-Description: convert GS20 or FLX assemblies into CAF format
+ Some tools to convert GS20 or FLX assemblies (454Contigs.ace) into
+ CAF format so that these are correct viewable/editable/... whithin
+ the staden package (gap4).  You have then access to "hidden data",
+ exact aligned trace and there positions, base values etc and whith
+ staden-1-7-0 you have graphical access to the associated flowgramm
+ traces (SFF format).
+ .
+ Description, Goals - please take a look at
+ http://genome.imb-jena.de/software/roche454ace2caf/Poster_UserMeeting_GS20_Munich_070328.pdf
+Remark: The BioLinux distribution http://envgen.nox.ac.uk/biolinux.html
+ maintains a package called bio-linux-assembly-conversion-tools which
+ contains caftools and roche2gap in one package with the following
+ description:
+ .
+ Conversion tools for handling 454 assemblies.
+ .
+ This package contains code from different authors that allow sequence
+ assemblies to be converted into formats such as CAF (Common Assembly
+ Format) or GAP4. This package includes tools to convert assemblies
+ from Newbler's ace format for loading into a gap4 assembly.
+
+Depends: big-blast
+Homepage: ftp://ftp.sanger.ac.uk/pub/pathogens/software/artemis/extra/big_blast.pl
+License: not specified
+Responsible: BioLinux - Stewart Houten <shou@ceh.ac.uk>
+Pkg-URL: http://nebc.nox.ac.uk/bio-linux/dists/unstable/bio-linux/binary-i386/
+Pkg-Description: Helper tool to run blast on large sequences
+ This script will chop up a large sequence, run blast on each bit and
+ then write out an EMBL feature table and a MSPcrunch -d file
+ containing the hits.
+Remark: This package ships with BioLinux http://envgen.nox.ac.uk/biolinux.html
+
+Depends: blixem
+Homepage: http://bioinformatics.abc.hu/tothg/biocomp/other/Blixem.html
+License: not specified
+Responsible: BioLinux - Dan Swan <dswan@ceh.ac.uk>
+Pkg-URL: http://nebc.nox.ac.uk/bio-linux/dists/unstable/bio-linux/binary-i386/
+Pkg-Description: interactive browser of pairwise Blast matches
+ Blixem (BLast matches In an X-windows Embedded Multiple alignment),
+ is an interactive browser of pairwise Blast matches that have been
+ stacked up in a ma ster-slave multiple alignment
+Remark: The link to the source archive on the web pages is not valid any more - it might be a problem to obtain the source.
+Remark: This package ships with BioLinux http://envgen.nox.ac.uk/biolinux.html
+
+Depends: cap3
+Homepage: http://genome.cs.mtu.edu/cap/cap3.html
+License: free for governmental agency or a non-profit educational institution
+Responsible: BioLinux - Bela Tiwari <btiwari@ceh.ac.uk>
+X-Category: Sequence assembly
+X-Importance: not a lot of alternatives
+Pkg-URL: http://nebc.nox.ac.uk/bio-linux/dists/unstable/bio-linux/binary-i386/
+Pkg-Description: DNA Sequence Assembly Program
+ CAP3 contains the following improvements to the CAP sequence assembly
+ program.
+  1. Use of forward-reverse constraints to correct assembly errors and
+     link contigs.
+  2. Use of base quality values in alignment of sequence reads.
+  3. Automatic clipping of 5' and 3' poor regions of reads.
+  4. Generation of assembly results in ace file format for Consed.
+  5. CAP3 can be used in GAP4 of the Staden package.
+ These improvements allow CAP3 to take longer sequences of higher
+ errors and produce more accurate consensus sequences.
+Remark: Obtaining the source requires to fill in a registration form
+ Official distribution in Debian is probably impossible.  The
+ package included in the BioLinux distribution
+ http://envgen.nox.ac.uk/biolinux.html containins only the binaries
+ cap3 and formcon, dated Aug 29, 2002.  This package exists purely for
+ convenience to Bio-Linux users so that the files are placed in
+ locations consistent with the Bio-Linux setup.
+
+Depends: cd-hit
+Homepage: http://www.bioinformatics.org/cd-hit/
+License: to be clarified
+Responsible: BioLinux - Bela Tiwari <btiwari@ceh.ac.uk>
+Pkg-URL: http://nebc.nox.ac.uk/bio-linux/dists/unstable/bio-linux/binary-i386/
+Pkg-Description: suite of programs designed to quickly group sequences.
+ CD-HIT stands for Cluster Database at High Identity with
+ Tolerance. The program (cd-hit) takes a fasta format sequence
+ database as input and produces a set of 'non-redundant' (nr)
+ representative sequences as output. In addition cd-hit outputs a
+ cluster file, documenting the sequence 'groupies' for each nr
+ sequence representative. The idea is to reduce the overall size of
+ the database without removing any sequence information by only
+ removing 'redundant' (or highly similar) sequences. This is why the
+ resulting database is called non-redundant (nr). Essentially, cd-hit
+ produces a set of closely related protein families from a given fasta
+ sequence database.
+ .
+ CD-HIT uses a 'longest sequence first' list removal algorithm to
+ remove sequences above a certain identity threshold. Additionally the
+ algorithm implements a very fast heuristic to find high identity
+ segments between sequences, and so can avoid many costly full
+ alignments.
+ .
+ With recent developments, cd-hit package offers new programs for DNA
+ sequence clustering and comparing two databases. It also has lots of
+ new options for clustering control.
+Remark: This package ships with BioLinux http://envgen.nox.ac.uk/biolinux.html
+
+Comment: BioLinux contains a clcworkbench package which is available
+ at http://www.clcbio.com/index.php?id=28 but this seems to be only
+ "free as in beer" binary download - so this is not for us ...
+
+Depends: coalesce
+Homepage: http://evolution.gs.washington.edu/lamarc/coalesce.html
+License: not specified
+Responsible: BioLinux - Nathan S Haigh <n.haigh@sheffield.ac.uk>
+Pkg-URL: http://nebc.nox.ac.uk/bio-linux/dists/unstable/bio-linux/binary-i386/
+Pkg-Description: outdated program to estimate population-genetic parameters
+ COALESCE fits the model which has a single population of constant
+ size, and estimates 4Nu, where N is the effective population size and
+ u is the neutral mutation rate per site. You may also want the
+ Postscript or the TeX file of the preprint version of the Kuhner,
+ Yamato, and Felsenstein 1995 paper.
+Remark: This software is probably outdated
+ The homepage contains the explicite link: "We are no longer
+ supporting COALESCE as its functions can be done just as well by
+ LAMARC and it's easier for us to support just one program. You may
+ still want the paper, however."  So this is actually no target for
+ the Debian Med distribution but just a hint for users about the
+ existence of this program and the even better alternative even if
+ BioLinux distribution http://envgen.nox.ac.uk/biolinux.html contains
+ a package.
+
+Comment: BioLinux contains a dendroscope package which is available
+ at http://www.dendroscope.org but this project has only a
+ "free as in beer" binary download - so this is not for us ...
+
+Depends: dotter
+Homepage: http://www.cgb.ki.se/cgb/groups/sonnhammer/Dotter.html
+License: to be clarified
+Responsible: BioLinux - Stewart Houten <shou@ceh.ac.uk>
+Pkg-URL: http://nebc.nox.ac.uk/bio-linux/dists/unstable/bio-linux/binary-i386/
+Pkg-Description: detailed comparison of two sequences
+ Dotter is a graphical dotplot program for detailed comparison of two
+ sequences.  Here, every residue in one sequence is compared to every
+ residue in the other sequence. The first sequence runs along the
+ x-axis and the second sequence along the y-axis. In regions where the
+ two sequences are similar to each other, a row of high scores will
+ run diagonally across the dot matrix. If you're comparing a sequence
+ against itself to find internal repeats, you'll notice that the main
+ diagonal scores maximally, since it's the 100% perfect self-match.
+ .
+ To make the score matrix more intelligible, the pairwise scores are
+ averaged over a sliding window which runs diagonally. The averaged
+ score matrix forms a three-dimensional landscape, with the two
+ sequences in two dimensions and the height of the peaks in the
+ third. This landscape is projected onto two dimensions by aid of
+ greyscales - the darker grey of a peak, the higher it is.
+ .
+ Dotter provides a tool to explore the visual appearance of this
+ landscape, as well as a tool to examine the sequence alignment it
+ represents.
+Remark: This package ships with BioLinux http://envgen.nox.ac.uk/biolinux.html
+ .
+ The package's homepage is currently unavailable but the source might be
+ obtainable from freebsd.org.
+
+Depends: dotur
+Homepage: http://schloss.micro.umass.edu/software/dotur.html
+License: GPL
+Responsible: BioLinux - Bela Tiwari <btiwari@ceh.ac.uk>
+Pkg-URL: http://nebc.nox.ac.uk/bio-linux/dists/unstable/bio-linux/binary-i386/
+Pkg-Description: Defining Operational Taxonomic Units and estimating species Richness
+ Dotur (Distance Based OTU and Richness determination) is a computer
+ program that takes a distance matrix describing the genetic distance
+ between DNA sequence data and assigns sequences to operational
+ taxonomic units (OTUs) using either the furthest, average, or nearest
+ neighbor algorithms for all possible distances that can be described
+ using the distance matrix.  Using the OTU composition data, dotur
+ constructs collector's and rarefaction curves for sampling intensity,
+ richness estimators, and diversity indices.
+Remark: This package ships with BioLinux http://envgen.nox.ac.uk/biolinux.html
+
+Depends: estferret
+Homepage: http://legr.liv.ac.uk/EST-ferret/index.htm
+License: to be clarified
+Responsible: BioLinux - Bela Tiwari <btiwari@ceh.ac.uk>
+Pkg-URL: http://nebc.nox.ac.uk/bio-linux/dists/unstable/bio-linux/binary-i386/
+Pkg-Description: processes, clusters and annotates EST data
+ ESTFerret processes, clusters and annotates EST data. It is
+ user-configurable. Results are currently stored in a series of text
+ tables. Annotation consists of searches against use r-defined blast
+ databases, prosite, GO and allocation of EC numbers where possible.
+ .
+ EST-ferret is a user-configurable, automated pipeline for the
+ convenient analysis of EST sequence data that includes all of the
+ necessary steps for cleanup and trimming, submission to external
+ sequence repositories, clustering, identification by BLAST homology
+ searches and by searches of protein domain databases, annotation with
+ computer-addressable terms and production of outputs for direct entry
+ into microarray analysis packages. It is composed of several widely
+ used, open-source algorithms, including PHRED, CAP3, BLAST, and a
+ range of sequence and annotation databases, including Gene Ontology
+ and Conserved Domain Database to deliver a putative identity and a
+ detailed annotation of each clone. It can be run either step-by-step
+ to track the outputs, or as a single batch process. Users can easily
+ edit the configuration file to define parameter settings.
+ .
+ This package has five major components: (1) ESTs coding system; (2)
+ sequence processing; (3) sequence clustering; (4) sequence annotating
+ and (5) storage and reporting of results. DNA trace files are renamed
+ and converted into FASTA format, cleaned and submitted to
+ dbEST(Boguski, et al, 1993). Sequence assembly uses two rounds of
+ CAP3 to assemble the ESTs into groups corresponding to separate gene
+ families and unique genes. Sequence identification and annotation is
+ provided by a series of BLAST homology searches (Parallel_BLAST and
+ Priority_BLAST) against user-defined sequence databases implemented
+ with the NCBI BLASTALL algorithm. The BLAST results are parsed and
+ annotation terms that reflect functional attributes are captured from
+ Gene Ontology (The Gene Ontology Consortium, 2000), KEGG and Enzyme
+ Commission (EC) databases and applied to each of the clones. CDD (and
+ InterPro) searches are performed for seeking protein domains in the
+ sequences. Other options are provided to run PatSearch, RepeatMasker
+ and BLAT to find UTRs, repeats and EST candidates in
+ genomes. Finally, the package generates analysis reports in a variety
+ of flat file formats, sources of which can be serve as inputs for
+ some gene annotation and gene expression profiling tools, and also as
+ a MySQL database or web-browsable search tool.
+Remark: This package ships with BioLinux http://envgen.nox.ac.uk/biolinux.html
+
+Depends: estscan
+Homepage: http://estscan.sourceforge.net/
+License: free
+Responsible: BioLinux - Bela Tiwari <btiwari@ceh.ac.uk>
+Pkg-URL: http://nebc.nox.ac.uk/bio-linux/dists/unstable/bio-linux/binary-i386/
+Pkg-Description: detect coding regions in DNA sequences, even if of low quality
+ ESTScan is a program that can detect coding regions in DNA sequences,
+ even if they are of low quality. It will also detect and correct
+ sequencing errors that lead to fr ameshifts.
+ .
+ ESTScan is not a gene prediction program, nor is it an open reading
+ frame detector. In fact, its strength lies in the fact that it does
+ not require an open reading frame to detect a coding region. As a
+ result, the program may miss a few translated amino acids at either
+ the N or the C terminus, but will detect coding regions with high
+ selectivity and sensitivity.
+ .
+ Similarly to GENSCAN, ESTScan uses a Markov model to represent the
+ bias in hexanucleotide usage found in coding regions relative to
+ non-coding regions. Additionally, ESTScan allows insertions and
+ deletions when these improve the coding region statistics. Further
+ details can be found at:
+ http://www.ch.embnet.org/software/ESTScan2_help.html
+ .
+ References:
+  * Lottaz C, Iseli C, Jongeneel CV, Bucher P. (2003) Modeling sequencing
+    errors by combining Hidden Markov models Bioinformatics 19,
+    ii103-ii112.
+  * Iseli C, Jongeneel CV, Bucher P. (1999) ESTScan: a program for
+    detecting, evaluating, and reconstructing potential coding regions in
+    EST sequences. Proc Int Conf Intell Syst Mol Biol.138-48.
+Remark: This package ships with BioLinux http://envgen.nox.ac.uk/biolinux.html
+
+Depends: fasta
+Homepage: http://www.ebi.ac.uk/Tools/fasta/
+License: no inclusion into commercial product
+Responsible: BioLinux - Stewart Houten <shou@ceh.ac.uk>
+Pkg-URL: http://nebc.nox.ac.uk/bio-linux/dists/unstable/bio-linux/binary-i386/
+Pkg-Description: searching DNA and protein databases
+ FASTA (pronounced FAST-AYE) stands for FAST-ALL, reflecting the fact
+ that it can be used for a fast protein comparison or a fast
+ nucleotide comparison. This program achieves a high level of
+ sensitivity for similarity searching at high speed. This is achieved
+ by performing optimised searches for local alignments using a
+ substitution matrix. The high speed of this program is achieved by
+ using the observed pattern of word hits to identify potential matches
+ before attempting the more time consuming optimised search. The
+ trade-off between speed and sensitivity is controlled by the ktup
+ parameter, which specifies the size of the word. Increasing the ktup
+ decreases the number of background hits. Not every word hit is
+ investigated but instead initially looks for segment's containing
+ several nearby hits.
+Remark: This package ships with BioLinux http://envgen.nox.ac.uk/biolinux.html
+
+Depends: fluctuate
+Homepage: http://evolution.gs.washington.edu/lamarc/fluctuate.html
+License: not specified
+Responsible: BioLinux - Nathan S Haigh <n.haigh@sheffield.ac.uk>
+Pkg-URL: http://nebc.nox.ac.uk/bio-linux/dists/unstable/bio-linux/binary-i386/
+Pkg-Description: outdated program to model a single population
+ FLUCTUATE fits the model which has a single population which has been
+ growing (or shrinking) according to an exponential growth law. It
+ estimates 4Nu and g, where N is the effective population size, u is
+ the neutral mutation rate per site, and g is the growth rate of the
+ population.
+Remark: This software is probably outdated
+ The homepage contains the explicite link: "We are no longer
+ supporting FLUCTUATE as its functions can be done just as well by
+ LAMARC and it's easier for us to support just one program. You may
+ still want the paper, however."  So this is actually no target for
+ the Debian Med distribution but just a hint for users about the
+ existence of this program and the even better alternative even if
+ BioLinux distribution http://envgen.nox.ac.uk/biolinux.html contains
+ a package.
+
+Depends: forester
+Homepage: http://sourceforge.net/projects/forester-atv/
+License: LGPL
+Responsible: BioLinux - Stewart Houten <shou@ceh.ac.uk>
+Pkg-URL: http://nebc.nox.ac.uk/bio-linux/dists/unstable/bio-linux/binary-i386/
+Pkg-Description: visualization of annotated phylogenetic trees
+ FORESTER is a Java/Perl based software package for phylogenomic
+ analyses. Currently, it includes the phylogenetic tree visualization
+ and manipulation tool ATV and implementations of the SDI algorithm
+ and the RIO method (http://www.phylosoft.org/).
+Remark: This package ships with BioLinux http://envgen.nox.ac.uk/biolinux.html
+
+Depends: jalview
+Homepage: http://www.jalview.org/
+License: GPL
+WNPP: 507436
+Responsible: Vincent Fourmond <fourmond@debian.org>
+Pkg-URL: http://nebc.nox.ac.uk/bio-linux/dists/unstable/bio-linux/binary-i386/
+Pkg-Description: multiple alignment editor
+ Jalview is a multiple alignment editor written in Java. It is used
+ widely in a variety of web pages (e.g. the EBI Clustalw server and
+ the Pfam protein domain database) but is available as a general
+ purpose alignment editor.
+
+Depends: lamarc
+Homepage: http://evolution.gs.washington.edu/lamarc/
+License: Apache V2.0
+Responsible: BioLinux - Nathan S Haigh <n.haigh@sheffield.ac.uk>
+Pkg-URL: http://nebc.nox.ac.uk/bio-linux/dists/unstable/bio-linux/binary-i386/
+Pkg-Description: estimate population-genetic parameters
+ LAMARC is a program which estimates population-genetic parameters
+ such as population size, population growth rate, recombination rate,
+ and migration rates. It approximates a summation over all possible
+ genealogies that could explain the observed sample, which may be
+ sequence, SNP, microsatellite, or electrophoretic data. LAMARC and
+ its sister program Migrate are successor programs to the older
+ programs Coalesce, Fluctuate, and Recombine, which are no longer
+ being supported. The programs are memory-intensive but can run
+ effectively on workstations.
+Remark: This package ships with BioLinux http://envgen.nox.ac.uk/biolinux.html
+
+Depends: lucy
+Homepage: http://rcc.uga.edu/applications/bioinformatics/lucy.html
+License: GPL
+Responsible: BioLinux - Dan Swan <dswan@ceh.ac.uk>
+Pkg-URL: http://nebc.nox.ac.uk/bio-linux/dists/unstable/bio-linux/binary-i386/
+Pkg-Description: DNA sequence quality and vector trimming tool
+ Lucy is a utility that prepares raw DNA sequence fragments for
+ sequence assembly, possibly using the TIGR Assembler. The cleanup
+ process includes quality assessment, confidence reassurance, vector
+ trimming and vector removal. The primary advantage of Lucy over other
+ similar utilities is that it is a fully integrated, stand alone
+ program.
+ .
+ Lucy was designed and written at The Institute for Genomic Research
+ (TIGR, now the J. Craig Venter Institute), and it has been used here
+ for several years to clean sequence data from automated DNA
+ sequencers prior to sequence assembly and other downstream uses.  The
+ quality trimming portion of lucy makes use of phred quality scores,
+ such as those produced by many automated sequencers based on the
+ Sanger sequencing method.  As such, lucy’s quality trimming may not
+ be appropriate for sequence data produced by some of the new
+ “next-generation” sequencers.
+ .
+ See also the SourceForge page at http://lucy.sourceforge.net/.
+Remark: This package ships with BioLinux http://envgen.nox.ac.uk/biolinux.html
+
+Depends: maxd
+Homepage: http://www.bioinf.man.ac.uk/microarray/maxd/
+License: Artistic
+Responsible: BioLinux - Stewart Houten <shou@ceh.ac.uk>
+Pkg-URL: http://nebc.nox.ac.uk/bio-linux/dists/unstable/bio-linux/binary-i386/
+Pkg-Description: data warehouse and visualisation environment for genomic expression data
+ Maxd is a data warehouse and visualisation environment for genomic
+ expression data. It is being developed in the University of
+ Manchester by the Microarray Bioinformatics Group.
+ .
+ Software components:
+  maxdLoad2 - standards-compliant, highly customisable transcriptomics
+              database
+  maxdView  - modular and easily extensible data visualisation and
+              analysis environment
+  maxdSetup - installation management utility
+Remark: This package ships with BioLinux http://envgen.nox.ac.uk/biolinux.html
+
+Depends: mesquite
+Homepage: http://mesquiteproject.org/mesquite/mesquite.html
+License: LGPL
+Responsible: BioLinux - Stewart Houten <shou@ceh.ac.uk>
+Pkg-URL: http://nebc.nox.ac.uk/bio-linux/dists/unstable/bio-linux/binary-i386/
+Pkg-Description: help biologists analyze comparative data about organisms
+ Mesquite is software for evolutionary biology, designed to help
+ biologists analyze comparative data about organisms. Its emphasis is
+ on phylogenetic analysis, but some of its modules concern population
+ genetics, while others do non-phylogenetic multivariate
+ analysis. Because it is modular, the analyses available depend on the
+ modules installed. Analyses include:
+  * Reconstruction of ancestral states (parsimony, likelihood)
+  * Tests of process of character evolution, including correlation
+  * Analysis of speciation and extinction rates
+  * Simulation of character evolution (categorical, DNA, continuous)
+  * Parametric bootstrapping (integration with programs such as PAUP*
+    and NONA)
+  * Morphometrics (PCA, CVA, geometric morphometrics)
+  * Coalescence (simulations, other calculations)
+  * Tree comparisons and simulations (tree similarity, Markov
+    speciation models)
+ There is a brief outline of features, which includes
+ screenshots. Mesquite is not primarily designed to infer phylogenetic
+ trees, but rather for diverse analyses using already inferred trees.
+Remark: This package ships with BioLinux http://envgen.nox.ac.uk/biolinux.html
+
+Depends: migrate
+Homepage: http://popgen.scs.fsu.edu/Migrate-n.html
+License: to be clarified
+Responsible: BioLinux - Nathan S Haigh <n.haigh@sheffield.ac.uk>
+Pkg-URL: http://nebc.nox.ac.uk/bio-linux/dists/unstable/bio-linux/binary-i386/
+Pkg-Description: estimation of population sizes and gene flow using the coalescent
+ Migrate estimates effective population sizes and past migration rates
+ between n population assuming a migration matrix model with
+ asymmetric migration rates and different subpopulation sizes. Migrate
+ uses maximum likelihood or Bayesian inference to jointly estimate all
+ parameters. It can use the followind data types: sequence data using
+ Felsenstein's 84 model with or without site rate variation, single
+ nucleotide polymorphism data, microsatellite data using a stepwise
+ mutation model or a brownian motion mutation model, and
+ electrophoretic data using an 'infinite' allele model. The output can
+ contain: Estimates of all migration rates and all population sizes,
+ assuming constant mutation rates among loci or a gamma distributed
+ mutation rate among loci. Profile likelihood tables, Percentiles,
+ Likelihood-ratio tests, and simple plots of the log-likelihood
+ surfaces for all populations and all loci.
+Remark: This package ships with BioLinux http://envgen.nox.ac.uk/biolinux.html
+
+Depends: mrbayes
+Homepage: http://mrbayes.csit.fsu.edu/
+License: GPL
+Responsible: BioLinux - Bela Tiwari <btiwari@ceh.ac.uk>
+Pkg-URL: http://nebc.nox.ac.uk/bio-linux/dists/unstable/bio-linux/binary-i386/
+Pkg-Description: Bayesian estimation of phylogeny
+ MrBayes is a program for the Bayesian estimation of
+ phylogeny. Bayesian inference of phylogeny is based upon a quantity
+ called the posterior probability distribution of trees, which is the
+ probability of a tree conditioned on the observations. The
+ conditioning is accomplished using Bayes's theorem. The posterior
+ probability distribution of trees is impossible to calculate
+ analytically; instead, MrBayes uses a simulation technique called
+ Markov chain Monte Carlo (or MCMC) to approximate the posterior
+ probabilities of trees.
+ .
+ The program takes as input a character matrix in a NEXUS file
+ format. The output is several files with the parameters that were
+ sampled by the MCMC algorithm. MrBayes can summarize the information
+ in these files for the user. The program features include:
+Remark: This package ships with BioLinux http://envgen.nox.ac.uk/biolinux.html
+
+Depends: msatfinder
+Homepage: http://www.genomics.ceh.ac.uk/msatfinder/
+License: GPL
+Responsible: BioLinux - Stewart Houten <shou@ceh.ac.uk>
+Pkg-URL: http://nebc.nox.ac.uk/bio-linux/dists/unstable/bio-linux/binary-i386/
+Pkg-Description: identification and characterization of microsatellites in a comparative genomic context
+ Msatfinder is a Perl script designed to allow the identification and
+ characterization of microsatellites in a comparative genomic
+ context. There is also an online manual, a discussion forum and an
+ online interface where users can do searches in any number of DNA or
+ protein sequences (as long as the maximum size of all sequences does
+ not exceed 10MB). Nucleotide and amino acid sequences in GenBank,
+ FASTA, EMBL and Swissprot formats are supported.
+Remark: This package ships with BioLinux http://envgen.nox.ac.uk/biolinux.html
+
+Depends: mview
+Homepage: http://bio-mview.sourceforge.net/
+License: GPL
+Responsible: BioLinux - Stewart Houten <shou@ceh.ac.uk>
+Pkg-URL: http://nebc.nox.ac.uk/bio-linux/dists/unstable/bio-linux/binary-i386/
+Pkg-Description: reformat results of a sequence database search or a multiple alignment
+ MView is a tool for converting the results of a sequence database
+ search (BLAST, FASTA, etc.) into the form of a coloured multiple
+ alignment of hits stacked against the query. Alternatively, an
+ existing multiple alignment (MSF, PIR, CLUSTAL, etc.) can be pr
+ ocessed.  It reformats the results of a sequence database search or a
+ multiple alignment adding optional HTML markup to control colouring
+ and web page layout. MView is not a multiple alignment program, nor
+ is it a general purpose alignment editor.
+Remark: This package ships with BioLinux http://envgen.nox.ac.uk/biolinux.html
+
+Depends: oligoarrayaux
+Homepage: http://dinamelt.bioinfo.rpi.edu/OligoArrayAux.php
+License: non-free (fre academical use)
+Responsible: BioLinux - Bela Tiwari <btiwari@ceh.ac.uk>
+Pkg-URL: http://nebc.nox.ac.uk/bio-linux/dists/unstable/bio-linux/binary-i386/
+Pkg-Description: Prediction of Melting Profiles for Nucleic Acids
+ OligoArrayAux is a subset of the UNAFold package for use with
+ OligoArray (http://berry.engin.umich.edu/oligoarray2_1/). OligoArray
+ is a free software that computes gene specific oligonucleotides for
+ genome-scale oligonucleotide microarray construction.  (It is not
+ really specified what they mean with "free software". You can
+ download the source code after registration: "registration is the
+ only way for me to keep trace of OligoArray users and be able to send
+ you a bug fix or a new release".)
+ .
+ The original UNAFold server is available at
+ http://dinamelt.bioinfo.rpi.edu/download.php and you should probably
+ read http://dinamelt.bioinfo.rpi.edu/ if you want to know more about
+ "Prediction of Melting Profiles for Nucleic Acids".
+Remark: This package ships with BioLinux http://envgen.nox.ac.uk/biolinux.html
+ Finally it is hard to find some documentation what OligoArrayAux is
+ really doing because it is only specified into relation to OligoArray
+ (as precondition) and UNAFold (as subset of this) but BioLinux
+ distribution http://envgen.nox.ac.uk/biolinux.html decided to package
+ this and so it might make soem sense to list it here - further
+ investigation is needed.
+
+Depends: omegamap
+Homepage: http://www.danielwilson.me.uk/software.html
+License: to be clarified
+Responsible: BioLinux - Stewart Houten <shou@ceh.ac.uk>
+Pkg-URL: http://nebc.nox.ac.uk/bio-linux/dists/unstable/bio-linux/binary-i386/
+Pkg-Description: detecting natural selection and recombination in DNA or RNA sequences
+ OmegaMap is a program for detecting natural selection and
+ recombination in DNA or RNA sequences. It is based on a model of
+ population genetics and molecular evolution. The signature of natural
+ selection is detected using the dN/dS ratio (which measures the
+ relative excess of non-synonymous to synonymous polymorphism) and the
+ signature of recombination is detected from the patterns of linkage
+ disequilibrium. The model and the method of estimation are described
+ in
+  Wilson, D. J. and G. McVean (2006)
+  Estimating diversifying selection and functional constraint in the
+  presence of recombination.
+  Genetics doi:10.1534/genetics.105.044917.
+Remark: This package ships with BioLinux http://envgen.nox.ac.uk/biolinux.html
+
+Depends: paml
+Homepage: http://abacus.gene.ucl.ac.uk/software/paml.html
+License: not specified
+Responsible: BioLinux - Stewart Houten <shou@ceh.ac.uk>
+Pkg-URL: http://nebc.nox.ac.uk/bio-linux/dists/unstable/bio-linux/binary-i386/
+Pkg-Description: Phylogenetic Analysis by Maximum Likelihood
+ PAML is a package of programs for phylogenetic analyses of DNA or
+ protein sequences using maximum likelihood. It is maintained and
+ distributed for academic use free of charge by Ziheng Yang. ANSI C
+ source codes are distributed for UNIX/Linux/Mac OSX, and executables
+ are provided for MS Windows. PAML is not good for tree making. It may
+ be used to estimate parameters and test hypotheses to study the
+ evolutionary process, when you have reconstructed trees using other
+ programs such as PAUP*, PHYLIP, MOLPHY, PhyML, RaxML, etc.
+Remark: This package ships with BioLinux http://envgen.nox.ac.uk/biolinux.html
+
+Depends: partigene
+Homepage: http://www.nematodes.org/bioinformatics/PartiGene/
+License: GPL
+Responsible: BioLinux - Bela Tiwari <btiwari@ceh.ac.uk>
+Pkg-URL: http://nebc.nox.ac.uk/bio-linux/dists/unstable/bio-linux/binary-i386/
+Pkg-Description: generating partial gemomes
+ PartiGene is part of the Edinburgh-EGTDC developed EST-software
+ pipeline at the moment consisting of trace2dbEST, PartiGene,
+ wwwPartiGene, port4EST and annot8r. PartiGene is a menu-driven,
+ multi-step software tool which takes sequences (usually ESTs) and
+ creates a dataabase of a non-redundant set of sequence objects
+ (putative genes) which we term a partial genome.
+Remark: This package ships with BioLinux http://envgen.nox.ac.uk/biolinux.html
+
+Depends: pfaat
+Homepage: http://pfaat.sourceforge.net/
+License: GPL
+Responsible: BioLinux - Dan Swan <dswan@ceh.ac.uk>
+Pkg-URL: http://nebc.nox.ac.uk/bio-linux/dists/unstable/bio-linux/binary-i386/
+Pkg-Description: Protein Family Alignment Annotation Tool
+ Pfaat is a Java application that allows one to edit, analyze, and
+ annotate multiple sequence alignments. The annotation features are a
+ key component as they provide a framework to for further sequence,
+ structure and statistical analysis.
+Remark: This package ships with BioLinux http://envgen.nox.ac.uk/biolinux.html
+
+Depends: pftools
+Homepage: http://www.isrec.isb-sib.ch/profile/profile.html
+License: not specified
+Responsible: BioLinux - Stewart Houten <shou@ceh.ac.uk>
+Pkg-URL: http://nebc.nox.ac.uk/bio-linux/dists/unstable/bio-linux/binary-i386/
+Pkg-Description: handle profiles of protein domains
+ The 'pftools' package is a collection of experimental programs
+ supporting the generalized profile format and search method of
+ PROSITE.
+Remark: This package ships with BioLinux http://envgen.nox.ac.uk/biolinux.html
+
+Depends: prank
+Homepage: http://www.ebi.ac.uk/goldman-srv/prank/
+License: GPL (except two algorithms)
+Responsible: BioLinux - Stewart Houten <shou@ceh.ac.uk>
+Pkg-URL: http://nebc.nox.ac.uk/bio-linux/dists/unstable/bio-linux/binary-i386/
+Pkg-Description: Probabilistic Alignment Kit for DNA, codon and amino-acid sequences
+ PRANK is a probabilistic multiple alignment program for DNA, codon
+ and amino-acid sequences. It's based on a novel algorithm that treats
+ insertions correctly and avoids over-estimation of the number of
+ deletion events. In addition, PRANK borrows ideas from maximum
+ likelihood methods used in phylogenetics and correctly takes into
+ account the evolutionary distances between sequences. Lastly, PRANK
+ allows for defining a potential structure for sequences to be aligned
+ and then, simultaneously with the alignment, predicts the locations
+ of structural units in the sequences.
+ .
+ PRANK is a command-line program for Unix-style environments but the
+ same sequence alignment engine is implemented in the graphical
+ program PRANKSTER. In addition to providing a user-friendly interface
+ to those not familiar with Unix systems, PRANKSTER is an alignment
+ browser for alignments saved in the HSAML format. The novel format
+ allows for storing all the information generated by the aligner and
+ the alignment browser is a convenient way to analyse and manipulate
+ the data.
+ .
+ PRANK aims at an evolutionarily correct sequence alignment and often
+ the result looks different from ones generated with other alignment
+ methods. There are, however, cases where the different look is caused
+ by violations of the method's assumptions. To understand why things
+ may go wrong and how to avoid that, read this explanation of
+ differences between PRANK and traditional progressive alignment
+ methods.
+Remark: This package ships with BioLinux http://envgen.nox.ac.uk/biolinux.html
+
+Comment: priam
+ BioLinux contains a priam package which is available at
+ http://bioinfo.genotoul.fr/priam/REL_JUL06/index_jul06.html but this
+ project has only a "free as in beer" binary download - so this is not
+ for us ...
+
+Depends: prot4est
+Homepage: http://xyala.cap.ed.ac.uk/bioinformatics/prot4EST/index.shtml
+License: GPL
+Responsible: BioLinux - Bela Tiwari <btiwari@ceh.ac.uk>
+Pkg-URL: http://nebc.nox.ac.uk/bio-linux/dists/unstable/bio-linux/binary-i386/
+Pkg-Description: EST protein translation suite
+ prot4EST is a perl script that takes expressed sequence tags (ESTs)
+ and translates them optimally to produce putative peptides. prot4EST
+ intergrates a number of programs to overcome problems inherent with
+ translating ESTs.
+Remark: This package ships with BioLinux http://envgen.nox.ac.uk/biolinux.html
+
+Depends: qtlcart
+Homepage: http://statgen.ncsu.edu/qtlcart/
+License: GPL
+Responsible: BioLinux - Dan Swan <dswan@ceh.ac.uk>
+Pkg-URL: http://nebc.nox.ac.uk/bio-linux/dists/unstable/bio-linux/binary-i386/
+Pkg-Description: map quantitative traits using a map of molecular markers
+ QTL Cartographer is a suite of programs to map quantitative traits
+ using a map of molecular markers. It contains a set of programs that
+ will aid in locating the genes that control quantitative traits using
+ a molecular map of markers.  It includes some programs to allow
+ simulation studies of experiments.
+Remark: This package ships with BioLinux http://envgen.nox.ac.uk/biolinux.html
+
+Depends: rbs-finder
+Homepage: http://www.genomics.jhu.edu/RBSfinder/
+License: not specified
+Responsible: BioLinux - Stewart Houten <shou@ceh.ac.uk>
+Pkg-URL: http://nebc.nox.ac.uk/bio-linux/dists/unstable/bio-linux/binary-i386/
+Pkg-Description: find ribosome binding sites(RBS)
+ The program implements an algorithm to find ribosome binding
+ sites(RBS) in the upstream regions of the genes annotated by
+ Glimmer2, GeneMark, or other prokaryotic gene finders.  If there is
+ no RBS-like patterns in this region, program searches for a start
+ codon having a RBS-like pattern ,in the same reading frame upstream
+ or downstream and relocates start codon accordingly.
+ .
+ You can find more detailed information at
+ http://nbc11.biologie.uni-kl.de/docbook/doc_userguide_bioinformatics_server/chunk/ch01s06.html
+Remark: This package ships with BioLinux http://envgen.nox.ac.uk/biolinux.html
+
+Depends: recombine
+Homepage: http://evolution.genetics.washington.edu/lamarc/recombine.html
+License: not specified
+Responsible: BioLinux - Nathan S Haigh <n.haigh@sheffield.ac.uk>
+Pkg-URL: http://nebc.nox.ac.uk/bio-linux/dists/unstable/bio-linux/binary-i386/
+Pkg-Description: effective population size of populations
+ RECOMBINE fits a model which has a single population of constant size
+ with a single recombination rate across all sites. It can accomodate
+ either plain DNA or RNA data or SNP (Single Nucleotide Polymorphism)
+ data. It estimates 4Nu and r, where N is the effective population
+ size, u is the neutral mutation rate per site, and r is the ratio of
+ the per-site recombination rate to the per-site mutation rate.
+Remark: This software might be outdated
+ The homepage contains the explicite link: "We are no longer
+ supporting RECOMBINE as its functions can be done just as well by
+ LAMARC and it's easier for us to support just one program. You may
+ still want the paper, however."  So this is actually no target for
+ the Debian Med distribution but just a hint for users about the
+ existence of this program and the even better alternative even if
+ BioLinux distribution http://envgen.nox.ac.uk/biolinux.html contains
+ a package.
+
+Depends: splitstree
+Homepage: http://www-ab.informatik.uni-tuebingen.de/software/splitstree3/welcome.html
+License: to be clarified
+Responsible: BioLinux - Stewart Houten <shou@ceh.ac.uk>
+Pkg-URL: http://nebc.nox.ac.uk/bio-linux/dists/unstable/bio-linux/binary-i386/
+Pkg-Description: Analyzing and Visualizing Evolutionary Data
+ Evolutionary data is most often presented as a phylogentic tree, the
+ underlying assumption being that evolution is a branching
+ process. However, real data is never ideal and thus doesn't always
+ support a unique tree, but often supports more than one possible
+ tree. Hence, it makes sense to consider tree reconstruction methods
+ that produce a tree, if the given data heavily favors one tree over
+ all others, but otherwise produces a more general graph that
+ indicates different possible phylogenies. One such method is the
+ Split Decomposition introduced by Hans-Juergen Bandelt and Andreas
+ Dress (1992) and its variations. Another example is Spectral Analysis
+ developed by Hendy, Penny and others.
+ .
+ These and other methods are implemented in the program SplitsTree,
+ that I wrote with contributions from Dave Bryant, Mike Hendy, Holger
+ Paschke, Dave Penny and Udo Toenges. It is based on the Nexus
+ format.
+ .
+ Note: There is a new version 4.0 written from scratch at
+ http://www.splitstree.org/ which requires a license key - so this is
+ probably non-free.  Version 3.2 which is linked above has some
+ downloadable source code without any license or copyright statement -
+ so it has to be clarified whether we are able to distribute this code
+ or not.
+Remark: This package ships with BioLinux http://envgen.nox.ac.uk/biolinux.html
+
+
+Depends: taverna
+Homepage: http://taverna.sourceforge.net/
+License: LGPL
+Responsible: BioLinux - Bela Tiwari <btiwari@ceh.ac.uk>
+Pkg-URL: http://nebc.nox.ac.uk/bio-linux/dists/unstable/bio-linux/binary-i386/
+Pkg-Description: designing and executing myGrid workflows for bioinformatics
+ The Taverna workbench is a free software tool for designing and
+ executing workflows, created by the myGrid  project, and funded
+ through OMII-UK. Taverna allows users to integrate many different
+ software tools, including web services, such as those provided by the
+ National Center for Biotechnology Information, The European
+ Bioinformatics Institute, the DNA Databank of Japan (DDBJ), SoapLab,
+ BioMOBY and EMBOSS.
+ .
+ The Taverna Workbench provides a desktop authoring environment and
+ enactment engine for scientific workflows expressed in Scufl (Simple
+ Conceptual Unified Flow language). The Taverna enactment engine is
+ also available separately, and other Scufl enactors are available
+ including Moteur. The myExperiment social web site supports finding
+ and sharing of workflows and has special support for Scufl
+ workflows. The Taverna workbench, myExperiment and associated
+ components are developed and maintained by the myGrid team, in
+ collaboration with the open source community.
+Remark: This package ships with BioLinux http://envgen.nox.ac.uk/biolinux.html
+
+Depends: taxinspector
+Homepage: http://nebc.nox.ac.uk/projects/taxinspector.html
+License: Artistic + other free licenses
+Responsible: BioLinux - Tim Booth <tbooth@ceh.ac.uk>
+Pkg-URL: http://nebc.nox.ac.uk/bio-linux/dists/unstable/bio-linux/binary-i386/
+Pkg-Description: browser for entries in the NCBI taxonomy
+ TaxInspector is a browser for entries in the NCBI taxonomy. It is
+ designed to run as a plugin to annotation software such as maxdLoad2
+ and Pedro, but also has a standalone mode.
+Remark: This package ships with BioLinux http://envgen.nox.ac.uk/biolinux.html
+
+Depends: tetra
+Homepage: http://www.megx.net/tetra/
+License: free academic
+Responsible: BioLinux - Stewart Houten <shou@ceh.ac.uk>
+Pkg-URL: http://nebc.nox.ac.uk/bio-linux/dists/unstable/bio-linux/binary-i386/
+Pkg-Description: tetranucleotide frequency calculator
+ The TETRA program can be used to calculate how well tetranucleotide
+ usage patterns in DNA sequences correlate. Such correlations can
+ provide valuable hints on the relatedne ss of DNA sequences, and are
+ particularly useful for metagenomic sequences.
+Remark: for the Linux version
+ Version 1.0.2 (Mac OSX has version
+ 2.0b30) is deprecated and hence a feature-limited version of
+ TETRA. At the time writing, no decisions have been made about
+ adapting and cross-compiling the Mac OS X code for this platform. A
+ Linux version might happen when REALbasic's Linux IDE is more mature.
+Remark: This package ships with BioLinux http://envgen.nox.ac.uk/biolinux.html
+
+Depends: trace2dbest
+Homepage: http://www.nematodes.org/bioinformatics/trace2dbEST/
+License: GPL
+Responsible: BioLinux - Bela Tiwari <btiwari@ceh.ac.uk>
+Pkg-URL: http://nebc.nox.ac.uk/bio-linux/dists/unstable/bio-linux/binary-i386/
+Pkg-Description: process trace files into dbEST submissions
+ Trace2dbest is part of the PartiGene pipeline.
+ .
+ Trace2dbest takes a series of sequence traces and converts them into
+ basecalled files. It also creates files in the appropriate format for
+ submission to dbEST and allows you to submit them directly if your
+ machine is configured to allow mailing to external sites.  The output
+ from trace2dbest can be used as input to the PartiGene program.
+ .
+ Trace2dbEST process raw sequenceing chromatograph trace files from
+ EST projects into quality-checked sequences, ready for submission to
+ dbEST. trace2dbEST guides you through the creation of all the
+ necessary files for submission of ESTs to dbEST. trace2dbest makes
+ use of other software (available free under academic licence) that
+ you will need to have installed, namely phred, cross_match and
+ (optionaly) BLAST.
+Remark: This package ships with BioLinux http://envgen.nox.ac.uk/biolinux.html
+
+Depends: profit
+Homepage: http://www.bioinf.org.uk/software/profit/
+License: non-free
+Responsible: Steffen Moeller <steffen_moeller@gmx.de>
+WNPP: 525428
+Pkg-Description: structural alignment of multiple proteins
+ ProFit is designed to be the ultimate protein least squares fitting
+ program. It has many features including flexible specification of
+ fitting zones and atoms, calculation of RMS over different zones or
+ atoms, RMS-by-residue calculation, on-line help facility, etc.
+Remark: The authors need to change the license, still.
+ The debian folder should appear in Debian Med Svn in some near future.
+
+Depends: kempbasu
+Homepage: http://code.google.com/p/kempbasu/
+License: GPL
+Vcs-Svn: svn://svn.debian.org/svn/debian-med/trunk/packages/kempbasu/trunk/
+Responsible: Charles Plessy <plessy@debian.org>
+Pkg-Description: Significance tests for comparing digital gene expression profiles
+ This package implements the significance tests for comparing digital
+ gene profiles described in the article:
+ .
+ Varuzza _et al_. *"Significance tests for comparing digital gene
+ expression profiles"*
+ .
+ They provide two programs: kemp for the frequentist test and basu for
+ the Bayesian test, and some auxiliary scripts.
+
+Depends: fastx-toolkit
+Homepage: http://hannonlab.cshl.edu/fastx_toolkit
+License: AGPL / MIT
+Responsible: Assaf Gordon <gordon@cshl.edu>
+Pkg-Description: collection of command line tools for Short-Reads FASTA/FASTQ files preprocessing
+ Next-Generation sequencing machines usually produce FASTA or FASTQ files, containing multiple
+ short-reads sequences (possibly with quality information).  The main processing of such
+ FASTA/FASTQ files is mapping (aka aligning) the sequences to reference genomes or other
+ databases using specialized programs. Example of such mapping programs are: Blat, SHRiMP,
+ LastZ, MAQ and many many others.
+ .
+ However, It is sometimes more productive to preprocess the FASTA/FASTQ files before mapping the
+ sequences to the genome - manipulating the sequences to produce better mapping results.
+ .
+ The FASTX-Toolkit tools perform some of these preprocessing tasks.
+Remark: See also
+ http://hannonlab.cshl.edu/column_normalizer/
+ .
+ http://hannonlab.cshl.edu/crosstab/
+
+Depends: grogui
+Homepage: http://www.kde-apps.org/content/show.php?content=47665
+License: GPL
+Pkg-Description: graphical user interface for popular molecular dynamics package GROMACS
+  1. File browsing and management with customizable right-click pop up menu.
+  2. Graphical interfaces for GROMACS commands (currently 21 commands have their own interfaces).
+  3. Plot drawing tool which can export plots to pdf.
+  4. A simple built-in console.
+  5. Built-in GROMACS manual viewer.
+  6. Built-in file editor with syntax highlighting for some GROMACS file formats (currently only mdp format is supported).
+  7. MDP Writer section to easily create your mdp files.
+  8. File icons based on their types.
+
+Depends: rosetta
+Homepage: http://www.rosettacommons.org/
+License: not redistributable, not unlikely to change
+Pkg-Description: Protein-folding, -docking, ..?
+ Rosetta is a much renowned tool for the molecular modelling of protein
+ structures, small chemicals, and interactions between any of these.
+ It is developed by a consortium of several american academic research
+ groups. Industry can buy licenses from a not-for-profit company, while
+ academic groups have the opportunity to download the source and build
+ it locally. That license explicitly denies the right to redistribute
+ the source or binaries. Nevertheless, Debian Med could possibly offer
+ an easy preparation of Debian packages.
+
+Depends: obo-edit
+Homepage: http://www.geneontology.org
+License: something free
+Pkg-Description: editor for biological ontologies
+ (Open Biological Ontologies) Obo-Edit supports the formal representation
+ of biological entities and the specification of is-a (specialisation)
+ and part-of relations. Amongst the databases cureated by this tool
+ is the GeneOntology.
+
+Suggests: pdb2pqr
+
+Depends: lagan
+Homepage: http://lagan.stanford.edu/lagan_web/index.shtml
+License: GPL
+Pkg-Description: highly parametrizable pairwise global alignment program
+ Lagan takes local alignments generated by CHAOS as anchors, and limits the search area of
+ the Needleman-Wunsch algorithm around these anchors.
+ .
+ Multi-LAGAN is a generalization of the pairwise algorithm to multiple sequence alignment.
+ M-LAGAN performs progressive pairwise alignments, guided by a user-specified phylogenetic
+ tree. Alignments are aligned to other alignments using the sum-of-pairs metric.
+Remark: May be packaged in local repository
+ A local package is mentioned at
+ https://www.bioinformatics.uwaterloo.ca/wiki/index.php?Local%20Debian%20Repository
+ but the package does not seem to be available publicly.  It might be a good idea to ask
+ there before starting packaging.
+Published-Title: LAGAN and Multi-LAGAN: efficient tools for large-scale multiple alignment of genomic DNA
+Published-Authors: Michael Brudno, Chuong Do, Gregory Cooper, Michael F. Kim, Eugene Davydov, Eric D. Green, Arend Sidow, Serafim Batzoglou
+Published-In: Genome Research 13(4):721-31.
+Published-Year: 2003
+Published-URL: http://lagan.stanford.edu/lagan_web/mlagan_gr.pdf
+X-Category: Comparative genomics
+
+Depends: jstreeview
+Homepage: http://www.sanger.ac.uk/Users/lh3/treeview.shtml
+License: MIT/X11
+Language: JavaScript
+Pkg-Description: Editor for Phylogenetic Trees
+ A concise viewer/editor for phylogenetic trees in the Newick format.
+ The core functions are written in JavaScript, using the <canvas> tag
+ proposed by HTML 5. No server side support is needed for rendering the
+ picture and therefore you can grab this page together with knhx.js and
+ canvastext.js to locally view your trees in a supported web browser.
+ .
+ The source can be downloaded at
+ http://www.sanger.ac.uk/Users/lh3/download/jstreeview.zip                    
+
+Depends: phagefinder
+Homepage: http://phage-finder.sourceforge.net/
+License: GPL
+Language: Perl
+X-Category: Genomics; Prophage detection in prokaryotes
+Pkg-Description: heuristic computer program to identify prophage regions within bacterial genomes
+ It uses tab-delimited results from NCBI BLASTALL or WU BLASTP 2.0 searches against a
+ collection of bacteriophage protein sequences and results from HMMSEARCH analysis of
+ 441 phage-specific HMMs to locate prophage regions. By using FASTA33, MUMMER  or BLASTN,
+ it can find potential attachment (att) sites of the phage region(s). Data from tRNAscan-SE
+ and Aragorn  are used to determine whether a tRNA  or tmRNA  served as the putative target
+ for integration. Additionally, by looking for the presence or absence of specific proteins
+ using specific HMM models, Phage_Finder can predict whether the region is most likely
+ prophage and which type (Mu, P2, or retron R73), an integrated element, a plasmid, or a
+ degenerate phage region.
+ .
+ The goal of this project is to provide an open-sourced, standardized and automated system
+ to identify and classify prophages within prokaryotic genomes. It is hoped that this package
+ will facilitate future studies on the biology and evolution of these prophages by providing
+ a level of microbial genome annotation that was previously void.
+
+Depends: codonw
+Homepage: http://codonw.sourceforge.net/
+License: GPL
+X-Category: Genomics; Codon usage analysis
+Pkg-Description: Correspondence Analysis of Codon Usage
+ CodonW is a programme designed to simplify the Multivariate analysis (correspondence
+ analysis) of codon and amino acid usage. It also calculates standard indices of codon
+ usage. It has both menu and command-line interfaces. It was written by John Peden in
+ the lab of Paul Sharp,  Dept of Genetics,  University of Nottingham. John is working
+ in human genetics and is currently employed as ProCardis database manager at the WTCHG
+ in Oxford University.
+
+Depends: compclust
+Homepage: http://woldlab.caltech.edu/compclust/
+License: MLX (http://woldlab.caltech.edu/compclust/LICENSE.txt)
+Language: Python
+X-Category: Genomics; Clustering analysis (+GUI)
+Pkg-URL: http://woldlab.caltech.edu/compclust/debian_install.shtml
+Pkg-Description: explore and quantify relationships between clustering results
+ CompClust is a python package written using the pyMLX and IPlot APIs. It provides
+ software tools to explore and quantify relationships between clustering results. Its
+ development has been largely built around needs of microarray data analysis but could
+ be easily used in other domains.
+ .
+ Briefly pyMLX provides for efficient and convenient execution of many clustering
+ algorithms using a extendable library of algorithms. It also provides many-to-many
+ linkages between data features and annotations (such as cluster labels, gene names,
+ gene ontology information, etc.) These linkages persist through varied data
+ manipulations. IPlot provides an abstraction of the plotting process in which any
+ arbitrary feature or derived feature of the data can be projected onto any feature
+ of the plot, including the X,Y coordinates of points, marker symbol, marker size,
+ maker/line color, etc. These plots are intrinsically linked to the dataset, the
+ View and the Labeling classes found within pyMLX.
+
+Depends: treebuilder3d
+Homepage: http://www.bcgsc.ca/platform/bioinfo/software/treebuilder
+License: GPL
+Language: Java
+X-Category: Clustering; SAGE expression
+Pkg-Description: viewer of SAGE and other types of gene expression data
+ TreeBuilder3D is an interactive viewer that allows organization of SAGE and other
+ types of gene expression data such as microarrays into hierarchical dendrograms,
+ or phenetic networks (the term 'phenetic' used as the analysis relies on principals,
+ used in phylogenetic analysis by system biology). Might be used as a visual aid when
+ analyzing differences in expression profiles of SAGE libraries, serves as an
+ alternative to Venn diagrams.
+
+Depends: excavator
+Homepage: http://csbl.bmb.uga.edu/downloads/excavator/
+License: GPL
+Language: Java
+X-Category: Clustering; Gene expression data
+Pkg-Description: gene expression data clustering
+ Excavator is a program for gene expression data clustering. It uses a set of unique
+ clustering algorithms developed by the Computational Systems Biology Lab (CSBL) at
+ the University of Georgia. Excavator represents data internally as a minimum spanning
+ tree and outputs results to the user through the use of a micro-array data window,
+ graphs, and a dendrogram viewer.
+ .
+ Features
+  * partitioning gene expressions profiles using multiple methods of clustering and
+    definitions of distance between profiles.
+  * automatic selection of the most plausible number of clusters in a data set
+  * three different ways of viewing data: Micro-array, Gene Expression, and Dendrogram.
+    As well as graphing individual genes from each cluster independently.
+  * identification of genes with expression profiles similar to specified seed genes
+  * cluster identification from a noisy background
+  * numerical comparison between different clustering results of the same data set
+  * runnable on command line as well as through a Java GUI
+
+Depends: tigr-assembler
+Homepage: http://www.jcvi.org/cms/research/software/
+License: free (OSI-certified)
+X-Category: Assembling
+Pkg-Description: whole-genome assembly
+ Enabled the first published whole-genome assembly of a free-living organism in 1995.
+ Last revised in 2003.
+ .
+ See also http://www.jcvi.org/cms/publications/listing/abstract/article/tigr-assembler-a-new-tool-for-assembling-large-shotgun-sequencing-projects/
+Remark: It seems that wgs-assembler is the more up to date program.  Moreover there
+ seems to be no download option for TIGR Assembler at the J. Craig Venter Institute
+ (formerly TIGR) any more.
+
+Depends: bowtie
+Homepage: http://bowtie-bio.sourceforge.net/
+License: Artistic
+X-Category: Sequencing
+Pkg-Description: An ultrafast memory-efficient short read aligner
+ Bowtie is an ultrafast, memory-efficient short read aligner. It aligns short
+ DNA sequences (reads) to the human genome at a rate of over 25 million 35-bp
+ reads per hour. Bowtie indexes the genome with a Burrows-Wheeler index to keep
+ its memory footprint small: typically about 2.2 GB for the human genome (2.9 GB
+ for paired-end).
+
+Depends: crossbow
+Homepage: http://bowtie-bio.sourceforge.net/crossbow
+License: Artistic
+X-Category: Sequencing
+Pkg-Description: Genotyping from short reads using cloud computing
+ Crossbow is a scalable software pipeline for whole genome resequencing
+ analysis. It combines Bowtie, an ultrafast and memory efficient short read
+ aligner, and SoapSNP, an accurate genotyper, within Hadoop to distribute and
+ accelerate the computation with many nodes. The pipeline can accurately analyze
+ over 35x coverage of a human genome in one day on a 10-node local cluster, or
+ in 3 hours for about $100 using a 40-node, 320-core cluster rented from
+ Amazon's EC2 utility computing service. 
+Published-Title: Searching for SNPs with cloud computing
+Published-Authors: Ben Langmead, Michael Schatz, Jimmy Lin, Mihai Pop, Steven Salzberg
+Published-In: Genome Biology
+Published-Year: 2009
+Published-URL: http://genomebiology.com/2009/10/11/R134
+Published-DOI: 10.1186/gb-2009-10-11-r134
+
+Depends: ncbi-tools++
+Homepage: http://www.ncbi.nlm.nih.gov/IEB/ToolBox/CPP_DOC/
+License: Public domain except for some third-party LGPLed code
+Language: C++
+WNPP: 150636
+Pkg-Description: NCBI C++ libraries for biology applications
+ The NCBI C++ Toolkit was developed for the production and distribution
+ of new molecular-biology-related services by NCBI.  It allows you to
+ read and write NCBI ASN.1 files, builds Cn3D, etc.
+
+Depends: treetime
+Homepage: http://treetime.linhi.com/
+License: GPL
+Pkg-Description: Bayesian sampling of phylogenetic trees from molecular data
+ TreeTime is controlled by input files in nexus format and does
+ bayesian sampling of phylogenetic trees from these data.
+
+Depends: qiime
+WNPP: 587275
+Homepage: http://qiime.sf.net
+License: GPL
+Vcs-Browser: http://svn.debian.org/wsvn/debian-med/trunk/packages/qiime/trunk/?rev=0&sc=0
+Vcs-Svn: svn://svn.debian.org/svn/debian-med/trunk/packages/qiime/trunk/
+Responsible: Steffen Moeller <steffen_moeller@gmx.de>
+Pkg-Description: Quantitative Insights Into Microbial Ecology
+ QIIME (canonically pronounced ‘Chime’) is a pipeline for performing
+ microbial community analysis that integrates many third party tools which
+ have become standard in the field. A standard QIIME analysis begins with
+ sequence data from one or more sequencing platforms, including Sanger,
+ Roche/454, and Illumina GAIIx. With all the underlying tools installed,
+ of which not all are yet available in Debian (or any other Linux
+ distribution), QIIME can perform library de-multiplexing and quality
+ filtering; denoising with PyroNoise; OTU and representative set picking
+ with uclust, cdhit, mothur, BLAST, or other tools; taxonomy assignment
+ with BLAST or the RDP classifier; sequence alignment with PyNAST, muscle,
+ infernal, or other tools; phylogeny reconstruction with FastTree, raxml,
+ clearcut, or other tools; alpha diversity and rarefaction, including
+ visualization of results, using over 20 metrics including Phylogenetic
+ Diversity, chao1, and observed species; beta diversity and rarefaction,
+ including visualization of results, using over 25 metrics including
+ weighted and unweighted UniFrac, Euclidean distance, and Bray-Curtis;
+ summarization and visualization of taxonomic composition of samples
+ using pie charts and histograms; and many other features.
+ .
+ QIIME includes parallelization capabilities for many of the
+ computationally intensive steps. By default, these are configured to
+ utilize a mutli-core environment, and are easily configured to run in
+ a cluster environment. QIIME is built in Python using the open-source
+ PyCogent toolkit. It makes extensive use of unit tests, and is highly
+ modular to facilitate custom analyses.
+
+Depends: denoiser
+WNPP: 587274
+Homepage:  http://www.microbio.me/denoiser/
+License: GPL
+Language: Haskell
+Vcs-Browser: http://svn.debian.org/wsvn/debian-med/trunk/packages/denoiser/trunk/?rev=0&sc=0
+Vcs-Svn: svn://svn.debian.org/svn/debian-med/trunk/packages/denoiser/trunk/
+Responsible: Steffen Moeller <steffen_moeller@gmx.de>
+Pkg-Description: Rapid denoising of pyrosequencing amplicon data
+ To denoise pyrosequencing amplicon data, the package exploits the
+ rank-abundance distribution.  PyroNoise uses an expectation maximization
+ (EM) algorithm to figure out the most likely sequence for every read. We,
+ instead, use a greedy scheme that can be seen as an approximation to
+ PyroNoise. According to several test data sets, the approximation gives
+ very similar results in a fraction of the time.
+
+Depends: mothur
+Homepage: http://www.mothur.org
+License: free
+WNPP: 589675
+Responsible: Sri Girish Srinivasa Murthy <srigirish@evolbio.mpg.de>
+Vcs-Browser: http://svn.debian.org/wsvn/debian-med/trunk/packages/mothur/?rev=0&sc=0
+Vcs-Svn: svn://svn.debian.org/svn/debian-med/trunk/packages/mothur/trunk/
+Pkg-Description: sequence analysis for research on microbiota
+ Mothur seeks to develop a single piece of open-source, expandable
+ software to fill the bioinformatics needs of the microbial ecology
+ community. It has incorporated the functionality of dotur, sons,
+ treeclimber, s-libshuff, unifrac, and much more. In addition to improving
+ the flexibility of these algorithms, a number of other features including
+ calculators and visualization tools were added.
+
+
+Comment: Several related R packages are listed at CRAN:
+         http://cran.r-project.org/web/views/Genetics.html

@@ -1,0 +1,4 @@
+?package(libncbi6-dev):command="/usr/bin/vibrate /usr/bin/asntool" needs="X11" \
+	section="Med/Biology development" title="asntool" hints="Biology" icon="/usr/share/pixmaps/asntool.xpm"
+?package(libncbi6-dev):command="/usr/bin/vibrate /usr/bin/errhdr" needs="X11" \
+	section="Med/Biology development" title="errhdr" hints="Biology" icon="/usr/share/pixmaps/ncbilogo.xpm"

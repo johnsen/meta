@@ -1,0 +1,14 @@
+?package(ncbi-tools-x11):command="/usr/bin/Cn3D-3.0" needs="X11" \
+	section="Med/Biology/ncbi-tools-x11" title="Cn3D-3.0" hints="Biology" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(ncbi-tools-x11):command="/usr/bin/Nentrez" needs="X11" \
+	section="Med/Biology/ncbi-tools-x11" title="Entrez" hints="Biology" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(ncbi-tools-x11):command="/usr/bin/Psequin" needs="X11" \
+	section="Med/Biology/ncbi-tools-x11" title="Sequin" hints="Biology" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(ncbi-tools-x11):command="/usr/bin/ddv" needs="X11" \
+	section="Med/Biology/ncbi-tools-x11" title="ddv" hints="Biology" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(ncbi-tools-x11):command="/usr/bin/entrez2" needs="X11" \
+	section="Med/Biology/ncbi-tools-x11" title="entrez2" hints="Biology" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(ncbi-tools-x11):command="/usr/bin/netentcf" needs="X11" \
+	section="Med/Biology/ncbi-tools-x11" title="Entrez net config" hints="Biology" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(ncbi-tools-x11):command="/usr/bin/udv" needs="X11" \
+	section="Med/Biology/ncbi-tools-x11" title="udv" hints="Biology" icon="/usr/share/pixmaps/ncbilogo.xpm"

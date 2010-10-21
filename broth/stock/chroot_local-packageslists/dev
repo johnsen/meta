@@ -1,0 +1,13 @@
+# package list for developer tools
+
+# compilation
+make
+gcc
+patchutils
+
+subversion
+mercurial
+bzr
+
+# emacs stuff
+emacs-goodies-el

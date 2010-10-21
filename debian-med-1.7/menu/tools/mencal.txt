@@ -1,0 +1,10 @@
+MenCal: Menstruation Calendar
+
+Some information about mencal from the Debian Med project.
+
+Please read
+
+     man mencal
+
+for a detailed description of options and the configuration file of the
+menstruation calendar.  It is intended to be called from a text console.

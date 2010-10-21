@@ -1,0 +1,54 @@
+Task: Tools
+Description: Debian Med several tools
+ This metapackage will install tools for several purposes in health care.
+ Currently it contains some simple programs for Personal Health.
+
+Depends: mencal, cycle, pondus
+
+Suggests: cl-pubmed
+Why:      Strong dependency would cost installing a large amount of Common Lisp tools which in most cases is not worth the effort
+
+Depends: mssstest
+Published-Title: Multiple Sclerosis Severity Score 
+Published-Authors: R. Roxburgh S. Seaman et al.
+Published-In: American Academy of Neurology 
+Published-Year: 2005
+Published-URL: http://www.neurology.org/cgi/content/abstract/64/7/1144?ck=nck
+Published-DOI: 10.1191/135248505ms1277oa
+
+Depends: wgerman-medical, hunspell-de-med
+
+Depends: quitcount
+
+Depends: workrave
+
+Depends: linuxorg-pcal
+Homepage: http://linuxorg.sourceforge.net/about_m.phtml#pcal
+License: GPL
+Pkg-Description: assist in women menstrual cycles tracking and fertility periods prediction
+ Periodic Calendar is a GUI utility which assists in women menstrual
+ cycles tracking and fertility periods prediction. This information
+ can be used either to became pregnant or to prevent pregnancy.  The
+ fertility prediction is based on the calendar method which is not
+ very precise. It is not recommended to use this method alone for the
+ birth control.
+
+Depends: hunspell-en-med
+Homepage: http://e-medtools.com/openmedspel.html
+License: GPL
+Pkg-Description: English medical spelling word list
+ OpenMedSpel includes nearly 50,000 medical terms ranging from abdominis
+ to zygomatic, which allows you to concentrate on your work instead of
+ looking up words in a medical dictionary that are not in a standard USA
+ English spelling dictionary.
+
+Depends: python-clips
+Homepage: http://pyclips.sourceforge.net
+License: LGPL
+WNPP: 544706
+Pkg-Description: Python binding for the CLIPS expert system engine
+ CLIPS is an expert system shell / inference engine written
+ by NASA (see Debian package clips).
+ .
+ pyclips are the Python bindings to that engine.
+

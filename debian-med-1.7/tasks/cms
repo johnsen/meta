@@ -1,0 +1,6 @@
+Task: Content Management
+Description: Debian Med content management systems
+ This metapackage will install packages which are useful to build a
+ content management system for medical care.
+
+Suggests: zope-zms

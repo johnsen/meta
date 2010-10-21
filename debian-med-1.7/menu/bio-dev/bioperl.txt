@@ -1,0 +1,13 @@
+Bioperl: Perl tools for computational molecular biology
+
+Some information about Bioperl from the Debian Med project.
+
+ The Bioperl project is a coordinated effort to collect computational methods
+ routinely used in bioinformatics into a set of standard CPAN-style,
+ well-documented, and freely available Perl modules.
+
+The Homepage is http://bio.perl.org/
+
+You can get a good overview by the main manpage:
+
+       man bioperl

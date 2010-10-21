@@ -1,0 +1,185 @@
+Task: Hospital Information Systems
+Description: Debian Med suggestions for Hospital Information Systems
+ Currently Debian Med does not yet contain any software which can be
+ regarded as Hospital Information System.  There is some Free Software
+ out there which might be interesting targets for inclusion into Debian
+ and so we provide a list of these projects which might be included
+ at a later point in time provided somebody is willing to take over
+ the packaging work.
+
+Depends: medical
+Homepage: http://medical.sourceforge.net/
+License: GPL
+Pkg-Description: centralized Electronic Medical Record and Hospital Information System
+ Medical is a multi-user, highly scalable, centralized Electronic Medical Record (EMR)
+ and Hospital Information System (HIS) for openERP, so doctors and institutions all over
+ the world, independently of their economic status, will benefit from a centralized,
+ high quality, secure and scalable system.
+ .
+ Medical at a glance:
+  * 100% paperless patient examination and history taking
+  * Patient Administration (creation, evaluations / consultations, history ... )
+  * Strong focus in family medicine and Primary Health Care
+  * Doctor Administration
+  * Lab Administration
+  * Medicine / Drugs information (vademécum)
+  * Medical stock and supply chain management
+  * Demographics and other statistical reports
+  * Financial Administration (Invoicing, ...).
+  * Designed with industry standards in mind
+
+Depends: care2x
+Homepage: http://sourceforge.net/projects/care2002/
+License: GPL / LGPL
+Pkg-URL: http://sourceforge.net/project/showfiles.php?group_id=53886&package_id=133412
+Pkg-Description: Integrated Hospital Information System
+ Functions: surgery, nursing, outpatient, wards, labs, security, admission,
+ schedulers, repair, communication & more. Multilanguage, userconfig,
+ embedded AI & work bots. Modular & scalable.
+ .
+ Official Homepage http://www.care2x.org/ seems to have some problems from time to
+ time.
+ .
+ Inoffical Debian package of alpha version:
+ http://downloads.sourceforge.net/care2002/care2x-2.6.alpha.deb?use_mirror=mesh
+
+Depends: fis-gtm
+Homepage: http://fis-gtm.com
+License: AGPL v3
+WNPP: 541239
+Vcs-Browser: http://bazaar.launchpad.net/~ivaldes-hal-pc/astronaut-vista-server/trunk/files/head:/gtm/
+Responsible: K.S. Bhaskar <ks.bhaskar@fnis.com>
+Pkg-Description: Database Engine with Extreme Scalability and Robustness
+ GT.M is a database engine with scalability proven in large real-time
+ transaction processing systems that have thousands of concurrent
+ users, individual database file sizes to the Terabyte range (with
+ virtually unlimited aggregate database sizes).  Yet the light
+ footprint of GT.M allows it to also scale down for use in small
+ applications and software appliances (virtual machines).
+ .
+ The GT.M data model is hierarchical associative memory (i.e.,
+ multi-dimensional array) that imposes no restrictions on the data
+ types of the indexes or content - the application logic can impose
+ any schema, dictionary or data organization suited to its problem
+ domain.  (Database engines that do not impose schemas, but which
+ allow layered application software to impose and use whatever schema
+ that is appropriate to the application are popularly referred to as
+ "document oriented", "schemaless" or "schema-free" databases.)
+ .
+ GT.M's compiler for the standard M (also known as MUMPS) scripting
+ language implements full support for ACID (Atomic, Consistent,
+ Isolated, Durable) transactions, using optimistic concurrency control
+ and software transactional memory (STM) that resolves the common
+ mismatch between databases and programming languages. Its unique
+ ability to create and deploy logical multi-site configurations of
+ applications provides unrivaled continuity of business in the face of
+ not just unplanned events, but also planned events, including planned
+ events that include changes to application logic and schema.
+ .
+ Community support forums for GT.M can be found at
+ http://sourceforge.net/projects/fis-gtm and support with assured
+ service levels on commercial terms can be purchased from
+ gtmsupport@fnis.com.
+
+Depends: vista
+Homepage: http://worldvista.org/AboutVistA
+License: Public Domain, GPL v2, AGPL v3
+WNPP: 541242
+Vcs-Browser: https://launchpad.net/astronaut
+Responsible: K.S. Bhaskar <ks.bhaskar@fnis.com>
+Pkg-Description: Real time health care information system including electronic health record
+ VistA is the complete health care information system (HIS) which
+ is developed and used by the US Department of Veterans Affairs to
+ run all of its hospitals and clinics.  It is in the public domain
+ through the US Freedom of Information Act.  Versions are also in
+ use both in the US and internationally, including the US Department
+ of Defense, the US Indian Health Service, the Mexican Instituto
+ Mexicano del Seguro Social, etc.  There are also flavors of VistA
+ provided by WorldVistA (http://worldvista.org) and Medsphere
+ (http://medsphere.org).
+
+Depends: world-vista
+Homepage: http://worldvista.org/World_VistA_EHR
+License: GPL v2
+Responsible: K.S. Bhaskar <ks.bhaskar@fnis.com>
+WNPP: 541245
+Vcs-Browser: https://launchpad.net/astronaut
+Pkg-Description: repackage and extended version of VistA produced by WorldVistA
+ Developed by WorldVistA (http://worldvista.org) and released under GPL
+ v2, WorldVistA EHR is a repackaged and extended version of the VistA
+ health care information system (HIS) developed by the US Department of
+ Veterans Affairs, and in the public domain through the US Freedom of
+ Information Act.
+ .
+ WorldVistA successfully submitted WorldVistA EHR for certification by
+ CCHIT (http://cchit.org) in 2007.  WorldVistA EHR VOE/ 1.0 was tested
+ and passed inspection of 100 percent of a set of criteria for
+ functionality (ability to create and manage electronic records for all
+ patients, as well as automating workflow in a physician's office),
+ interoperability (a first step in the ability to receive and send
+ electronic data to other entities such as laboratories), and security
+ (ability to keep patients' information safe).
+
+Depends: ipath
+Homepage: http://ipath.sourceforge.net/
+License: GPL
+Pkg-Description: telemedicine platform
+ iPath is an open source platform for telemedicine applications such as consulations,
+ case disucssions, virtual staff meetings, etc. It was originally developed at University
+ of Basel where a public iPath server for projects with developing countries is hosted.
+
+Depends: patientos
+Homepage: http://www.patientos.org/
+License: GPL v3
+Language: Java
+Pkg-Description: Healthcare Information System (HIS) for small hospitals and clinics
+ The software can be used as an Electronic Medical Record, Electronic
+ Health Record or as a Personal Medical System.  It provides a wide range
+ of functionality including scheduling, orders, medications, pharmacy,
+ clinical doc, HL7, billing and more.  The software architecture, design
+ patterns and framework has been built for the complexities and
+ challenges of an enterprise wide information system.
+ .
+ Features include:
+  * WYIWYG view of the registration forms through the ordering and extensive properties of a control list
+  * Makes extensive use of organizing reference data into tree structure
+  * WebReach Inc. advanced Open Source interface engine
+  * Clinical Documentation - Nursing assessments, therapy, progress notes
+  * Standards - LOINC lab results, ICD9/10, CPT, OpenEHR, CCR, CDA
+  * Orders - medications, lab tests, nursing care
+  * Registration and Scheduling - multi-facility, EMPI
+  * Interfaces - HL7 2.2, 2.3 ADT, Billing, Orders, Results
+  * Billing - Charges, Invoices, Claims
+  * Medication Management - Med orders, administration, eMAR
+  * Physician - H&P, Progress Notes
+  * Add-ons are available to add new features or functionality including plugins, custom forms, themes, and translations
+  * Supports multiple languages
+
+Depends: openmrs
+Homepage: http://openmrs.org/
+License: OpenMRS Public License
+Pkg-Description: electronic medical record system platform
+ The software's mission is to help the fight against HIV/AIDS,
+ multi-drug resistant tuberculosis, malaria, and related health crises.
+ It is a common framework upon which medical informatics efforts in
+ developing countries can be built.  The system is designed to be usable
+ in very resource poor environments and can be modified with the addition
+ of new data items, forms and reports without programming. 
+ .
+ The package is both just a library of API calls and a database and a
+ default implementation of those API calls in the form of a web
+ application.
+ .
+ OpenMRS is mature software. It is based upon a program which has been
+ used effectively for over 30 years at Regenstrief Institute. It is
+ currently implemented in Kenya, Rwanda, South Africa, Pakistan, Uganda,
+ Tanzania, Zimbabwe, Lesotho, Malawi, Phillipines,Peru, Haiti, and other
+ countries.
+ .
+ Features include:
+  * Backed by a data model driven by a concept dictionary
+  * Includes tools for data export and reporting
+  * Versions exist for HIV/AIDS, Drug resistant TB, primary care and oncology
+  * Supports open standards for medical data exchange including HL7, LOINC and IXF
+  * Modular construction
+

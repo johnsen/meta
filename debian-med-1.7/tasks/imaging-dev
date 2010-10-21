@@ -1,0 +1,118 @@
+Task: Imaging Development
+Description: Debian Med packages for medical image development
+ This metapackage will install Debian packages which might be useful
+ for developing applications for medical image processing.
+
+Depends: ctn-dev, cimg-dev, libminc-dev, libmdc2-dev
+
+Depends: libnifti-dev
+
+Depends: libigstk4-dev
+
+Suggests: igstk-examples
+
+Depends: libinsighttoolkit3-dev
+
+Suggests: insighttoolkit3-examples
+
+Suggests: libnifti-doc
+
+Suggests: libvtk5.4
+
+Depends: libvolpack1-dev
+
+Depends: libgdcm2-dev
+Depends: python-gdcm
+
+Suggests: python-libavg
+Why: Homepage (http://www.libavg.de) shows some potential medical applications
+
+Depends: python-mvpa
+Why: Suggested by maintainer Michael Hanke <michael.hanke@gmail.com>
+
+Depends: python-nipy
+
+Depends: python-nipype
+
+Depends: libvia-dev
+
+Depends: odin
+
+Depends: libcv-dev
+
+Depends: libvxl1-dev
+
+Depends: libteem1-dev
+
+Depends: gmic
+
+Depends: libgiftiio-dev
+
+Depends: libvista2-dev
+Homepage: http://mia.sourceforge.net/
+License: GPL
+Pkg-Description: software environment for computer vision research
+ Vista is a software environment for computer vision research. It is
+ designed to support not only images, but also edge sets, camera models,
+ and more complex  data structures. Vista includes libraries of common
+ computer vision and image  processing algorithms. It is written in
+ ANSI C, for UNIX platforms running X Windows, and it is freely available.
+ The original development was done  at University of British Columbia
+ (http://www.cs.ubc.ca/nest/lci/vista/vista.html).
+ .
+ Because the development was stalled by the original authors the
+ development continued in the "Tools for Medical Image Analysis"
+ framework (http://mia.sourceforge.net/) which is maintained by
+ Max Planck Institute of Cognitive Neuroscience
+ (http://www.cns.mpg.de/).
+ .
+ This is the development package.
+Remark: With libvia-dev an alternative is already part of Debian.
+
+Depends: libmni-perllib-perl
+Homepage: http://packages.bic.mni.mcgill.ca/tgz/
+License: Artistic License
+Responsible: NeuroDebian Team <team@neuro.debian.net>
+Pkg-URL: http://apsy.gse.uni-magdeburg.de/svn/fsl/libmni-perllib-perl/trunk/debian/
+Pkg-Description: The MNI Perl Library
+ Collection of various Perl module used by other MNI software
+ packages.
+Remark: There was some previous work on this software which is stalled currently
+ Michael Hanke agreed to take over his stuff from mentors 
+ http://mentors.debian.net/cgi-bin/sponsor-pkglist?action=details;package=libmni-perllib-perl
+ to Debian Med svn and start group maintenance. 
+
+Depends: libbiosig4c++-dev
+License: GPL
+Responsible: NeuroDebian Team <team@neuro.debian.net>
+WNPP: 585533
+Homepage: http://biosig.sf.net/
+Vcs-Git: git://git.debian.org/pkg-exppsy/biosig4c++.git
+Vcs-Browser: http://git.debian.org/?p=pkg-exppsy/biosig4c++.git;a=summary
+Pkg-Description: library for accessing files in biomedical data formats
+ A library for accessing files in several biomedical data formats
+ (including EDF, BDF, GDF, BrainVision, BCI2000, CFWB, HL7aECG,
+ SCP_ECG (EN1064), MFER, ACQ, CNT(Neuroscan), DEMG, EGI, EEG1100,
+ FAMOS, SigmaPLpro, TMS32).  The complete list of supported file
+ formats is available at http://hci.tugraz.at/schloegl/biosig/TESTED .
+ .
+ This package provides header files and static library libbiosig.a
+ which provides access to a variety of dataformats.
+
+
+Depends: libgiftiio-dev
+License: Public domain
+Pkg-URL: http://neuro.debian.net/pkgs/libgifti-dev.html
+
+
+Depends: python-dicom
+License: MIT
+Pkg-URL: http://neuro.debian.net/pkgs/python-dicom.html
+
+
+Depends: libopenmeeg-dev
+License: CeCILL-B
+Published-Title: OpenMEEG: opensource software for quasistatic bioelectromagnetics
+Published-Authors: Alexandre Gramfort, Théodore Papadopoulo, Emmanuel Olivi, Maureen Clerc
+Published-In: Preprint
+Published-URL: http://hal.archives-ouvertes.fr/inria-00467061/en/

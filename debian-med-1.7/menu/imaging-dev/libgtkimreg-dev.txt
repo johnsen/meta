@@ -1,0 +1,12 @@
+Imreg Development: Image Sequences Development Support
+
+Some information about libgtkimreg-dev from the Debian Med project.
+
+Please read
+
+        man gtkimreg
+	man gtkimmov
+
+for a detailed description for cutting and moving sets of images.
+A complex example of the usage of these libraries is the image viewer
+paul.

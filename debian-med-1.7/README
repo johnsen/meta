@@ -1,0 +1,10 @@
+This folder collects information on packages that have been built for
+the Debian Med Blend or that are currently prepared
+to be uploaded.
+
+If you want to add package descriptions, then edit the
+respective file in tasks/  and make sure to have read through
+http://blends.alioth.debian.org/blends/ch-sentinel.en.html.
+
+For more advanced issues please refer to the Blends paper in full and
+consider to talk back to Andreas Tille <tille@debian.org>.

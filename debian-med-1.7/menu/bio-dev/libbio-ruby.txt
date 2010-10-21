@@ -1,0 +1,12 @@
+BioRuby tools for computational molecular biology
+
+Some information about libbio-ruby from the Debian Med project.
+
+ BioRuby project aims to implement an integrated environment for
+ Bioinformatics with Ruby language. Design philosophy of the BioRuby library
+ is KISS (keep it simple and stupid) to maximize the usability and the
+ efficiency for biologists as a daily tool. The project was started in Japan
+ and supported by University of Tokyo (Human Genome Center), Kyoto University
+ (Bioinformatics Center) and the Open Bio Foundation.
+
+Homepage: http://www.bioruby.org/

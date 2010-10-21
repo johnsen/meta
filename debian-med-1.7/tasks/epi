@@ -1,0 +1,150 @@
+Task: Epidemiology
+Description: Debian Med epidemiology related packages
+ This metapackage will install tools that are useful in epidemiological
+ research.  Several packages making use of the GNU R data language for
+ statistical investigation.  It might be a good idea to read the paper
+ "A short introduction to R for Epidemiology" at
+ http://staff.pubhealth.ku.dk/%7Ebxc/Epi/R-intro.pdf
+
+Depends: epigrass
+
+Suggests: r-cran-msm
+
+Depends: r-cran-epibasix
+
+Depends: r-cran-epitools
+X-Comment: See also: http://sites.google.com/site/medepi/epitools
+
+Depends: r-cran-surveillance
+
+Depends: r-cran-epi
+
+Depends: r-cran-diagnosismed, r-cran-epicalc, r-cran-epir
+
+Depends: netepi-analysis
+Homepage: http://sourceforge.net/projects/netepi
+Responsible: Andreas Tille <tille@debian.org>
+License: MPL 1.1
+Vcs-Svn: svn://svn.debian.org/svn/debian-med/trunk/packages/netepi-analysis/trunk
+Pkg-Description: network-enabled tools for epidemiology and public health practice
+ NetEpi, which is short for "Network-enabled Epidemiology", is a collaborative
+ project to create a suite of free, open source software tools for epidemiology
+ and public health practice. Anyone with an interest in population health
+ epidemiology or public health informatics is encouraged to examine the prototype
+ tools and to consider contributing to their further development. Contributions
+ which involve formal and/or informal testing of the tools in a wide range of
+ circumstances and environments are particularly welcome, as is assistance with
+ design, programming and documentation tasks.
+ .
+ This is a tool for conducting epidemiological analysis of data sets, both large
+ and small, either through a Web browser interface, or via a programmatic
+ interface. In many respects it is similar to the analysis facilities included
+ in the Epi Info suite, except that NetEpi Analysis is designed to be installed
+ on servers and accessed remotely via Web browsers, although it can also be
+ installed on individual desktop or laptop computers.
+ .
+ The software was developed by New South Wales Department of Health.
+ .
+ There is also a Google code project page at http://code.google.com/p/netepi/
+ .
+ See also: http://www.stockholmchallenge.se/data/2123 and
+ http://www.publish.csiro.au/?act=view_file&file_id=NB07103.pdf
+
+Depends: netepi-collection
+Homepage: http://sourceforge.net/projects/netepi
+Responsible: Andreas Tille <tille@debian.org>
+License: MPL 1.1
+Vcs-Svn: svn://svn.debian.org/svn/debian-med/trunk/packages/netepi-collection/trunk
+Pkg-Description: network-enabled tools for epidemiology and public health practice
+ NetEpi, which is short for "Network-enabled Epidemiology", is a collaborative
+ project to create a suite of free, open source software tools for epidemiology
+ and public health practice. Anyone with an interest in population health
+ epidemiology or public health informatics is encouraged to examine the prototype
+ tools and to consider contributing to their further development. Contributions
+ which involve formal and/or informal testing of the tools in a wide range of
+ circumstances and environments are particularly welcome, as is assistance with
+ design, programming and documentation tasks.
+ .
+ NetEpi Case Manager is a tool for securely collecting structured
+ information about cases and contacts of communicable (and other)
+ diseases through Web browsers and the Internet. New data collection
+ forms can be designed and deployed quickly by epidemiologists, using a
+ "point-and-click" interface, without the need for knowledge of or
+ training in any programming language. Data can then be collected from
+ users of the system, who can be located anywhere in the world, into a
+ centralised database. All that is needed by users of the system is a
+ relatively recent Web browser and an Internet connection ("NetEpi"
+ is short for "Network-enabled Epidemiology"). In many respects,
+ NetEpi Case Manager is like a Web-enabled version of the data entry
+ facilities in the very popular Epi Info suite of programmes published by
+ the US Centers for Disease Control and Prevention, and in the Danish
+ EpiData project, which is available for several languages. The software
+ was developed by the Centre for Epidemiology and Research of the New
+ South Wales Department of Health, with contributions from Population
+ Health Division of the Australian Government Department of Health and
+ Ageing.
+ .
+ The software was developed by New South Wales Department of Health.
+ .
+ See also: http://www.stockholmchallenge.se/data/2123 and
+ http://www.publish.csiro.au/?act=view_file&file_id=NB07103.pdf
+
+Suggests: repast
+Homepage: http://repast.sourceforge.net/
+License: BSD
+WNPP: 179183
+Pkg-Description: framework for creating agent based simulations
+ Repast Simphony is a free and open source agent-based modeling toolkit
+ that simplifies model creation and use. Repast Simphony offers users a
+ rich variety of features including the following:
+  * Fluid model component development using any mixture of Java, Groovy,
+    and flowcharts in each project;
+  * A pure Java point-and-click model execution environment that includes
+    built-in results logging and graphing tools as well as automated
+    connections to a variety of optional external tools including the R
+    statistics environment, *ORA and Pajek network analysis plugins, A
+    live agent SQL query tool plugin, the VisAD scientific visualization
+    package, the Weka data mining platform, many popular spreadsheets,
+    the MATLAB computational mathematics environment, and the iReport
+    visual report designer;
+  * An extremely flexible hierarchically nested definition of space
+    including the ability to do point-and-click and modeling and
+    visualization of 2D environments; 3D environments; networks including
+    full integration with the JUNG network modeling library as well as
+    Microsoft Excel spreadsheets and UCINET DL file importing; and
+    geographical spaces including 2D and 3D Geographical Information
+    Systems (GIS) support;
+  * A range of data storage "freeze dryers" for model check pointing
+    and restoration including XML file storage, text file storage, and
+    database storage;
+  * A fully concurrent multithreaded discrete event scheduler;
+  * Libraries for genetic algorithms, neural networks, regression, random
+    number generation, and specialized mathematics;
+  * An automated Monte Carlo simulation framework which supports multiple
+    modes of model results optimization;
+  * Built-in tools for integrating external models;
+  * Distributed computing with Terracotta;
+  * Full object-orientation;
+  * Optional end-to-end XML simulation
+  * A point-and-click model deployment system
+Remark: Please read also
+  http://www.tbiomed.com/content/5/1/11
+  http://lists.debian.org/debian-med/2009/08/msg00013.html (and following mails)
+
+Suggests: swarm
+Homepage: http://www.swarm.org/
+License: GPL
+WNPP: 179182
+Vcs-Svn: svn://svn.debian.org/svn/debian-med/trunk/packages/swarm/trunk/
+Pkg-Description: multi-agent simulation of complex systems
+ Swarm is a software package for multi-agent simulation of complex
+ systems, originally developed at the Santa Fe Institute. Swarm is
+ intended to be a useful tool for researchers in a variety of
+ disciplines. The basic architecture of Swarm is the simulation of
+ collections of concurrently interacting agents: with this architecture,
+ we can implement a large variety of agent based models.
+X-Remark: Jakson Alves de Aquino has a guide to installing Swarm 2.2 on Ubuntu and Debian
+ This guide vanished from the web but the WayBackMachine conserved
+ a copy at
+ http://web.archive.org/web/20071225020842/http://jalvesaq.googlepages.com/swarm.html
+

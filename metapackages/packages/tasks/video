@@ -1,0 +1,15 @@
+Task: Video
+Description: Openstudio Video packages
+ This metapackage will install Video software for use in 
+ openstudio.
+
+Depends: xjadeo qjadeo blender ffmpeg ffmpeg2theora
+#Suggests: lives dvgrab freemix kino stopmotion subtitleeditor
+
+
+Depends: qjadeo
+Why:     Handy when making soundtracks with Ardour and JACK transport
+Responsible: Rosea Grammostola
+NeedConfig:  no
+
+

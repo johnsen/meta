@@ -1,0 +1,17 @@
+Loki: MCMC linkage analysis on general pedigrees
+
+Some information about Loki from the Debian Med project.
+
+ Performs Markov chain Monte Carlo multipoint linkage analysis on large,
+ complex pedigrees.  The current package supports analyses on quantitative
+ traits only, although this restriction will be lifted in later versions.
+ Joint estimation of QTL number, position and effects uses Reversible Jump
+ MCMC. It is also possible to perform affected only IBD sharing analyses.
+
+ Homepage: http://loki.homeunix.net.
+       
+You can get a good overview by the main manpage:
+
+       man loki
+
+It is suggested to install the loki-doc package.

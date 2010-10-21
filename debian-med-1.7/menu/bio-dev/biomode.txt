@@ -1,0 +1,11 @@
+BioMode: Emacs mode to edit genetic data
+
+Some information about Biomode from the Debian Med project.
+
+    It provides you several interesting commands to take the antiparallel
+    of a region, convert it using readseq, runs blast on it, etc.
+
+This package is not really installed by the med-bio package but it is
+suggested.  That means if you are comfortable with the powerful editor
+Emacs you might wish to install also the biomode package and make use
+of it by typing "M-x biomode".

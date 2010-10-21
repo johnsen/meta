@@ -1,0 +1,7 @@
+Task: Proaudio-audio
+Description: Openstudio pro audio packages for audio recording, editing and looping.
+ 
+Depends: ardour qtractor audacity jack-capture meterbridge sooperlooper qjackctl soundconverter
+#Suggests: traverso rezound mhwaveedit lmms kluppe freewheeling paulstretch   
+
+

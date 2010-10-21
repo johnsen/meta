@@ -1,0 +1,850 @@
+Task: Imaging
+Description: Debian Med imaging packages
+ This metapackage will install Debian packages which might be useful in
+ medical image processing.
+ .
+ It installs several packages supporting DICOM (Digital Imaging and
+ Communications in Medicine) which is the de-facto standard for medical
+ image management. The standard defines data structures and services for
+ the exchange of medical images and related information. The latest release
+ has been published in 2008 and consists of 18 parts.
+ .
+ For more information, you can visit the NEMA homepage
+ http://medical.nema.org/ .
+ .
+ The status of the official DICOM base standard plus all the
+ supplements and correction items are summarized at David Clunie's webpage:
+ http://www.dclunie.com/dicom-status/status.html
+ where you'll find direct links to the most recent yearly edition
+ ftp://medical.nema.org/medical/dicom/2008/ .
+
+Depends: amide, ctsim, ctn, dicomnifti, imagej, minc-tools, medcon, python-nifti, xmedcon, dcmtk
+
+Suggests: imagemagick, pngquant, imview
+
+Depends: nifti-bin
+
+Depends: aeskulap
+
+Depends: fsl
+Registration: http://www.fmrib.ox.ac.uk/fsldownloads/
+Published-Title: Advances in functional and structural MR image analysis and implementation as FSL
+Published-Authors: S.M. Smith, M. Jenkinson, M.W. Woolrich, C.F. Beckmann, T.E.J. Behrens, H. Johansen-Berg, P.R. Bannister, M. De Luca, I. Drobnjak, D.E. Flitney, R. Niazy, J. Saunders, J. Vickers, Y. Zhang, N. De Stefano, J.M. Brady, P.M. Matthews
+Published-In: NeuroImage, 23:208-219
+Published-Year: 2004
+Published-DOI: 10.1016/j.neuroimage.2004.07.051
+
+Depends: fslview
+Published-Title: Advances in functional and structural MR image analysis and implementation as FSL
+Published-Authors: S.M. Smith, M. Jenkinson, M.W. Woolrich, C.F. Beckmann, T.E.J. Behrens, H. Johansen-Berg, P.R. Bannister, M. De Luca, I. Drobnjak, D.E. Flitney, R. Niazy, J. Saunders, J. Vickers, Y. Zhang, N. De Stefano, J.M. Brady, P.M. Matthews
+Published-In: NeuroImage, 23:208-219
+Published-Year: 2004
+Published-DOI: 10.1016/j.neuroimage.2004.07.051
+
+Depends: via-bin
+
+Depends: gwyddion
+
+Depends: sofa-apps
+
+Depends: python-mvpa
+Why: Suggested by maintainer Michael Hanke <michael.hanke@gmail.com>
+Published-Title: PyMVPA: a unifying approach to the analysis of neuroscientific data
+Published-Authors: Michael Hanke, Yaroslav O. Halchenko, Per B. Sederberg, Emanuele Olivetti, Ingo Fründ, Jochem W. Rieger, Christoph S. Herrmann, James V. Haxby, Stephen José Hanson, Stefan Pollmann
+Published-In: Frontiers in Neuroinformatics, 3:3
+Published-Year: 2009
+Published-URL: http://www.frontiersin.org/neuroinformatics/paper/10.3389/neuro.11/003.2009/
+Published-DOI: 10.3389/neuro.11.003.2009
+
+
+Depends: python-nipy
+Why: Although listed in -dev task, it also has a strong focus on interactive
+ data analysis.
+
+Depends: python-nipype
+Why: Although listed in -dev task, it also has a strong focus on interactive
+ data analysis.
+
+Depends: caret
+Registration: http://brainmap.wustl.edu/register.html
+Published-Title: An Integrated Software Suite for Surface-based Analyses of Cerebral Cortex
+Published-Authors: David C. Van Essen, Heather A. Drury, James Dickson, John Harwell, Donna Hanlon, Charles H. Anderson
+Published-In: Journal of American Medical Informatics Association, 8(5): 443-459
+Published-Year: 2001
+Published-URL: http://www.pubmedcentral.nih.gov/articlerender.fcgi?pubmedid=11522765
+
+Depends: libgdcm-tools
+
+Depends: slicer
+
+Depends: lipsia
+Published-Title: Lipsia—a new software system for the evaluation of functional magnetic resonance images of the human brain
+Published-Authors: Gabriele Lohmann, Karsten Müller, Volker Bosch, Heiko Mentzel, Sven Hessler, Lin Chen, S. Zysset, D. Yves von Cramon
+Published-In: Computerized Medical Imaging and Graphics, 25: 449-457
+Published-Year: 2001
+Published-URL: http://www.medicalimagingandgraphics.com/article/S0895-6111(01)00008-8
+Published-DOI: 10.1016/S0895-6111(01)00008-8
+
+Depends: dicom3tools
+
+Depends: odin
+Published-Title: ODIN: Object-oriented development interface for NMR
+Published-Authors: Thies H. Jochimsen, Michael von Mengershausen
+Published-In: Journal of Magnetic Resonance 170:67-78
+Published-Year: 2004
+Published-URL: http://od1n.sourceforge.net/odin.pdf
+
+Depends: dicomscope
+
+Depends: pixelmed-java
+
+Depends: vmtk
+
+Depends: bioimagesuite
+Homepage: http://www.bioimagesuite.org/
+License: GPL
+Pkg-Description: integrated image analysis software suite
+ BioImage Suite has extensive capabilities for both neuro/cardiac
+ and abdominal image analysis and state of the art visualization.
+ Many packages are available that are highly extensible, and provide
+ functionality for image visualization and registration, surface
+ editing, cardiac 4D multi-slice editing, diffusion tensor image
+ processing, mouse segmentation and registration, and much more. It
+ can be integrated with other biomedical image processing software,
+ such as FSL and SPM. This site provides information, downloads,
+ documentation, and other resources for users of the software.
+ .
+ BioImage Suite was developed at Yale University and has been
+ extensively used at different labs at Yale since 2004.
+ .
+ There is a forum at BioImage Suite site for discussion of
+ compiling it from source and packaging issues at
+ http://research.yale.edu/bioimagesuite/forum/index.php?board=12.0
+
+Depends: drjekyll
+Homepage: http://drjekyll.sourceforge.net
+License: GPL
+Pkg-Description: interactive voxel editor for viewing and editing three-dimensional images
+ It is specifically aimed at postprocessing of segmented datasets,
+ but offers some functionality for raw data as well.
+ Voxel elements (=voxels) and pixel ("picture element") are viewed
+ as data sets and can be processed by this program as kind of
+ a final polishing process.
+Why: Hint given by Petter Reinholdtsen
+
+Depends: libvista2
+Homepage: http://mia.sourceforge.net/
+License: GPL
+Pkg-Description: software environment for computer vision research
+ Vista is a software environment for computer vision research. It is
+ designed to support not only images, but also edge sets, camera models,
+ and more complex  data structures. Vista includes libraries of common
+ computer vision and image  processing algorithms. It is written in
+ ANSI C, for UNIX platforms running X Windows, and it is freely available.
+ The original development was done  at University of British Columbia
+ (http://www.cs.ubc.ca/nest/lci/vista/vista.html).
+ .
+ Because the development was stalled by the original authors the
+ development continued in the "Tools for Medical Image Analysis"
+ framework (http://mia.sourceforge.net/) which is maintained by
+ Max Planck Institute of Cognitive Neuroscience
+ (http://www.cns.mpg.de/).
+Remark: With libvia an alternative implementation is already part of Debian.
+
+Depends: dcm4che
+Homepage: http://www.dcm4che.org/
+License: LGPL, MPL, Apache, other (also non-free)
+Pkg-Description: collection of open source applications and utilities healthcare enterprise
+ At the core of the dcm4che project is a robust implementation of the
+ DICOM standard. The dcm4che-1.x DICOM toolkit is used in many production
+ applications across the world, while the current (2.x) version of the
+ toolkit has been re-architected for high performance and flexibility.
+ .
+ Also contained within the dcm4che project is dcm4chee (the extra 'e'
+ stands for 'enterprise'). dcm4chee is an Image Manager/Image Archive
+ (according to IHE). The application contains the DICOM, HL7 services
+ and interfaces that are required to provide storage, retrieval, and
+ workflow to a healthcare environment. dcm4chee is pre-packaged and
+ deployed within the JBoss application server. By taking advantage of
+ many JBoss features (JMS, EJB, Servlet Engine, etc.), and assuming the
+ role of several IHE actors for the sake of interoperability, the
+ application provides many robust and scalable services.
+
+
+Depends: piano
+Homepage: http://mbi.dkfz-heidelberg.de/mbi/software/
+License: BSD
+Pkg-Description: medical image processing library for surgical planning
+ Piano is a library containing roughly 75 algorithms and tools for
+ multi-dimensional medical image processing, analysis and visualization.
+ It is used in the field of surgical planning.
+
+Depends: mesa-test-tools
+Homepage: http://ihedoc.wustl.edu/mesasoftware/
+License: free
+Pkg-Description: IHE Test Software for Radiology
+ The MESA software release which is available at
+ http://ihedoc.wustl.edu/mesasoftware/10.15.0/dist/ provides several
+ tools that might cover a wide range of applications for
+ Integrating the Healthcare Enterprise (IHE) testing.
+ .
+ Another important element of the IHE testing process is the set of
+ software tools HIMSS and RSNA have commissioned. Developed by the
+ Electronic Radiology Laboratory at the Mallinckrodt Institute of
+ Radiology, Washington University of St. Louis, the MESA tools are
+ designed for use by participating companies in implementing IHE
+ capabilities in their systems and preparing for the Connectathon. Their
+ purpose is to provide communication partners, test data and test plans
+ to allow organizations to provide a baseline level of testing as they
+ implement the IHE Technical Framework. These tools are made available to
+ participants during the period of an IHE demonstration year and are then
+ released into the public domain at the end of that cycle. The latest
+ version of the MESA Test Tools available in the public domain can be
+ found here.
+ .
+ This kind of software is definitively valuable for information systems
+ vendors and imaging systems vendors.
+ .
+ Because the CTN Debian package is based on an upstream dead project
+ these tools should have a high priority for packaging because the
+ CTN homepage http://erl.wustl.edu/research/dicom/ctn.html says:
+ "The CTN software is also embedded within the MESA tools. The version
+ of CTN software in those tools does not have a separate release number
+ but is more current than version 3.0.6."
+
+Depends: devide
+Homepage: http://code.google.com/p/devide/
+License: BSD
+WNPP: 509110
+Responsible: Mathieu Malaterre <mathieu.malaterre@gmail.com>
+Pkg-Description: Delft Visualization and Image processing Development Environment
+ DeVIDE, or the Delft Visualization and Image processing Development
+ Environment, is a Python-based dataflow application builder that enables
+ the rapid prototyping of medical visualization and image processing
+ applications via visual programming. In other words, by visually connecting 
+ functional blocks (think Yahoo pipes), you can create cool visualizations.
+ .
+ See the DeVIDE website at http://visualisation.tudelft.nl/Projects/DeVIDE
+
+Depends: dicom4j
+Homepage: http://dicom4j.sourceforge.net/
+License: GPL
+Pkg-Description: Java framework for Dicom
+ Java framework for Dicom
+
+Depends: opendicom.net
+Homepage: http://opendicom.sourceforge.net/
+License: LGPL
+Responsible: Albert Gnandt <agnandt@users.sourceforge.net>
+Pkg-URL: http://ubuntu.mi.hs-heilbronn.de/other/opendicom
+Pkg-Description: API to DICOM in C# for Mono
+ The openDICOM.NET project implements a new approach towards DICOM
+ (Digital Imaging and Communications in Medicine) libraries. DICOM is
+ a worldwide standard in Medical IT and is provided by the National
+ Electrical Manufacturers Association (NEMA). This standard specifies
+ the way medical images and meta data like study or patient related
+ data is stored and communicated over different digital medias. Thus,
+ DICOM is a binary protocol and data format.
+ .
+ The openDICOM# Class Library, main part of the openDICOM.NET project,
+ provides an API to DICOM in C# for Mono and the .NET Framework. It is
+ a completely new implementation of DICOM. In contrast to other
+ similar libraries the intention of this implementation is to provide
+ a clean classification with support of unidirectional DICOM data
+ streaming. Another implemented goal is the support of DICOM as
+ XML. This is not standard conform but very use- and powerful within
+ software development, storage and manipulation. Currently, full read
+ support of DICOM output stream and full write support to XML is
+ supposed to be provided. The entire DICOM content can be accessed as
+ sequence or as tree of class instances. Latter is the default
+ representation of DICOM content by the library.
+ .
+ The openDICOM.NET Utils are a collection of console tools for working
+ with the needed data dictionaries in different data formats (binary
+ and textual), query of ACR-NEMA (prior DICOM standard) and DICOM
+ files and transcoding them into image formats like JPEG and XML
+ files. These utils are written in C# for Mono and the .NET Framework
+ and are using the openDICOM# API for processing.
+ .
+ The openDICOM.NET Navigator recapitulates the openDICOM.NET Utils in
+ form of a GTK# GUI. It provides different views with focus on DICOM
+ data sets and visualization. Connectivity to GIMP is also given for
+ single image processing purpose as well as the possibility to run
+ through multi-frame images like a movie.
+ .
+ The openDICOM.NET Beagle Filter Plugin increases the usability of
+ ACR-NEMA and DICOM query within your desktop. It makes DICOM content
+ overall indexable for retrieval. The Beagle search engine relies on
+ Mono/.NET and works in the background of your system, but is able to
+ detect content changes in realtime (depending on your configuration).
+ .
+ All GUI applications focus the popular GNOME desktop, but are 100%
+ platform independent by relying on Mono.
+
+Depends: afni
+Homepage: http://afni.nimh.nih.gov/
+WNPP: 409849
+Responsible: NeuroDebian Team <team@neuro.debian.net>
+License: GPL
+Pkg-URL: http://neuro.debian.net/pkgs/afni.html
+Pkg-Description: environment for processing and displaying functional MRI data
+ AFNI is an environment for processing and displaying functional
+ MRI data. It provides a complete analysis toolchain, including
+ 3D cortical surface models, and mapping of volumetric data (SUMA).
+ In addition to its own format AFNI understands the NIfTI format and is
+ therefore easily usable in combination with FSL and Freesurfer.
+Published-Title: AFNI: Software for analysis and visualization of functional magnetic resonance neuroimages
+Published-Authors: Robert W. Cox
+Published-In: Computers and Biomedical Research, 29:162-173
+Published-Year: 1996
+Published-URL: http://afni.nimh.nih.gov/pub/dist/doc/papers/afni_paper1.pdf
+
+Depends: blox
+Homepage: http://sourceforge.net/projects/blox/
+License: GPL
+Pkg-Description: medical imaging and visualization program
+ The purpose of the project is to develop a quantitative medical
+ imaging and visualization program for use on brain MR, DTI and MRS
+ data. It is a joint project of the Kennedy Krieger Institute and the
+ Johns Hopkins University, Psychiatric Neuroimaging Lab
+ (http://pni.med.jhu.edu/methods/morph.htm).
+
+Depends: conquest-dicom-server
+Homepage: http://www.xs4all.nl/~ingenium/dicom.html
+License: Public domain
+Pkg-Description: full featured DICOM server
+ A full featured DICOM server that has been developed based on and
+ heavily extending the public domain UCDMC DICOM code.
+ Some possible applications of the Conquest DICOM software are:
+  * DICOM training and testing
+  * Demonstration and research image archives
+  * Image format conversion from a scanner with DICOM network access
+  * DICOM image viewing and slide making
+  * DICOM image selection, (limited) editing, and splitting and merging of series
+  * Advanced automatic image forwarding and (de)compression
+  * DICOM caching and archive merging 
+
+Depends: ecg2png
+X-Homepage-old: http://www.cardiothink.com/downloads
+Homepage: http://www.freshports.org/graphics/ecg2png/
+License: GPL
+Pkg-Description: convert scanned electrocardiograms into PNG format
+ This program is designed to convert scanned 12-lead
+ electrocardiograms into PNG format and a web-friendly image size. It
+ assumes that the electrocardiogram (ECG) is printed with a black line
+ on white paper with a red grid.
+ .
+ The problems this program is designed to solve are (1) an ECG scanned
+ at relatively high resolution (300 to 600 dots per inch) imposes a
+ substantial load on the web browser because it contains about 6
+ million pixels which may require 18 to 24 MB of RAM to store for
+ display. Also, (2) typical scanners convert a clean paper ECG into a
+ multitude of colors, include green and blue. The resulting file
+ cannot be compressed efficiently because it does not contain as much
+ redundancy, and thus takes more time to transmit over low-speed
+ network connections.
+Remark: Homepage vanished
+ The homepage of this project that used to be at
+ http://www.cardiothink.com/downloads/ecg2png/ vanished but the source
+ can be downloaded fro instance from
+ http://www.freshports.org/graphics/ecg2png/ .
+
+Depends: kradview
+Homepage: http://www.orcero.org/irbis/kradview/
+License: GPLv3
+Vcs-Svn: svn://svn.debian.org/svn/debian-med/trunk/packages/kradview/trunk
+Responsible: Andreas Tille <tille@debian.org>
+Pkg-Description: the free DICOM viewer for Linux
+ Kradview is a GPLed viewer of images obtained for some different
+ sources: X-ray, NMR and DICOM-compatible imaging devices that runs on
+ free operating systems. Its aim is a easy to use DICOM viewer with
+ instant rendering of images, no matter the size and the zoom of the
+ DICOM image. It covers the "let's see the the X-ray image" need of
+ the medical professional.
+ .
+ Kradview as been developed in C and C++ using KDE libraries. The
+ parsing, rendering, and processing routines has been developed in C,
+ and the graphical interface has been developed in C++ and includes
+ the former routines with "extern C" for fast use.
+
+Depends: opensourcepacs
+Homepage: http://www.mii.ucla.edu/index.php/MainSite:OpenSourcePacsHome
+License: GPL
+WNPP: 509113
+Responsible: Mathieu Malaterre <mathieu.malaterre@gmail.com>
+Pkg-Description: medical image referral, archiving, routing and viewing system
+ OpenSourcePACS is a free, open source image referral, archiving,
+ routing and viewing system. It adds functionality beyond conventional
+ PACS by integrating wet read functions, implemented through DICOM
+ Presentation State and Structured Reporting standards.
+ .
+ In its first release, OpenSourcePACS delivers a complete wet read
+ system, enabling an imaging clinic or hospital to offer its services
+ over the web to physicians within or outside the institution. In
+ future releases, we hope to incorporate more RIS (dictation,
+ transcription, and reporting) functionality.
+ .
+ OpenSourcePACS is a product of the UCLA Medical Imaging Informatics
+ group (http://www.mii.ucla.edu/).
+
+Suggests: visit
+Homepage: http://www.llnl.gov/visit/
+WNPP: 395573
+License: 3-clause BSD license with additional disclaimers
+Pkg-Description: visualization and graphical analysis tool for viewing scientific data
+ VisIt is a free interactive parallel visualization and graphical
+ analysis tool for viewing scientific data.  Users can quickly
+ generate visualizations from their data, animate them through time,
+ manipulate them, and save the resulting images for presentations.
+ VisIt contains a rich set of visualization features so that you can
+ view your data in a variety of ways.  It can be used to visualize
+ scalar and vector fields defined on two- and three-dimensional (2D
+ and 3D) structured and unstructured meshes.
+ .
+ VisIt was designed to handle very large data set sizes in the terascale
+ range and yet can also handle small data sets in the kilobyte range.
+
+Depends: mni-autoreg
+Homepage: http://www.bic.mni.mcgill.ca/software/mni_autoreg/
+License: no-free, but GPLed parts
+Responsible: NeuroDebian Team <team@neuro.debian.net>
+Pkg-URL: http://apsy.gse.uni-magdeburg.de/debian/pool/contrib/m/mni-autoreg-model/
+Pkg-Description: MNI average brain (305 MRI) stereotaxic registration model
+ This package provides a version of the MNI Average Brain (an average of 305
+ T1-weighted MRI scans, linearly transformed to Talairach space) specially
+ adapted for use with the MNI Linear Registration Package.
+ .
+  * average_305.mnc - a version of the average MRI that covers the whole brain
+    (unlike the original Talairach atlas), sampled with 1mm cubic voxels
+  * average_305_mask.mnc - a mask of the brain in average_305.mnc
+  * average_305_headmask.mnc - another mask, required for nonlinear mode
+Remark: There was some previous work on this software which is stalled currently
+ Michael Hanke agreed to take over his stuff from mentors
+ http://mentors.debian.net/cgi-bin/sponsor-pkglist?action=details;package=mni-autoreg
+ and
+ http://mentors.debian.net/cgi-bin/sponsor-pkglist?action=details;package=mni-autoreg-model
+ to Debian Med svn and start group maintenance.
+
+Depends: mni-n3
+Homepage: http://www.bic.mni.mcgill.ca/software/N3/
+License: BSDish
+Responsible: NeuroDebian Team <team@neuro.debian.net>
+Pkg-URL: http://mentors.debian.net/debian/pool/main/m/mni-n3/
+Pkg-Description: MNI Non-parametric Non-uniformity Normalization
+ MNI Non-parametric Non-uniformity Normalization (N3). This package provides
+ the 'nu_correct' tool for unsupervised correction of radio frequency (RF)
+ field inhomogenities in MR volumes. Two packages are provided:
+  * mni-n3 - provides 'nu_correct'
+  * libebtks-dev - MNI support library with numerical types and algorithms
+Remark: There was some previous work on this software which is stalled currently
+ Michael Hanke agreed to take over his stuff from mentors
+ http://mentors.debian.net/cgi-bin/sponsor-pkglist?action=details;package=mni-n3
+ to Debian Med svn and start group maintenance.
+
+Depends: brainvisa
+Homepage: http://brainvisa.info/
+License: Free? (CeCill License)
+Pkg-Description: image processing factory for MR images
+ BrainVISA is a software, which embodies an image processing
+ factory. A simple control panel allows the user to trigger some
+ sequences of treatments on series of images. These treatments are
+ performed by calls to command lines provided by different
+ laboratories. These command lines, hence, are the building blocks on
+ which are built the assembly lines of the factory. BrainVISA is
+ distributed with a toolbox of building blocks dedicated to the
+ segmentation of T1-weighted MR images. The product of the main
+ assembly line made up from this toolbox is the following: grey/white
+ classification for Voxel Based Morphometry, Meshes of each hemisphere
+ surface for visualization purpose, Spherical meshes of each
+ hemisphere white matter surface, a graph of the cortical folds, a
+ labeling of the cortical folds according to a nomenclature of the
+ main sulci.
+
+Depends: maris
+Homepage: http://maris.homelinux.org/
+License: GPL
+Pkg-Description: package suite for Radiological Workflow
+ The MARiS Project goal is to realize a package suite for Radiological
+ Workflow using Open Source tools and technologies in according with
+ IHE guidelines. The architecture of the single packages is based on
+ the concept of IHE actor: this is very useful to develop a system
+ that is an ensemble of single pieces that cooperate together using
+ IHE profiles.
+
+Depends: micromanager
+Homepage: http://www.micro-manager.org/
+License: free, but some nonfree parts with NDA
+Responsible: Johan Henriksson <johan.henriksson@ki.se>
+Pkg-URL: http://mahogny.areta.org/temp/debs/
+Pkg-Description: imaging and control of automated microscopes, shutters, cameras etc.
+ µManager is an Open Source software package for imaging and control
+ of automated microscopes. Together with ImageJ, a popular image processing
+ package, μManager provides a comprehensive imaging solution – comparable to
+ commercially available ones.
+ .
+ Unfortunately there is a pile of dirty licenses involved so I'm not sure
+ this is ready for Debian yet.  Some of the code cannot be given out and
+ some drivers require kernel modules to be built. You have to sign NDAs
+ to get access to all the code.
+
+Suggests: mrisim
+Homepage: http://packages.bic.mni.mcgill.ca/tgz/
+License: BSD-like
+Pkg-Description: simulator for magnetic resonance imaging data
+ mrisim is a simple Magnetic Resonance Imaging (MRI) simulation program
+ which produces MINC volumes from a segmented and labelled brain phantom.
+ It allows intrinsic tissue parameters (T1, T2...) and pulse sequence
+ parameters (TR, TE ...) to be specified and then produces simulated
+ images with noise. Currently, no artifacts are implemented.
+
+Depends: fiji
+Homepage: http://pacific.mpi-cbg.de/
+Responsible: Mark Longair <mark-debianlists@longair.net>
+Pkg-URL: http://pacific.mpi-cbg.de/wiki/index.php/Downloads
+Pkg-Description: The Fiji image processing suite (based on ImageJ)
+ Fiji is a project aiming at simplifying:
+  * the installation of ImageJ
+  * the usage of ImageJ
+  * the usage of specific, powerful ImageJ plugins
+  * the development of plugins using ImageJ
+Remark: About packaging status the authors said:
+ See the thread on the Debian Med mailing list at:
+ http://lists.debian.org/debian-med/2009/04/msg00059.html
+  - We've been working to get rid of, or replace, any remaining
+    non-DFSG licensed plugins, but there's at least one left.
+    The bug for tracking this is here:
+      http://pacific.mpi-cbg.de/cgi-bin/bugzilla/show_bug.cgi?id=19
+  - At the moment Fiji depends on sun-java6 rather than openjdk.
+  - The packages are rather large at the moment (about 35MiB).
+    This is mostly due to bundling various components with Fiji
+    that could be satisfied as dependencies in Debian, such as
+    junit, jruby, etc. but I haven't had time to work on
+    separating those out.
+  - Fiji uses a modified version of ImageJA (which again is
+    bundled into the fiji package) rather than depending on the
+    imagej Debian package created by people on this list.
+  - One of the aims of Fiji was to make Benjamin Schmid's
+    Java3D-based 3D viewer plugin work out-of-the-box, since
+    people often had trouble installing it manually.  At the time
+    when I first made these packages there were no java3d
+    packages in Debian, but now that these are in sid we should
+    eventually be able to switch to using those.
+
+Depends: cdmedicpacs
+Homepage: http://cdmedicpacsweb.sourceforge.net/
+License: GPL2
+Pkg-URL: http://sourceforge.net/projects/cdmedicpacsweb/files/
+Pkg-Description: web interface to PACS to access DICOM study images
+ Web based PACS (Picture Archiving and Communication System) to access DICOM
+ studies images, in an easy and quick manner.
+ .
+  * Easy configuration of PACS nodes (AE,IP,Port) , status, statistics
+    of storage form web interface.
+  * Dynamic web page generation from DICOM data +- prospective preparation
+    when system is idle.
+  * Automatic video(mp4/gif) generation from Heart MRI at Patient’s heart
+    bit frame rate and XA at 15 fps.
+  * Still images in jpeg with Window/Level from DICOM header when present
+    or with Histogram algorithm.
+  * Possibility on large Studies of still images to make a single mp4 for
+    Series instead of a bunch of jpeg.  
+  * Easy web deletion of Series/Studies and  auto deletion (Study date/DB
+    insertion) for temporal PACS.
+  * Good DICOM interaction with Diagnostic Modalities and commercial DICOM
+    Viewers/Work Stations.  
+  * Good DICOM interaction with free DICOM Viewers Aeskulap
+
+Depends: stir
+Homepage: http://stir.sourceforge.net/
+License: GPL
+Pkg-Description: Software for Tomographic Image Reconstruction
+ STIR is Open Source software for use in tomographic imaging. Its aim is to 
+ provide a Multi-Platform Object-Oriented framework for all data manipulations 
+ in tomographic imaging. Currently, the emphasis is on (iterative) image 
+ reconstruction in PET, but other application areas and imaging modalities
+ can and might be added.
+ .
+ STIR is the successor of the PARAPET software library which was the result
+ of a (European Union funded) collaboration between 6 different partners,
+ the PARAPET project..
+Remark: Even if this is GPLed software the download requires registration.
+
+Depends: openelectrophy
+Homepage: http://neuralensemble.org/trac/OpenElectrophy
+License: Cecill v2 (GPL-compatible)
+Language: Python
+Responsible: NeuroDebian Team <team@neuro.debian.net>
+WNPP: 556552
+Pkg-URL: http://neuro.debian.net/pkgs/openelectrophy.html
+Published-In: Frontiers in Neuroinformatics, 3:14
+Published-Year: 2009
+Published-DOI: 10.3389/neuro.11.014.2009
+Pkg-Description: data analysis framework for intra- and extra-cellular recordings
+ This package provide a library und GUI for analyzing electrophysiological
+ data. The data handling and storage uses a MySQL-server. The package is written
+ in pure Python.
+
+Depends: invesalius
+Homepage: http://svn.softwarepublico.gov.br/trac/invesalius
+License: GPL-2
+X-Screenshot: http://dl.dropbox.com/u/4053278/invesalius_trac/screenshots/invesalius3_promed_0446_bone.png
+WNPP: 584920
+Pkg-URL: http://svn.softwarepublico.gov.br/trac/invesalius/wiki/downloads/3.0-beta-1#GNULinux
+Pkg-Description: 3D medical imaging reconstruction
+ InVesalius generates 3D medical imaging reconstruction based on a
+ sequence of 2D DICOM files acquired with CT or MRI equipments.
+ InVesalius is internationalized (currently available in English,
+ Portuguese, French and Spanish), multi-platform (GNU Linux, Windows
+ and MacOS) and provides several tools:
+  * DICOM-support including:
+     * ACR-NEMA version 1 and 2
+     * DICOM version 3.0 (including various encodings of JPEG -lossless and lossy-, RLE)
+  * Image manipulation facilities (zoom, pan, rotation, brightness/contrast, etc)
+  * Segmentation based on 2D slices
+  * Pre-defined threshold ranges according to tissue of interest
+  * Edition tools (similar to Paint Brush) based on 2D slices
+  * 3D surface creation
+  * 3D surface connectivity tools
+  * 3D surface exportation (including: binary STL, OBJ, VRML, Inventor)
+  * High-quality volume rendering projection
+  * Pre-defined volume rendering presets
+  * Volume rendering crop plane
+  * Picture exportation (including: BMP, TIFF, JPG, PostScript, POV-Ray)
+
+Depends: loci-bio-formats
+Homepage: http://www.loci.wisc.edu/software/bio-formats
+License: GPL
+Enhances: imagej
+Language: Java
+Pkg-Description: a standalone Java library for reading and writing life sciences image file formats
+ Bio-Formats is a standalone Java library for reading and writing life
+ sciences image file formats. It is capable of parsing both pixels and
+ metadata for a large number of formats, as well as writing to several
+ formats.  The software includes a visualisation tool VisBio and it also
+ works with ImageJ.
+ .
+ Currentla Bio-Formats supports 75 formats including the most very
+ frequently used in biological and medical research.
+
+
+Comment: Several related R packages are listed at CRAN:
+         http://cran.r-project.org/web/views/MedicalImaging.html
+
+
+Depends: mricron
+Homepage: http://www.cabiatl.com/mricro/mricron/index.html
+License: BSD
+Language: Pascal
+Responsible: NeuroDebian Team <team@neuro.debian.net>
+WNPP: 579231
+Pkg-URL: http://neuro.debian.net/pkgs/mricron.html
+Pkg-Description: magnetic resonance image conversion, viewing and analysis
+ GUI-based visualization and analysis tool for (functional) magnetic resonance
+ imaging. MRIcron can be used to create 2D or 3D renderings of statistical
+ overlay maps on brain anatomy images. Moreover, it aids drawing anatomical
+ regions-of-interest (ROI), or lesion mapping, as well as basic analysis
+ of functional timeseries (e.g. creating plots of peristimulus signal-change).
+ .
+ This package also provides 'dcm2nii' that supports converting DICOM and PAR/REC
+ images into the NIfTI format.
+Published-Title: Improving lesion-symptom mapping
+Published-Authors: Chris Rorden, Hans-Otto Karnath, Leonardo Bonilha
+Published-In: Journal of Cognitive Neuroscience, 19: 1081-1088
+Published-Year: 2007
+Published-URL: http://www.ncbi.nlm.nih.gov/pubmed/17583985
+
+
+Depends: voxbo
+Registration: http://voxbo.org/usage.html
+
+
+Depends: mrtrix
+Published-Title: Robust determination of the fibre orientation distribution in diffusion MRI: Non-negativity constrained super-resolved spherical deconvolution
+Published-Authors: J-Donald Tournier, Fernando Calamantea, Alan Connelly
+Published-In: NeuroImage, 35: 1459-1472
+Published-Year: 2007
+Published-DOI: 10.1016/j.neuroimage.2007.02.016
+
+
+Depends: ants
+Published-Title: The optimal template effect in hippocampus studies of diseased populations
+Published-Authors: Brian B. Avants, Paul Yushkevich, John Pluta, David Minkoff, Marc Korczykowski, John Detre and James C. Gee
+Published-In: NeuroImage, 49: 2457-2466
+Published-Year: 2010
+Published-DOI: 10.1016/j.neuroimage.2009.09.062
+X-Institution: UCLA Center for Computation Biology
+
+
+Depends: itksnap
+Published-Title: User-guided 3D active contour segmentation of anatomical structures: Significantly improved efficiency and reliability
+Published-Authors: Paul A. Yushkevich, Joseph Piven, Heather Cody Hazlett, Rachel Gimpel Smith, Sean Ho, James C. Gee, and Guido Gerig
+Published-In: Neuroimage, 31: 1116-1128
+Published-Year: 2006
+Published-DOI: 10.1016/j.neuroimage.2006.01.015
+
+
+Depends: connectomeviewer
+Homepage: http://www.connectomics.org/viewer
+License: GPL-3
+Responsible: NeuroDebian Team <team@neuro.debian.net>
+WNPP: 565431
+Registration: http://www.connectomeviewer.org/users/register
+Pkg-Description: visualization and analysis of structural neuroimaging data
+ The ConnectomeViewer application was developed to meet the needs of basic and
+ clinical neuroscientists, as well as complex network scientists, providing an
+ integrative, extensible platform to visualize and analyze Connectomics
+ data. It provides
+ .
+  * Support of the connectome and generic neuroimaging file formats:
+    metadata in XML, networks (NetworkX), surfaces (GIfTI), volumes (NIfTI),
+    fiber tracks (TrackVis)
+  * Interactive data manipulation and scripting capabilities with Python
+  * Integration of the neuroanatomy knowledge-base ConnectomeWiki
+  * Storage and retrieval of datasets from the ConnectomeDatabase
+Published-Title: Mapping the Structural Core of Human Cerebral Cortex
+Published-Authors: Patric Hagmann, Leila Cammoun, Xavier Gigandet, Reto Meuli, Christopher J. Honey, Van J. Wedeen, Olaf Sporns
+Published-In: PLoS Biology 6: e159
+Published-Year: 2008
+Published-DOI: 10.1371/journal.pbio.0060159
+
+Depends: sigviewer
+License: GPL
+Responsible: NeuroDebian Team <team@neuro.debian.net>
+WNPP: 585535
+Homepage: http://sigviewer.sourceforge.net
+Vcs-Git: git://git.debian.org/pkg-exppsy/sigviewer.git
+Vcs-Browser: http://git.debian.org/?p=pkg-exppsy/sigviewer.git;a=summary
+Pkg-Description: GUI viewer for biosignals such as EEG, EMG, and ECG
+ SigViewer is a viewing and scoring software for biomedical signal
+ data.  It relies on biosig4c++ library which supports a number of
+ data formats (including EDF, BDF, GDF, BrainVision, BCI2000, CFWB,
+ HL7aECG, SCP_ECG (EN1064), MFER, ACQ, CNT(Neuroscan), DEMG, EGI,
+ EEG1100, FAMOS, SigmaPLpro, TMS32). The complete list of supported
+ file formats is available at
+ http://hci.tugraz.at/schloegl/biosig/TESTED .
+
+
+Depends: mni-icbm152-nlin-2009
+Homepage: http://www.bic.mni.mcgill.ca/ServicesAtlases/ICBM152NLin2009
+License: custom, DFSG-compliant
+Responsible: NeuroDebian Team <team@neuro.debian.net>
+Pkg-Description: MNI stereotaxic space human brain template
+ This is an unbiased standard magnetic resonance imaging template volume for
+ the normal human population. It has been created by the Montreal Neurological
+ Institute (MNI) using anatomical data from the International Consortium for
+ Brain Mapping (ICBM).
+ .
+ The package provides a 1x1x1 mm and 0.5x0.5x0.5 mm resolution templates
+ (hemissphere-symetric and asymetric non-linearily co-registered versions),
+ some including T1w, T2w, PDw modalities, T2 relaxometry, and tissue probability
+ maps. In addition, it contains a lobe atlas, and masks for brain, eyes and
+ face.
+Published-Authors: V.S. Fonov, A.C. Evans, R.C. McKinstry, C.R. Almli and D.L. Collins
+Published-Title: Unbiased nonlinear average age-appropriate brain templates from birth to adulthood.
+Published-In: NeuroImage, 47, Supplement 1: 102
+Published-Year: 2009
+Remark: This package is waiting for the Debian data package archive to become available.
+
+
+Depends: mni-colin27-nifti
+Homepage: http://packages.bic.mni.mcgill.ca/tgz/
+License: custom, DFSG-compliant
+Responsible: NeuroDebian Team <team@neuro.debian.net>
+Pkg-URL: http://neuro.debian.net/pkgs/mni-colin27-nifti.html
+Pkg-Description: Talairach stereotaxic space template
+ This template MRI volume was created from 27 T1-weighted MRI scans of a
+ single individual that have been transformed into the Talairach stereotaxic
+ space. The anatomical image is complemented by a brain and a head mask.
+ All images are in 1x1x1 mm resolution.
+ .
+ This package provides the template in NIfTI format.
+Published-Authors: C.J. Holmes, R. Hoge, L. Collins, R. Woods, A.W. Toga, A.C. Evans
+Published-Title: Enhancement of MR images using registration for signal averaging.
+Published-In: J Comput Assist Tomogr, 22: 324-333
+Published-Year: 1998
+Remark: This package is waiting for the Debian data package archive to become available.
+
+Depends: gofigure2
+Homepage: http://gofigure2.sf.net
+License: BSD
+Language: C++
+Vcs-Browser: http://svn.debian.org/wsvn/debian-med/trunk/packages/gofigure2/trunk/?rev=0&sc=0
+Vcs-Svn: svn://svn.debian.org/svn/debian-med/trunk/packages/gofigure2/trunk/
+WNPP: 587051
+Responsible: Mathieu Malaterre <mathieu.malaterre@gmail.com>
+Description: Cross-platform for visualizing, processing and analysing of bioimages
+ GoFigure2 is an open-source, cross-platform application for
+ visualizing, processing and analyzing of multidimensional microscopy
+ data. Users can visualize, segment and track cells through time,
+ detect cell-division and ultimately generate lineages.
+
+
+Depends: mipav
+Homepage: http://mipav.cit.nih.gov/
+License: custom, non-free, closed-source (DFSG-compliant version promised)
+Responsible: NeuroDebian Team <team@neuro.debian.net>
+WNPP: 587645
+Pkg-URL: http://neuro.debian.net/pkgs/mipav.html
+Pkg-Description: quantitative analysis and visualization of medical images
+ The MIPAV (Medical Image Processing, Analysis, and Visualization)
+ application enables quantitative analysis and visualization of
+ medical images of numerous modalities such as PET, MRI, CT, or
+ microscopy.  Using MIPAV's standard user-interface and analysis
+ tools, researchers at remote sites can easily share research data and
+ analyses, thereby enhancing their ability to research, diagnose,
+ monitor, and treat medical disorders.  MIPAV provides an interface
+ for plug-ins and serves as the foundation for other projects
+ (e.g. JIST).
+ .
+ This package provides downloader/installer for non-redistributable
+ closed-source version of MIPAV and a convenience startup wrapper.
+ You will have a choice of reviewing the license and accepting or
+ declining it upon installation.
+Published-Authors: M.J. McAuliffe, F.M Lalonde, D. McGarry, W. Gandler,  K. Csaky, B.L Trus
+Published-Title: Medical Image Processing, Analysis & Visualization In Clinical Research
+Published-In: IEEE Computer-based Medical Systems (CBMS)
+Published-Year: 2001
+
+
+Depends: jist
+Homepage: http://www.nitrc.org/projects/jist/
+License: LGPL
+Responsible: NeuroDebian Team <team@neuro.debian.net>
+WNPP: 587820
+Pkg-URL: http://neuro.debian.net/pkgs/jist.html
+Pkg-Description: Java Image Science Toolkit
+ Java Image Science Toolkit (JIST) provides a native Java-based imaging
+ processing environment similar to the ITK/VTK paradigm. Initially developed as
+ an extension to MIPAV (CIT, NIH, Bethesda, MD), the JIST processing
+ infrastructure provides automated GUI generation for application plug-ins,
+ graphical layout tools, and command line interfaces.
+Published-Authors: B.C. Lucas, J.A. Bogovic, A. Carass, P.-L. Bazin, J.L. Prince, D. Pham, B.A. Landman
+Published-Title: The Java Image Science Toolkit (JIST) for Rapid Prototyping and Publishing of Neuroimaging Software.
+Published-In: Neuroinformatics 8, 5-17
+Published-Year: 2010
+
+
+Depends: openmeeg-tools
+License: CeCILL-B
+Published-Title: OpenMEEG: opensource software for quasistatic bioelectromagnetics
+Published-Authors: Alexandre Gramfort, Théodore Papadopoulo, Emmanuel Olivi, Maureen Clerc
+Published-In: Preprint
+Published-URL: http://hal.archives-ouvertes.fr/inria-00467061/en/
+
+
+Depends: jemris
+License: GPL-2+
+Responsible: NeuroDebian Team <team@neuro.debian.net>
+WNPP: 590469
+Homepage: http://www.jemris.org/
+Pkg-Description: high performance computing MRI simulator
+ JEMRIS, which stands for "Juelich Extensible MRI Simulator", is
+ a general simulator of MRI (Magnetic Resonance Imaging) data.
+ The general process of simulation consists of preparation by choice or
+ implementation of sequence, sample and coil setup and the invocation
+ of the simulation run itself.
+Published-Authors: Tony Stöcker, Kaveh Vahedipour, Daniel Pflugfelder, N. Jon Shah
+Published-Title: High-performance computing MRI simulations
+Published-In: Magnetic Resonance in Medicine
+Published-Year: 2010
+Published-DOI: 10.1002/mrm.22406

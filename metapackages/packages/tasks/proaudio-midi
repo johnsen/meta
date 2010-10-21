@@ -1,0 +1,8 @@
+Task: Proaudio-midi
+Description: Openstudio pro audio MIDI related packages
+ This metapackage will install pro audio MIDI related packages for openstudio.
+
+Depends: rosegarden qtractor a2jmidid jack-keyboard qsynth fluid-soundfont-gm
+#Suggests: muse seq24 non-sequencer lmms
+
+

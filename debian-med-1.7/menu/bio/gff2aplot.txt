@@ -1,0 +1,11 @@
+Pair-wise alignment-plots for genomic sequences in PostScript
+
+Some information about gff2aplot from the Debian Med project.
+
+ A program to visualize the alignment of two genomic sequences together with
+ their annotations. From GFF-format input files it produces PostScript figures
+ for that alignment.
+
+See also: man gff2aplot
+
+Homepage: http://genome.imim.es/software/gfftools/GFF2APLOT.html

@@ -1,0 +1,17 @@
+Some information about MolPhy from the Debian Med project.
+
+Molphy is an extensive set of tools for MOLecular PHYlogenetics.  You can
+get a first overview by the two manpages
+
+   man protml
+   man mollist
+
+For further reading the files in 
+
+   /usr/share/doc/molphy
+
+are suggested.  Moreover you can find several examples in
+
+   /usr/share/doc/molphy/examples/tests/
+
+which contains a makefile to give you an idea how to call the MolPhy tools.

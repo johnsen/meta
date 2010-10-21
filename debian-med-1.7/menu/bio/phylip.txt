@@ -1,0 +1,26 @@
+Some information about Phylip from the Debian Med project.
+
+  A package of programs for inferring phylogenies.
+
+  The PHYLogeny Inference Package is a package of programs for inferring
+  phylogenies (evolutionary trees) from sequences.
+  Methods that are available in the package include parsimony, distance
+  matrix, and likelihood methods, including bootstrapping and consensus
+  trees. Data types that can be handled include molecular sequences, gene
+  frequencies, restriction sites, distance matrices, and 0/1 discrete
+  characters.
+
+If you call phylip in a text console you get some help:
+
+ Usage: /usr/bin/phylip <program>
+   Existing programs are:
+ clique	  dnacomp   dnamlk    dollop	drawtree  kitsch    penny     retree
+ consense  dnadist   dnamove   dolmove	factor	  mix	    protdist  seqboot
+ contml	  dnainvar  dnapars   dolpenny	fitch	  move	    protpars
+ contrast  dnaml     dnapenny  drawgram	gendist   neighbor  restml
+
+which is quite the same information as the Debian manpage of phylip
+contains.
+There is extensive documentation at /usr/share/doc/phylip and some
+examples in the examples dir at this location.
+            

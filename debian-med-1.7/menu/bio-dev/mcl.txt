@@ -1,0 +1,33 @@
+MCL: Markov Cluster algorithm
+
+Some information about mcl from the Debian Med project.
+
+ The MCL package is an implementation of the MCL algorithm, and offers
+ utilities for manipulating sparse matrices (the essential data
+ structure in the MCL algorithm) and conducting cluster experiments.
+ 
+ MCL is currently being used in sciences like biology (protein family
+ detection, genomics), computer sciense (node clustering in
+ Peer-to-Peer networks), and linguistics (text analysis).
+
+ Homepage: http://micans.org/mcl/
+	
+An overview about the various tools are given by the following manpages:
+
+     man mcx
+     man clmimac
+     man clmmate
+     man clmmeet
+     man clmformat
+     man clmdist
+     man clminfo
+     man mcxconvert
+     man mcxassemble
+     man mcxmap
+     man mcxsubs
+     man mcxarray
+     man mcxdeblast
+     man mclblastline
+     man mcl
+     man clmresidue
+     man mclpipeline

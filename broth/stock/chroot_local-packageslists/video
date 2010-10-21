@@ -1,0 +1,35 @@
+# Video packages
+
+# multimedia players
+mplayer-nogui
+vlc
+vlc-plugin-jack
+
+# DV tools
+dvgrab
+kino
+
+#xjadeo
+
+# disabled for now - see chroot hooks for install process
+#cinelerracv
+
+# encoding
+avidemux
+transcode
+mencoder
+
+gjacktransport
+
+# Temp fix - see #665
+luvcview
+xawtv
+xawtv-plugins
+vgrabbj
+
+freej
+
+#processing
+
+libdvdcss2
+

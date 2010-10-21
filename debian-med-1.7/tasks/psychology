@@ -1,0 +1,109 @@
+Task: Psychology
+Description: Debian Med packages for psychology
+ This metapackage contains dependencies for a collection of software
+ which might be helpful for psychological research.
+
+Depends: python-pyepl
+
+Depends: praat
+
+Depends: r-cran-foreign, psignifit
+Why: analysis packages of particular relevance for psych. data
+
+Depends: r-cran-psy
+Remark: r-cran-psy is orphaned upstream.
+ Hint to users of statistical psychological software.  This package
+ seems to be orphaned upstream.  There are several related packages
+ at CRAN for instance.  See the list of prospective packages below
+ and drop the Debian Med team a note if you are interested in one
+ of them.
+ 
+
+Depends: psychopy
+
+Depends: visionegg
+Homepage: http://www.visionegg.org
+License: LGPL
+WNPP: 365856
+Pkg-Description: Python library for 2D/3D visual stimulus generation
+ The Vision Egg is a programming library that uses standard, inexpensive
+ computer graphics cards to produce visual stimuli for vision research
+ experiments.
+
+Depends: miscpsycho
+Homepage: http://cran.r-project.org/web/packages/MiscPsycho
+License: GPL
+Language: R
+Pkg-URL: http://debian.cran.r-project.org/cran2deb/debian-amd64/testing/
+Pkg-Description: Miscellaneous Psychometric Analyses
+ Miscellaneous functions for psychometric problems
+
+Depends: psych
+Homepage: http://cran.r-project.org/web/packages/psych/
+License: GPL2+
+Language: R
+Pkg-URL: http://debian.cran.r-project.org/cran2deb/debian-amd64/testing/
+Pkg-Description: Procedures for Psychological, Psychometric, and Personality Research
+ A number of routines for personality, psychometrics and experimental
+ psychology. Functions are primarily for scale construction using factor
+ analysis, cluster analysis and reliability analysis, although others
+ provide basic descriptive statistics. Functions for simulating
+ particular item and test structures are included. Several functions
+ serve as a useful front end for structural equation modeling. Graphical
+ displays of path diagrams, factor analysis and structural equation
+ models are created using basic graphics. Some of the functions are
+ written to support a book on psychometrics as well as publications in
+ personality research. For more information, see the
+ personality-project.org/r webpage.
+
+Depends: psychometric
+Homepage: http://cran.r-project.org/web/packages/psychometric
+License: GPL2+
+Language: R
+Pkg-URL: http://debian.cran.r-project.org/cran2deb/debian-amd64/testing/
+Pkg-Description: Applied Psychometric Theory
+ Contains functions useful for correlation theory, meta-analysis
+ (validity-generalization), reliability, item analysis, inter-rater
+ reliability, and classical utility
+
+Depends: psychotree
+Homepage: http://cran.r-project.org/web/packages/psychotree/
+License: GPL2
+Language: R
+Pkg-URL: http://debian.cran.r-project.org/cran2deb/debian-amd64/testing/
+Pkg-Description: Recursive Partitioning Based on Psychometric Models
+ Recursive partitioning based on psychometric models, employing the
+ general MOB algorithm (from package party). Currently, only
+ Bradley-Terry trees are implemented.
+
+Depends: psyphy
+Homepage: http://cran.r-project.org/web/packages/psyphy/
+License: GPL
+Language: R
+Pkg-URL: http://debian.cran.r-project.org/cran2deb/debian-amd64/testing/
+Pkg-Description: Functions for analyzing psychophysical data in R
+ An assortment of functions that could be useful in analyzing data from
+ pyschophysical experiments. It includes functions for calculating d'
+ from several different experimental designs, links for m-alternative
+ forced-choice (mafc) data to be used with the binomial family in glm
+ (and possibly other contexts) and self-Start functions for estimating
+ gamma values for CRT screen calibrations.
+
+Comment: Several related R packages are listed at CRAN:
+         http://cran.r-project.org/web/views/Psychometrics.html
+
+Depends: psignifit3
+Homepage: http://psignifit.sourceforge.net/
+License: MIT
+Language: C++, Python
+Responsible: Michael Hanke <michael.hanke@gmail.com>
+WNPP: 580499
+Pkg-Description: fitting and testing hypotheses about psychometric functions
+ This package allows fitting of psychometric functions to datasets while
+ maintaining full control over a large number of parameters. Psignifit performs
+ the calculation of confidence intervals as well as goodness-of-fit tests.
+ .
+ This is the successor of 'psignifit' a commandline-based toolbox. The new
+ version is primarily a python module, but other bindings will be added
+ eventually.
+

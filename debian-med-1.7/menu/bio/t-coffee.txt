@@ -1,0 +1,17 @@
+Multiple Sequence Alignment
+
+Some information about t-coffee from the Debian Med project.
+
+ T-Coffee is a multiple sequence alignment package. Given a set of
+ sequences (Proteins or DNA), T-Coffee generates a multiple sequence
+ alignment. Version 2.00 and higher can mix sequences and structures.
+ 
+ T-Coffee allows the combination of a collection of multiple/pairwise,
+ global or local alignments into a single model. It also allows to
+ estimate the level of consistency of each position within the new
+ alignment with the rest of the alignments. See the pre-print for more
+ information
+
+See also: man t_coffee
+ 
+Homepage: http://igs-server.cnrs-mrs.fr/~cnotred/Projects_home_page/t_coffee_home_page.html

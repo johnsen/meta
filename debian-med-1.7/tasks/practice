@@ -1,0 +1,279 @@
+Task: Practice
+Description: Debian Med packages for practice management
+ This metapackage contains dependencies for a collection of software
+ which might be helpful for practitioners to manage their practice.
+
+Depends: gnumed-client
+
+Depends: gnumed-server
+
+Depends: libchipcard-tools
+Why: Reading German "Gesundheitskarte"
+
+Depends: aeskulap
+
+Suggests: libctapimkt0
+
+Depends: freediams
+
+Depends: r-cran-medadherence
+
+Depends: medintux
+Homepage: http://medintux.org/medintux/en/
+License: CeCILL (free)
+Pkg-Description: Medical practice management system
+ MedinTux is a powerful medical software, multiuser (using MySQL for data storage),
+ easy-to-use, complete, working from the GP to the hospital.
+ .
+ Help wanted: Unfortunately, MedinTux is written in french, closing its use to many
+ countries in the world. Help is wanted to translate
+ .
+  * The GUI (directly in the source code, which will be reverse translated later
+    to french, using Qt Linguist)
+  * The documentation and installation instructions
+ .
+ Any person with real french to english skill is wellcome.
+ Please, contact Gérard Delafond : gerard-at-delafond.org
+
+Depends: mirth
+Homepage: http://www.mirthproject.org/
+License: MPL 1.1
+Pkg-Description: HL7 integration engine
+ "Swiss army knife" HL7 integration engine. Specifically designed for
+ HL7 message integration, Mirth provides the necessary tools for developing,
+ deploying, and monitoring interfaces.
+ .
+ Filtering can be performed on incoming messages using the default message
+ filters that are included with Mirth, or your own custom filtering scripts.
+ Mirth's web interface makes it easy to write new scripts by proving a
+ template and editing field that allows you to validate your script code.
+ Mirth also supports filters written in Java if you require more complex
+ filtering options.
+
+Depends: tinyheb
+Homepage: http://tinyheb.sourceforge.net/
+License: GPL
+Pkg-URL: http://home.arcor.de/thomas.baum/tinyheb/source/
+Pkg-Description: billing system for midwives
+ This billing system enables midwives to exchange data with health
+ insurances in Germany (compliant to §302 SGB V).
+
+Ignore: clearhealth
+Homepage: http://www.clear-health.com/
+License: GPL
+Pkg-Description: medical practice management
+ For larger practices or those with multiple locations ClearHealth
+ Advantage is an enterprise scalable system to meet the most demanding
+ needs.
+ .
+ The ClearHealth medical suite now offers a next generation set of
+ capabilities to practices large and small. Combining best of breed
+ scheduling, patient management, EMR, reporting, document storage,
+ labs, prescriptions and billing it gives you the tools you need to
+ effectively run your practice and keep your focus where it counts, on
+ improving patient care.
+ .
+ With support for a huge variety of payers and clearing houses you
+ have many options in who you can bill electroncally. Paper forms
+ support for the HCFA (CMS 1500) format as well as UB92 support.
+ Scheduling
+ .
+ Practice management begins with scheduling, while not specifically a
+ medical problem as any doctor knows there are several unique aspects
+ of medical scheduling that can make life miserable for the front end
+ staff. ClearHealth scheduling was built from the ground up in close
+ consultation with medical professionals to ensure that it meets those
+ special needs. Being extremely flexible you can schedule based on
+ providers, rooms, or equipment across facilities and regions.
+Comment: I do not really remember why this is set to "Ignore" - my
+ only guess is that it once was GPL and now the homepage quoted above
+ seems to provide some proprietary software.  Some investigation might
+ be needed (at).
+ .
+ The guessing above is manifested by the fact that the source code
+ repository of clearhealth which was linked from http://www.op-en.org/
+ vanished.
+
+Depends: mirrormed
+Homepage: http://www.mirrormed.org/
+License: GPL
+Pkg-Description: EHR and practice management system
+ MirrorMed is a free and open source EHR and practice management
+ system written in PHP. MirrorMed is a web-based application that is
+ capable of running a healthcare practice. MirrorMed shares code with
+ FreeMED, and OpenEMR. MirrorMed is primarily sponsored by SynSeer.
+
+Depends: elexis
+Homepage: http://sourceforge.net/projects/elexis
+License: Eclipse Public License
+WNPP: 570433
+Responsible: Niklaus Giger <niklaus.giger@member.fsf.org>
+Language: Java (Eclipse Rich Client Platform)
+Pkg-Description: medical practice managemant system for use in Switzerland
+ An Eclipse RCP program for all aspects of a medical practice:
+ electronic medical record (EMR), laboratory findings etc., as well as
+ accounting, billing (swiss TARMED-System, other systems to be
+ developped) and other daily work.
+
+Depends: freeb
+Homepage: http://freeb.org/
+License: GPL
+Pkg-Description: Medical Bill formating module
+ FreeB is Medical Bill formating module. It is designed to be used with any
+ EHR system that tracks basic demographics, procedure codes and diagnosis
+ codes. An EHR sends the basic billing data to FreeB using a simple XML-based
+ interface (XML-RPC or SOAP as needed). FreeB then handles the bill formating
+ and bill revision. FreeB has standard templates for X12 837, HFCA 1500 (now
+ the NPI modified CMS-1500) and UB-92 series formats. FreeB is designed so that
+ it can send bills to a printer, to a payers web interface, or to a
+ clearinghouse. FreeB also performs bill revision, as you modify the claim
+ data in order to meet the payor requirements, FreeB keeps track of those
+ changes over time so that you can easily see the progression of the claim
+ over time. The current version of FreeB is written in PHP and uses the Smarty
+ template language for bill templates. FreeB has a web interface that allows
+ users to modify any aspect of a claim, and send groups of claims in different
+ directions.
+ .
+ FreeB 1.0 (Perl) is still used by the OpenEMR project. FreeB 1.0 was rewritten
+ as REMITT which used by the FreeMED project.
+
+Depends: freemed
+Homepage: http://www.freemedsoftware.org/
+License: GPL
+Pkg-URL: http://downloads.sourceforge.net/freemed/freemed_0.8.4-1_all.deb?use_mirror=mesh
+Pkg-Description: Electronic Medical Record and Practice Management system
+ Electronic Medical Record and Practice Management system for medical providers
+ that runs in any web browser in multiple languages. It provides an XML-RPC
+ backend and multiple import and export formats, as well as reporting and other
+ features.
+
+Depends: elementalclinic
+Homepage: http://www.elementalclinic.com/
+License: GPL2+
+Responsible: Hans Dieter Pearcey <hdp@opensourcery.com>
+Pkg-URL: http://svn.opensourcery.com/public/ubuntu/pool/main/e/elementalclinic/
+Pkg-Description: Electronical Medical Health record system for mental health
+ Elemental Clinic is medical records management system for mental health
+ professionals.
+ .
+  * Implement an affordable web-based alternative to paper records keeping
+  * Train and support clinicians to get the most from your EMR
+  * Customize software to fit unique practice needs
+
+Depends: openemr
+Homepage: http://www.oemr.org/
+License: GPL
+Pkg-URL: http://www.openmedsoftware.org/wiki/OpenEMR_3.1_Ubuntu-Debian_Package_Installation
+Pkg-Description: medical practice management
+ OpenEMR is a free medical practice management, electronic medical records, prescription
+ writing, and medical billing application. These programs are also referred to as
+ electronic health records.  It is a free open source replacement for medical applications
+ such as Medical Manager, Health Pro, and Misys. It features support for EDI billing to
+ clearing houses such as MedAvant and ZirMED using ANSI X12. Medical claim and accounts
+ receivable are accomplished through SQL-Ledger, which has been customized. Calendar
+ features include categories for appointment types, colors associated with appointment
+ types, repeating appointments, and the ability to restrict appointments based on type.
+ There are customizable medical encounter forms, support for voice recognition software,
+ and electronic or scanned digital document management for records.
+ .
+ The community is dedicated to guarding OpenEMR's status as a free, open source software
+ solution for medical practices. Its members are comprised of software developers, as well
+ as physicians and those with extensive medical and billing knowledge, all with the common
+ goal of making OpenEMR a viable alternative to its proprietary counterparts.
+ .
+ The OpenEMR community strives to work together to create a high-quality electronic medical
+ record and practice management system. Through open collaboration, the community is molding
+ a stable, yet continuously improving product, thanks to the efforts of developers across
+ the globe, brought together by their tenacity and the connectivity of the Internet.
+
+Depends: clearhealth
+Homepage: http://www.op-en.org/site/clearhealth
+License: GPL
+Pkg-Description: Medical practice management system
+ ClearHealth is a Ppractice Management System to address the big five features: Medical
+ Billing, Medical Accounts Recievable, Scheduling, Access Control, and EMR.
+
+Suggests: openpms
+Homepage: http://sourceforge.net/projects/openpms
+License: GPL
+Pkg-Description: medical billing, scheduling, and account management system
+ HIPAA compliant medical billing, scheduling, and account management system. Integrated
+ with x12 standard electronic transactions, OpenBilling XML standards, and hcfa-1500
+ legacy support. Complete cross platform performance with java 2 standards.
+Remark: Status of this software
+ This project has not issued any release since March 2004 and
+ thus might be considered dead.  There are some chances to cherry pick some code from
+ SourceForge repository.
+
+Suggests: resmedicinae
+Homepage: http://resmedicinae.sourceforge.net/
+License: GPL:
+Pkg-Description: comprising software solution for use in medicine
+ Res Medicinae is to become a comprising software solution for use in Medicine which combines
+ intuitive ease of use with great flexibility, reached through the usage of CYBOP technology.
+ It wants to adhere to common standards for medical software, wherever useful, and will thus
+ be open to other systems. Using the CYBOL language, users are enabled to, themselves, modify
+ applications.
+ .
+ Res Medicinae is the attempt to overcome high pricing in the realm of Medical Information
+ Systems and to provide users with a free, stable, secure, platform-independent, extensive
+ system.
+ .
+ This project does not provide a complete solution for medical practice. It will take another
+ couple of years before being so far.
+
+Suggests: sqlclinic
+Homepage: http://www.sqlclinic.net/
+License: GPL
+Pkg-Description: intranet solution for Saint Vincents Catholic Medical Centers of New York
+ This is a complete clinical and administrative application for providers of psychiatric
+ housing, although the software is designed to accommodate an entire Community Mental Health
+ Care Center (CMHC) or private practitioners (both clinical social workers and psychiatrists)
+ working in behavioral health. Technical support is free via mailing lists. Support contracts
+ are available from Saint Vincent Catholic Medical Centers of New York.
+ .
+ Features:
+  * Administrative Tools
+  * Built In DBA Utilities
+  * Complete Clinical Chart
+  * Email Alerts, Reports and Reminders
+  * Intake and Placement Tracking
+  * Integrated DSM IV
+  * Quality Assurance Instruments
+  * Purchase Orders
+  * Unit (Shift) Logs
+  * Work Orders
+
+X-Comment: torch seems to be dead (last release in 2004)
+ Sourceforge page: http://sourceforge.net/projects/op-torch/
+
+X-Comment: Circare project seems to be dead
+
+X-Comment: OIO project seems to be dead
+ Homepage: http://www.txoutcome.org/
+
+X-Comment: Open PM ToolWorks seems to be dead
+
+Suggests: openrep
+Homepage: http://www.homeopathyonline.org/about_OpenRep.html
+License: GPLv3 or later
+WNPP: 533044
+Responsible: Y Giridhar Appaji Nag <appaji@debian.org>
+Pkg-Description: software for homeopathic repertorization and viewing materia medicae
+ OpenRep is a Java desktop application designed to serve as a homeopathic
+ software with capabilities to open and use multiple repertories, perform
+ repertorizations and view its results, manage patients and view different
+ materia medicae. It is also designed to save and load data in human readable
+ xml format.
+Remark: scientific use?
+ Please read the thread about homeopathic software on the Debian Med mailing
+ list starting at http://lists.debian.org/debian-med/2009/06/msg00028.html .
+
+Depends: proteus
+Homepage: http://proteme.org/
+License: EPL
+Pkg-Description: clinical decision support guidelines model
+ Proteus is a software technology that allows creating clinical executable
+ decision support guidelines with little effort. Once a guideline for a
+ condition has been created, it can be executed to provide stepwise advice
+ for any patient having that condition.

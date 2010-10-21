@@ -1,0 +1,12 @@
+Task: Statistics
+Description: Debian Med statistics
+ This metapackage will install packages which are helpful to do statistics
+ with a special focus on tasks in medical care.
+
+Depends: r-cran-qvalue
+
+Depends: r-cran-randomforest
+
+Suggests: science-statistics
+Why: This more or less includes all statistics relevant packages which might be
+ a bit to much for medical purposes - so it is only suggested.

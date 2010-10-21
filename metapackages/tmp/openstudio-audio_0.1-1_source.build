@@ -1,0 +1,64 @@
+ dpkg-buildpackage -rfakeroot -d -us -uc -S
+dpkg-buildpackage: export CPPFLAGS from dpkg-buildflags (origin: vendor): 
+dpkg-buildpackage: export CFLAGS from dpkg-buildflags (origin: vendor): -g -O2
+dpkg-buildpackage: export CXXFLAGS from dpkg-buildflags (origin: vendor): -g -O2
+dpkg-buildpackage: export FFLAGS from dpkg-buildflags (origin: vendor): -g -O2
+dpkg-buildpackage: export LDFLAGS from dpkg-buildflags (origin: vendor): 
+dpkg-buildpackage: source package openstudio-audio
+dpkg-buildpackage: source version 0.1-1
+dpkg-buildpackage: source changed by Rosea Grammostola <rosea.grammostola@gmail.com>
+ fakeroot debian/rules clean
+dh clean
+   dh_testdir
+   debian/rules override_dh_auto_clean
+make[1]: Entering directory `/home/d/live_dev/metapackages/openstudio-audio-0.1-1'
+# call make clean instead of distclean
+make clean
+make[2]: Entering directory `/home/d/live_dev/metapackages/openstudio-audio-0.1-1'
+rm -rf tmp
+rm -f tasks/*~
+rm -rf tasksel
+rm -f packages.txt by_vote packages-sorted.txt
+rm -f debian/*-config.postinst debian/*-config.preinst
+make[2]: Leaving directory `/home/d/live_dev/metapackages/openstudio-audio-0.1-1'
+make[1]: Leaving directory `/home/d/live_dev/metapackages/openstudio-audio-0.1-1'
+   debian/rules override_dh_clean
+make[1]: Entering directory `/home/d/live_dev/metapackages/openstudio-audio-0.1-1'
+# hmmm, that would kill debian/control - so don't do this!
+# /usr/bin/make -f /usr/share/blends-dev/Makefile clean
+# Clear apt-get cache
+rm -rf tmp
+# Remove backup files from source tarball
+rm -f tasks/*~
+# Remove auto generated post{inst,rm} scripts
+rm -f debian/openstudio-*.postinst debian/openstudio-*.prerm
+# remove auto generated files for config package
+rm -f debian/openstudio-config.templates debian/openstudio-config.config \
+	      debian/openstudio-config.install   debian/openstudio-config.links  \
+	      debian/90openstudio-config
+# remove auto generated debconf template translations
+rm -rf debian/po
+# remove possibly remaining debhelper files
+rm -f debian/openstudio-*.debhelper.log
+dh_clean
+make[1]: Leaving directory `/home/d/live_dev/metapackages/openstudio-audio-0.1-1'
+ dpkg-source -b openstudio-audio-0.1-1
+dpkg-source: warning: no source format specified in debian/source/format, see dpkg-source(1)
+dpkg-source: warning: source directory 'openstudio-audio-0.1-1' is not <sourcepackage>-<upstreamversion> 'openstudio-audio-0.1'
+dpkg-source: info: using source format `1.0'
+dpkg-source: info: building openstudio-audio in openstudio-audio_0.1-1.tar.gz
+dpkg-source: info: building openstudio-audio in openstudio-audio_0.1-1.dsc
+ dpkg-genchanges -S >../openstudio-audio_0.1-1_source.changes
+dpkg-genchanges: including full source code in upload
+dpkg-buildpackage: source only upload: Debian-native package
+Now running lintian...
+W: openstudio-audio source: out-of-date-standards-version 3.8.0 (current is 3.9.1)
+E: openstudio-audio source: version-substvar-for-external-package openstudio-audio -> openstudio-tasks
+W: openstudio-audio source: native-package-with-dash-version
+Finished running lintian.
+Now signing changes and any dsc files...
+ signfile openstudio-audio_0.1-1.dsc Rosea Grammostola <rosea.grammostola@gmail.com>
+
+ signfile openstudio-audio_0.1-1_source.changes Rosea Grammostola <rosea.grammostola@gmail.com>
+
+Successfully signed dsc and changes files

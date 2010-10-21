@@ -1,0 +1,7 @@
+#!/bin/sh -e
+
+# if apt-get hook of med-common package remains it might lead to
+# creating user menus twice.  So get rid of this not needed file.
+if [ -e /etc/apt/apt.conf.d/90med-common ] ; then
+    rm /etc/apt/apt.conf.d/90med-common
+fi

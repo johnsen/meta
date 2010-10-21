@@ -1,0 +1,22 @@
+Task: Laboratory
+Description: Debian Med suggestions for medical laboratories
+ Currently Debian Med does not yet contain any software which is
+ specifically intended to run a medical laboratory.  We just provide a
+ list of Free Software that might be used and which might be included
+ into Debian at a later point in time provided somebody is willing to
+ take over the packaging work.
+
+Depends: openelis
+Homepage: http://openelis.uhl.uiowa.edu/
+License: UIRF Open-source Based Public Software License 
+Pkg-Description: Enterprise Laboratory Information System
+ OpenELIS is a robust Enterprise Laboratory Information System built around an
+ extensible and scalable framework. OpenELIS is designed and developed through
+ the collaborative efforts of Public Health Laboratories to accommodate
+ business processes that are common to all public health laboratories;
+ encompassing clinical, environmental, newborn screening, and animal testing.
+ .
+ The goal of the OpenELIS team is to develop a state of the art system that
+ is economically sustainable by reducing both initial investment and ongoing
+ maintenance costs. By using an open source approach, we ensure that the project
+ will continue to evolve and meet the changing needs of the community.

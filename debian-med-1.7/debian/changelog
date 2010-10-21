@@ -1,0 +1,416 @@
+debian-med (1.7) unstable; urgency=low
+
+  * Rebuild against blends-dev >= 0.6.14 to prevent
+    accessint internet at package build time
+  * Standards-Version: 3.9.1 (no changes needed)
+  * tasks/imaging-dev: Revcent version of vtk to make
+    sure vtk migration will be not blocked by Debian Med
+  * config/control:
+    - Do not mention mention med-cms any more because the package
+      will not be created any more. The only dependency in Debian
+      zope-zms was removed.
+    - Add med-psychology and med-statistics
+
+ -- Andreas Tille <tille@debian.org>  Wed, 04 Aug 2010 12:43:09 +0200
+
+debian-med (1.6) unstable; urgency=low
+
+  * Rebuild against blends-dev >= 0.6.12.  This results in
+    using a prerm script instead of postrm which ensures that
+    blends-common is installed while this script is running
+  * Standards-Version: 3.8.4 (no changes needed)
+  * debian/oldchangelogs: removed old stuff
+
+ -- Andreas Tille <tille@debian.org>  Thu, 18 Mar 2010 10:07:26 +0100
+
+debian-med (1.5) unstable; urgency=low
+
+  * Depend from blends-common >= 0.6.9 and explain in
+    NEWS.Debian that no attempt to take over any CDD
+    related configuration
+    Closes: #562553
+
+ -- Andreas Tille <tille@debian.org>  Mon, 18 Jan 2010 22:22:05 +0100
+
+debian-med (1.4) unstable; urgency=low
+
+  * Several new dependencies in Metapackages
+  * Depend from blends-common >= 0.6.8
+    Closes: #562553
+  * No need to Build-Depends from debhelper because blends-dev
+    does depend from it
+  * Several new package 
+
+ -- Andreas Tille <tille@debian.org>  Mon, 28 Dec 2009 08:58:27 +0100
+
+debian-med (1.3) unstable; urgency=low
+
+  * tasks/physics: Enhanced information about biosig
+  * tasks/*: Several changes and additional information for a
+    lot of prospective packages; a certain amount of packages
+    is now available as official packages
+  * debian/control.stub:
+    - Fixed Vcs-Svn (missing svn/)
+  * Replaced some remaining "cdd" strings in the docs by "blends"
+  * Standards-Version: 3.8.3 (no changes needed)
+  * config/control: Depends: blends-common (>= 0.6.6)
+    Closes: #542656
+
+ -- Andreas Tille <tille@debian.org>  Fri, 21 Aug 2009 14:09:18 +0200
+
+debian-med (1.2) unstable; urgency=low
+
+  [ Andreas Tille ]
+  * Bumped policy to 3.8.1 and make use of the new feature that
+    debian/control allows comment lines starting with # with no
+    preceding whitespace. [Policy paragraph 5.2]
+  * debhelper (>=7)
+  * Added med-statistics
+  * tasks/bio: Replaced biococoa.app by sequenceconverter.app
+  * tasks/bio-dev: Added libbiococoa-dev
+  * Build-Depends: blends-dev (0.6.3) to make sure no useless
+    metapackages with no dependency available in Debian will be
+    created
+  * tasks.ctl: Added missing tasks; tasks data, his, laboratory
+    which do not yet feature an existing depenency in Debian
+    were set to priority-none.
+
+  [ Michael Hanke ]
+  * Added ODIN to imaging task.
+  * Added VIA to the imaging task.
+  * Updated LIPSIA item to ppoint to the packaging VCS and note ITP.
+
+ -- Andreas Tille <tille@debian.org>  Mon, 30 Mar 2009 07:56:56 +0200
+
+debian-med (1.1) experimental; urgency=low
+
+  * Make use of blends-dev instead of cdd-dev
+  * Versioned build depends from blends-dev >= 0.6.1 because this
+    also supports dist experimental
+  * Adapted Vcs fields to new location (cdd -> blends)
+  * tasks/practice: Depends: aeskulap
+  * Added link to tasks page in long description of med-tasks
+    (thanks to James Busser <jbusser@interchange.ubc.ca> for the
+    hint)
+  * tasks/*: several updates of newly uploaded packages and
+    prospective packages
+
+ -- Andreas Tille <tille@debian.org>  Tue, 06 Jan 2009 10:01:49 +0100
+
+debian-med (1.0) unstable; urgency=low
+
+  * tasks/bio-dev
+    - Added libgenome
+    - Added libmems as prospective package
+    - Moved bioconductor from bio to bio-dev
+    - Added prospective projects where Steffen Möller started some
+      packaging work
+    - libqsearch -> libqsearch-dev
+  * tasks/bio
+    - Added prospective projects where Steffen Möller started some
+      packaging work
+    - Suggests: texlive-latex-extra (because of TeXShade)
+    - Removed line breaks in Dependencies, because cdd-gen-control
+      is not compliant to RFC 822 and requires '\' at the end of
+      lines to continue parsing the tasks files.  To simply circumvent
+      this problem the relevant lines were concatenated to not miss
+      the dependencies in the resulting control file
+    - Renamed dialign-t to dialign-tx
+  * tasks/tools
+    - Added mssstest
+    - Added wgerman-medical, hunspell-de-med (remark: these are not
+      really tools but we have no better section, typesetting might be
+      an option but does also fit not really good)
+  * tasks/imaging
+    - Added prospective packages from static page
+  * tasks/imaging-dev
+    - Removed libgtkimreg
+    - Added libvtk5
+    - Added prospective packages from static page
+    - libminc0-dev | libminc-dev -> libminc-dev
+    - insighttoolkit -> insighttoolkit3
+  * tasks/physics
+    - octave | octave2.1 -> octave3.0
+  * debian/control.stub: XS-DM-Upload-Allowed -> DM-Upload-Allowed
+  * Standards-Version: 3.8.0 (no changes needed)
+  * Fixed typing of Debian Med: sed -i 's/Debian-Med/Debian Med/' *
+
+ -- Andreas Tille <tille@debian.org>  Mon, 30 Jun 2008 09:59:37 +0200
+
+debian-med (0.17) unstable; urgency=low
+
+  * tasks/bio:
+    - Added emboss-kaptain as prospective package
+    - Added agdbnet as prospective package
+    - Added autodock, exonerate
+    - Suggests biococoa.app: Only suggests because status is
+      questionable
+    - Removed bugsx which is not really biology related
+    - Added gamgi as prospective package
+    - Moved unoffical and prospective packages from static
+      web pages to tasks file
+  * tasks/bio-dev:
+    - Added aceperl as prospective package
+    - Added libgff-perl as prospective package
+    - Added Recommends: libqsearch
+  * tasks/imaging
+    - Removed paul
+    - pngquant: Recommends -> Suggests
+    - Added gdmc as prospective package
+    - Added dicom4j as prospective package
+  * tasks/epi: New meta package: med-epi for epidemiology
+    research
+  * tasks/tools:
+    - Moved NetEpi prospective package to epi where it really
+      belongs to
+    - Added pondus
+  * Removed remark about recommended and suggested packages
+    from description or meta packages
+  * Build-Depends-Indep: cdd-dev (>= 0.5.0) which ensures that the
+    source tarball is builded properly and no network access is neede
+    to build the package
+    Closes: #470271
+
+ -- Andreas Tille <tille@debian.org>  Wed, 20 Feb 2008 13:31:25 +0100
+
+debian-med (0.16) unstable; urgency=low
+
+  * New upstream version
+  * Standards-Version: 3.7.3 (no changes needed)
+  * Added Vcs-Browser / Vcs-Svn tags
+  * tasks/imaging:
+    - Added Dr. Jekyll, libvista2 and dcm4che as prospective package
+    - Fixed minc and nifti library depends
+    - odin, gwyddion and many more as prospective package
+    - Removed libfslio1, libniftiio0 which are only available in Etch
+    - Suggests: Imview
+  * tasks/imaging-dev:
+    - libvista2-dev as prospective package
+    - Fixed minc-dev and nifti-dev library depends
+    - Removed libniftiio0-dev which is only available in Etch
+  * tasks/bio
+    - Added ballview and mustang as prospective packages
+    - dialign-t is now official package - removed long
+      description
+    - Added glam2 as prospective package
+    - textopo is now in texlilve-science, decreased this from Recommends
+      to Suggests to not spoil systems with whole texlive installation
+  * tasks/bio-dev: Added BioClipse as prospective package
+    Pkg-Description
+  * tasks/practice:
+    - Added Mirth as prospective package
+    - Fixed libchipcard depends
+  * Debian-Med packaging policy:
+    - Maintainer: Debian-Med Packaging Team
+      <debian-med-packaging@lists.alioth.debian.org>
+    - XS-DM-Upload-Allowed: yes
+    - Uploaders: Andreas Tille <tille@debian.org>
+    - Vcs-Browser, Vcs-Svn
+  * Increased mozilla-biofox from Suggests to Recommends. Installation of
+    firefox as Dependency of this package should be no real problem.
+  * Increased bugsx from Suggests to Recommends.  It is automatically decreased
+    to Suggests by cdd-gen-control so there is no need to decrease it in the
+    tasks file.
+  * Make tasks files compliant with rfc822 to be able to use python-debian
+    tools successfully.  That means basically to have exactly one
+    Depends/Recommends/Suggest per paragraph so the fix was to insert some
+    newlines and remove '\' in end of lines
+  * tasks/tools: Fixed description
+  * tasks/practice: tinyheb as prospective package
+  * Increased Build-Dep version cdd-dev (>= 0.4.7) because
+    0.4.5 and 0.4.6 are broken
+  * config/control: med-config Depends cdd-common (>= 0.4.7)
+
+ -- Andreas Tille <tille@debian.org>  Tue, 19 Feb 2008 17:07:36 +0100
+
+debian-med (0.15) unstable; urgency=low
+
+  * med-imaging-dev: Added
+    Depends: libinsighttoolkit-dev
+    Suggests: insighttoolkit-examples
+  * med-imaging(-dev): Depend from libniftiio1(-dev) instead of
+    libniftiio0(-dev)
+    Closes: #448903
+  * Increased Build-Dep version cdd-dev (>= 0.4.4)
+  * Standards-Version: 3.7.3 (no changes needed)
+  * Added several prospective packages in tasks
+
+ -- Andreas Tille <tille@debian.org>  Sun, 07 Oct 2007 18:25:56 +0200
+
+debian-med (0.14) unstable; urgency=low
+
+  * Builded using new cdd-dev 0.4
+    - med-common is now renamed to med-config
+    - additional package med-tasks
+  * med-bio: added emboss
+  * med-imaging: amide, dicomnifti, imagej, python-nifti
+                 decreased paul from Recommends to Suggests
+  * med-imaging-dev: cimg-dev
+                 decreased libgtkimreg-dev from Recommends to Suggests
+  * med-practice: libchipcard3c1, libchipcard3d0
+  
+ -- Andreas Tille <tille@debian.org>  Sat, 11 Aug 2007 17:50:29 +0200
+
+debian-med (0.13) unstable; urgency=low
+
+  * Removed entry for gnumed-client-debug because this package does
+    not exist any more.  Removed gnumed-client menu as well because
+    this should be builded automatically from menu entry inside
+    gnumed-client package
+    Closes: #429217
+  * Added several packages to med-bio and reordering the task to
+    specific fields
+  * Imaging: Added dicomnifti
+  * Enhanced long description of med-common
+  * Remove header from po.stub/de.po because cdd-dev will add another
+    one
+
+ -- Andreas Tille <tille@debian.org>  Thu, 28 Jun 2007 16:23:36 +0200
+
+debian-med (0.12) unstable; urgency=low
+
+  * Changed med-practice menu
+    Closes: #385584
+    Use menu entry for gnumed-client-debug that regards #389932.
+    Note: gnumed-client-debug is not in the med-practice dependency
+    list but it is suggested by gnumed-client.  So *if* the package
+    is installed at the box then an additional menu item occures correctly
+    in the Debian-Med menu.  If it is not installed, only gnumed-client
+    is shown in the menu.
+  * med-bio: Added alternative to tree-puzzle as tree-ppuzzle
+  * Drop med-dent because odontolinux was removed from Debian
+  * med-bio: Added poa
+             Moved vrom Suggests to Depends: seaview (now really free)
+             Suggests: wise-doc
+  * med-imaging: Depends: libfslio0, libniftiio0, nifti-bin
+                 Suggests: 
+  * med-imaging-dev: Depends: libfslio0-dev, libniftiio0-dev
+                     Suggests: libnifti-doc
+
+ -- Andreas Tille <tille@debian.org>  Thu, 14 Sep 2006 15:28:51 +0200
+
+debian-med (0.11) unstable; urgency=low
+
+  * bugsx to from Depends to Suggets because this package moved to non-free
+    Closes: #383265
+  * Standards-Version: 3.7.2
+    Build-Depends: debhelper
+  * med-bio:
+      Depends: gromacs, dialign, kalign, probcons, wise, amap-align, biosquid
+      Suggests: mozilla-biofox
+  * debian/compat: 5
+  * Uploaders: Debian-Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
+  
+ -- Andreas Tille <tille@debian.org>  Wed, 16 Aug 2006 10:07:41 +0200
+
+debian-med (0.10.1) unstable; urgency=low
+
+  * Make med-common depend from ${misc:Depends}
+    Closes: #331797
+  * Now med-practice really depends from gnumed-client which is now
+    awailable at Debian mirror
+
+ -- Andreas Tille <tille@debian.org>  Wed,  5 Oct 2005 07:55:13 +0200
+
+debian-med (0.10) unstable; urgency=low
+
+  * Rebuilded with cdd-dev 0.3.11 (and increased versioned dependency
+    because 0.3.10 created broken *.dsc file)
+    Closes: #328428
+  * Standards-Version: 3.6.2 (no changes necessary)
+  * Added dependencies:
+    med-bio:     mipe, sim4, perlprimer
+    med-bio-dev: libbio-ruby
+  * Addes meta package: med-practice
+
+ -- Andreas Tille <tille@debian.org>  Sun, 25 Sep 2005 21:14:47 +0200
+
+debian-med (0.9) unstable; urgency=low
+
+  * Removed gnutrion from tools because it was removed from Debian at all
+  * Rebuilded with cdd-dev 0.3.10 version
+  * med-bio: 
+     Depends: muscle, gff2aplot, t-coffee, gff2ps, gdpc
+     Suggests: arb
+  * med-bio-dev
+     Recommends: libvibrant6-dev
+     Why: libmotif-dev conflicts lesstif-dev, so if someone wants to
+          install libmotif-dev it must be possible to deinstall
+	  libvibrant6-dev without beeing forced to deinstall med-bio-dev
+	  as well
+     Depends: python-biopython
+  * med-imaging:
+     paul now Recommends not Depends
+     Depends: dcmtk
+     Recommends: pngquant
+  * med-tools: 
+     Depends: cycle
+     Suggests: cl-pubmed
+               Strong dependency would cost installing a large amount
+	       of Common Lisp tools which in most cases is not worth
+	       the effort
+  * Added user menu entries: bio/gff2aplot.txt, bio/gff2ps.txt,
+    bio/muscle.txt, bio/t-coffee.txt, bio/boxshade.txt,
+    bio-dev/python-biopython.txt, imaging/dcmtk.txt
+  * Added charset to debian/po.stub/de.po
+
+ -- Andreas Tille <tille@debian.org>  Sun, 24 Oct 2004 20:59:03 +0200
+
+debian-med (0.8.9) experimental; urgency=low
+
+  * New upstream version which now uses the features of cdd-dev 0.3.9
+  * Exclude .svn dirs in dist target of debian/rules
+
+ -- Andreas Tille <tille@debian.org>  Fri, 16 Jul 2004 11:33:21 +0200
+
+debian-med (0.8.3) unstable; urgency=high
+
+  * Rebuilded again against cdd-dev 0.3.4 which really closes the
+    mentioned bug.
+  * Urgency set to high because it *really* fixes a grave bug.
+
+ -- Andreas Tille <tille@debian.org>  Thu, 15 Jul 2004 10:59:25 +0200
+
+debian-med (0.8.2) unstable; urgency=high
+
+  * Rebuilded with cdd-dev 0.3.3 which closes a grave bug (which
+    was reassigned to cdd-dev and thus it is not closed in this
+    changelog).
+  * Please make sure that all ${HOME}/.menu/cdd-menu files or
+    ${HOME}/.menu/med-* files are removed - they will not be
+    needed any more.
+
+ -- Andreas Tille <tille@debian.org>  Wed, 14 Jul 2004 21:42:24 +0200
+
+debian-med (0.8.1) unstable; urgency=low
+
+  * Adjust versioned dependency of med-common from cdd-common
+    Closes: #258373
+
+ -- Andreas Tille <tille@debian.org>  Fri,  9 Jul 2004 09:18:49 +0200
+
+debian-med (0.8) unstable; urgency=low
+
+  * Added med-physics, med-pharmacy, med-bio-dev
+  * Overworked menus of meta packages
+
+ -- Andreas Tille <tille@debian.org>  Fri,  4 Jun 2004 14:44:36 +0200
+
+debian-med (0.7) unstable; urgency=low
+
+  * Switched to new version of cdd package (0.3) which has many
+    enhancements (no really important changes to the Debian-Med stuff
+    except that the packages have to be rebuilded with cdd-dev).
+  * New cdd-dev package cares for versioned dependency on med-common
+    Closes: #244903
+
+ -- Andreas Tille <tille@debian.org>  Tue, 20 Apr 2004 11:21:16 +0200
+
+debian-med (0.6) unstable; urgency=medium
+
+  * Took over Debian-Edu method to build metapackages from one
+    common source.
+    The changelogs of the previous single meta package sources
+    can be found in the source package under debian/oldchangelogs.
+
+ -- Andreas Tille <tille@debian.org>  Mon, 22 Mar 2004 19:21:55 +0100

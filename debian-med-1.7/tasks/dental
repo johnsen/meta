@@ -1,0 +1,15 @@
+Task: Dental
+Description: Debian Med packages related to dental practice
+ This metapackage contains dependencies for a collection of software
+ which might be helpful for dentists to manage their practice.
+
+Depends: openmolar
+Homepage: https://launchpad.net/openmolar
+License: GPL-3+
+WNPP: 564285
+Responsible: David Paleino <dapal@debian.org>
+Language: Python
+Pkg-URL: https://launchpad.net/~rowinggolfer/+archive/ppa
+Pkg-Description: dental practice management software
+ More customisable software for dental practices, and ultimately,
+ patients of those practices.

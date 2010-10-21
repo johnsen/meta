@@ -1,0 +1,27 @@
+kdenlive
+
+# This MUST be installed via a hook - read hook's comment 
+#cinelerracv
+
+#codecs and related
+dirac
+mkvtoolnix
+ogmtools
+swftools
+x264
+
+# DVD authoring
+dvdauthor
+dvdstyler
+
+subtitleeditor
+
+# DVD menu 
+videolink
+
+#more video applications 
+
+lives
+
+dasciicam
+

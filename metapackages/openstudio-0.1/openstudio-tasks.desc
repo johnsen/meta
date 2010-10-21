@@ -1,0 +1,21 @@
+Task: openstudio-proaudio
+Section: openstudio
+Description: Openstudio pro audio packages
+ This metapackage will install pro audio packages for openstudio.
+Relevance: 10
+Key: 
+ openstudio-proaudio
+Packages: list
+ qjackctl
+
+Task: openstudio-video
+Section: openstudio
+Description: Openstudio Video packages
+ This metapackage will install Video software for use in 
+ openstudio.
+Relevance: 10
+Key: 
+ openstudio-video
+Packages: list
+ blender
+

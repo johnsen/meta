@@ -1,0 +1,13 @@
+libvibrant6-dev: NCBI libraries for graphic biology applications
+                 (development files)
+
+Some information about libvibrant6-dev from the Debian Med project.
+
+ Vibrant allows you to develop portable (Motif, MS-Windows, Mac-OS) graphic
+ biological applications.
+  
+The Homepage is http://www.ncbi.nlm.nih.gov/
+
+You can get a good overview by reading
+
+       zless /usr/share/doc/libvibrant6-dev/README.gz

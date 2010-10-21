@@ -1,0 +1,23 @@
+r-cran-qtl: GNU R package for genetic marker linkage analysis
+
+Some information about r-cran-qtl from the Debian Med project.
+
+ R/qtl is an extensible, interactive environment for
+ mapping quantitative trait loci (QTLs) in experimental crosses. It is
+ implemented as an add-on-package for the freely available and widely used
+ statistical language/software R (see http://www.r-project.org). The
+ user will benefit from the seamless integration of the QTL mapping
+ software into a general statistical analysis program.
+
+ The current version of R/qtl includes facilities for estimating
+ genetic maps, identifying genotyping errors, and performing single-QTL
+ genome scans and two-QTL, two-dimensional genome scans, by interval
+ mapping (with EM algorithm), Haley-Knott regression, and multiple
+ imputation. All of this may be done in the presence of covariates
+ (such as sex, age or treatment). The fit of higher-order QTL models,
+ with sophisticated techniques for model comparisons and model search,
+ will be incorporated soon.
+
+More information can be found at
+
+   Homepage: http://www.biostat.jhsph.edu/~kbroman/qtl/index.html

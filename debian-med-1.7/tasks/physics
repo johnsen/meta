@@ -1,0 +1,100 @@
+Task: Physics
+Description: Debian Med packages for medical physicists
+ This metapackage contains dependencies for a
+ collection of software and documentation which is useful for
+ medical physicists in radiation oncology, diagnostics imaging
+ and related fields.
+
+Depends: paw++
+Why:     Just depend from the user friendly version because it is easier to
+         povide a menu item
+
+Depends: paw
+Why:     This is for the purists with exactly the same functionality as paw++
+
+Suggests: paw-demos
+
+Depends: octave3.2
+
+Depends: r-base
+X-Comment: removed " | r-base-core" which desturbs tasks page and does not
+           harm to just use the metapackage in the dependency list
+Why:     "r-base" is a metapackage and it is better to have a default
+         alternative -- Dirk Eddelbuettel <edd@debian.org>
+
+Depends: biosig
+Homepage: http://biosig.sf.net
+License: GPL
+WNPP: 251868
+Responsible: NeuroDebian Team <team@neuro.debian.net>
+Pkg-Description: library for biomedical signal processing
+ BioSig is an open source software library for biomedical signal
+ processing, featuring for example the analysis of biosignals such as
+ the electroencephalogram (EEG), electrocorticogram (ECoG),
+ electrocardiogram (ECG), electrooculogram (EOG), electromyogram
+ (EMG), respiration, and so on. Major application areas are:
+ Neuroinformatics, brain-computer interfaces, neurophysiology,
+ psychology, cardiovascular systems and sleep research. The aim of the
+ BioSig project is to foster research in biomedical signal processing
+ by providing open source software tools for many different
+ applications. Generally, many concerns have to be addressed in this
+ scientific field. BioSig handles this by providing solutions for data
+ acquisition, artifact processing, quality control, feature
+ extraction, classification, modeling, data visualization, and so on.
+ .
+ BioSig consists of some (more or less) coherent parts, for more
+ details take a look at the project page:
+  * BioSig for Octave and Matlab (biosig4octmat): A toolbox for Octave
+    and Matlab with powerful data import and export filters, feature
+    extraction algorithms, classification methods, and a powerful
+    viewing and scoring software.
+  * BioSig for C/C++ (biosig4c++) containing:
+    reading and writing routines for different biosignal data formats.
+    - libbiosig - a library for reading and writing of a number of data
+      formats. libbiosig is used by save2gdf, mexSLOAD and SigViewer
+    - save2gdf - a converter between different data formats, and can be used
+      to show the header information
+    - mexSLOAD is a MEX-interface for loading biosignal data into Octave
+      (its much faster than the pure M-tools from biosig4octmat). It requires
+      Octave-headers and libbiosig
+  * SigViewer (sigviewer): A stand-alone viewing and scoring software for
+    biosignals (especially for EEG signals) based on C++ and the
+    platform-independent GUI toolkit Qt 4.
+  * rtsBCI (rtsbci): A real-time BCI system implemented in Matlab and
+    Simulink.
+  * BioProFeed (bioprofeed)
+  * BCIx (bcix)
+Published-Title: BioSig: A Free and Open Source Software Library for BCI Research
+Published-Authors: 10.1109/MC.2008.407
+Published-In: Computer, 41(10): 44-50
+Published-Year: 2008
+Published-URL: http://hci.tugraz.at/~schloegl/publications/Schloegl2007_BCI_Software.pdf
+Published-DOI: 10.3389/neuro.11.003.2009
+X-Institution: Institute for Human-Computer Interfaces, University of Technology Graz
+
+Depends: gate
+Homepage: http://www.opengatecollaboration.org
+License: LGPL
+WNPP: 431425
+Responsible: Nicolas Spalinger <nicolas.spalinger@healthgrid.org>
+Pkg-Description: Geant4 Application for Emission Tomography
+ GATE incorporates the Geant4 libraries in a modular, versatile, and
+ scripted simulation toolkit which is adapted to the field of nuclear
+ medicine both in PET (Positron Emission Tomography) and SPECT (Single
+ Photon Emission Computer Tomography). It allows the accurate description
+ of time-dependent phenomena such as source or detector movement and
+ source decay kinetics. The ability to synchronize all time-dependent
+ components allows a coherent description of the acquisition process. It
+ makes it possible to perform realistic simulations of data acquisitions
+ in time.
+
+
+Depends: openvibe
+Homepage: http://openvibe.inria.fr
+License: LGPL
+WNPP: 580247
+Pkg-Description: platform for the design, test and use of BCI
+ OpenViBE enables to design, test and use Brain-Computer Interfaces (BCI).
+ OpenViBE is a software for real-time neurosciences (that is, for
+ real-time processing of brain signals). It can be used to acquire, filter,
+ process, classify and visualize brain signals in real time.

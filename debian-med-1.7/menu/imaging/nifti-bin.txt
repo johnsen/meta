@@ -1,0 +1,17 @@
+Tool for reading and writing NIfTI-1 MRI and fMRI brain images
+
+Some information about nifti-bin from the Debian Med project.
+
+ Niftilib is a set of i/o libraries for reading and writing files in the
+ NIfTI-1 data format. NIfTI-1 is a binary file format for storing medical
+ image data, e.g. magnetic resonance image (MRI) and functional MRI (fMRI)
+ brain images.
+
+Please read:
+  man nifti_tool
+  man nifti_stats
+  man nifti1_test
+
+Further reading:
+      http://niftilib.sourceforge.net/
+      http://nifti.nimh.nih.gov/

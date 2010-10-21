@@ -1,0 +1,29 @@
+# The lot of entries just blast the menu to much
+?package(libvibrant6):command="/usr/bin/vibrate /usr/bin/bl2seq" needs="X11" \
+	section="Med/Biology/Blast2" title="bl2seq" hints="Biology" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6):command="/usr/bin/vibrate /usr/bin/blast2" needs="X11" \
+	section="Med/Biology/Blast2" title="blast2" hints="Biology" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6):command="/usr/bin/vibrate /usr/bin/blastall" needs="X11" \
+	section="Med/Biology/Blast2" title="blastall" hints="Biology" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6):command="/usr/bin/vibrate /usr/bin/blastcl3" needs="X11" \
+	section="Med/Biology/Blast2" title="blastcl3" hints="Biology" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6):command="/usr/bin/vibrate /usr/bin/blastclust" needs="X11" \
+	section="Med/Biology/Blast2" title="blastclust" hints="Biology" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6):command="/usr/bin/vibrate /usr/bin/blastpgp" needs="X11" \
+	section="Med/Biology/Blast2" title="blastpgp" hints="Biology" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6):command="/usr/bin/vibrate /usr/bin/copymat" needs="X11" \
+	section="Med/Biology/Blast2" title="copymat" hints="Biology" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6):command="/usr/bin/vibrate /usr/bin/fastacmd" needs="X11" \
+	section="Med/Biology/Blast2" title="fastacmd" hints="Biology" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6):command="/usr/bin/vibrate /usr/bin/formatdb" needs="X11" \
+	section="Med/Biology/Blast2" title="formatdb" hints="Biology" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6):command="/usr/bin/vibrate /usr/bin/impala" needs="X11" \
+	section="Med/Biology/Blast2" title="impala" hints="Biology" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6):command="/usr/bin/vibrate /usr/bin/makemat" needs="X11" \
+	section="Med/Biology/Blast2" title="makemat" hints="Biology" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6):command="/usr/bin/vibrate /usr/bin/megablast" needs="X11" \
+	section="Med/Biology/Blast2" title="megablast" hints="Biology" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6):command="/usr/bin/vibrate /usr/bin/rpsblast" needs="X11" \
+	section="Med/Biology/Blast2" title="rpsblast" hints="Biology" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6):command="/usr/bin/vibrate /usr/bin/seedtop" needs="X11" \
+	section="Med/Biology/Blast2" title="seedtop" hints="Biology" icon="/usr/share/pixmaps/ncbilogo.xpm"

@@ -1,0 +1,8 @@
+# fonts go here
+
+# enable 'foreign' (eg TTF) fonts for X
+x-ttcidfont-conf
+
+# for PiDiP
+ttf-bitstream-vera 
+xfonts-proggy

@@ -1,0 +1,24 @@
+zope-zms: Content management for science, technology and medicine
+
+Some information about Zope ZMS from the Debian Med project.
+
+ ZMS (Zope based Content Management for Science, Technology and Medicine)
+ is a ready to use solution for efficient electronic publishing. An easy
+ to handle graphical user interface for editors and flexible modelling
+ features (multiple languages, Metadata, content objects, XML
+ import/export, workflow etc.) allow an optimum of productivity: A
+ basic configuration to start with can be created with a few mouse clicks.
+
+ ZMS is perfectly suitable for hospitals, research institutions, NGOs
+ and small to medium-size international companies.
+
+ The ZMS concept is based on a consulting approach for the rational
+ publishing on the internet: the professional user is able to pursue
+ a consequently efficiency oriented producing base with the ZMS software
+ and can hereby also achieve important economic results in the so-called
+ low budget area. The modulation possibilities of the ZMS components and
+ the experienced producing steps makes out of ZMS an incomparable fast tool.
+
+ Homepage: http://www.zms-publishing.com/
+
+ Read /usr/share/doc/zope-zms/README.Debian for the first steps.

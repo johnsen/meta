@@ -1,0 +1,18 @@
+Partial Order Alignment for multiple sequence alignment
+
+Some information about t-coffee from the Debian Med project.
+
+ POA is Partial Order Alignment, a fast program for multiple sequence
+ alignment (MSA) in bioinformatics. Its advantages are speed,
+ scalability, sensitivity, and the superior ability to handle branching
+ / indels in the alignment. Partial order alignment is an approach to
+ MSA, which can be combined with existing methods such as progressive
+ alignment. POA optimally aligns a pair of MSAs and which therefore can
+ be applied directly to progressive alignment methods such as CLUSTAL.
+ For large alignments, Progressive POA is 10-30 times faster than
+ CLUSTALW. POA is published in Bioinformatics. 2004 Jul
+ 10;20(10):1546-56.
+
+See also: man poa
+
+Homepage: http://www.bioinformatics.ucla.edu/poa

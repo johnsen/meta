@@ -1,0 +1,11 @@
+Package: openstudio-tasks
+Source: openstudio
+Version: 0.1
+Architecture: all
+Maintainer: Rosea Grammostola
+Installed-Size: 36
+Depends: taskel
+Section: misc
+Priority: optional
+Description: Openstudio tasks for tasksel
+ This package provides Openstudio tasks in tasksel.

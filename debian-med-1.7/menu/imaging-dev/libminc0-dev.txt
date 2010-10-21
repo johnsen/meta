@@ -1,0 +1,12 @@
+MINC Development: MNI medical image format development
+
+Some information about libminc0-dev from the Debian Med project.
+
+The best way to get started with this development package is to read
+
+     http://localhost/doc/libminc0-dev/
+
+if you have a working webserver installed on your local machine or just
+browse
+
+     /usr/share/doc/libminc0-dev

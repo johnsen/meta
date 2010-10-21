@@ -1,0 +1,30 @@
+Broth
+-----
+
+This is broth, the mother of all soups.
+
+A simple high-level script used to generate Ubuntu based live distros
+using the Debian-Live framework.
+
+Broth is at the moment focussing on producing Puredyne live images but
+it can be used for virtually any other live systems.
+
+
+Documentation
+-------------
+FIXME
+depends:
+
+live-helper from snapshots: http://live.debian.net/archive/packages/live-helper/ (latest snapshot recommended)
+live-helper 1.0.5 as found in Ubuntu Karmic won't work, unless you replace 'lh foo' by 'lh_foo' in broth.sh - newer lh version recommended
+
+debootstrap-1.0.20 or higher
+
+
+Usage
+
+./broth -o CD|DVD
+
+and have a few coffees and loads of biscuits. It takes a long time, esp. the first time.
+
+

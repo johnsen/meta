@@ -1,0 +1,330 @@
+Task: med-bio
+Section: debian-med
+Description: Debian Med micro-biology packages
+ This metapackage will install Debian packages related to molecular biology,
+ structural biology and bioinformatics for use in life sciences.
+Relevance: 10
+Key: 
+ med-bio
+Packages: list
+ altree
+ fastdnaml
+ njplot
+ tree-puzzle
+ treeviewx
+ fastlink
+ loki
+ plink
+ r-cran-qtl
+ amap-align
+ boxshade
+ gff2aplot
+ muscle
+ sim4
+ sibsim4
+ wise
+ bwa
+ mummer
+ blast2
+ mafft
+ t-coffee
+ kalign
+ hmmer
+ exonerate
+ dialign
+ dialign-tx
+ poa
+ probcons
+ proda
+ sigma-align
+ emboss
+ embassy-domalign
+ embassy-domainatrix
+ embassy-domsearch
+ last-align
+ maq
+ ssake
+ velvet
+ infernal
+ rnahybrid
+ adun.app
+ garlic
+ gamgi
+ gdpc
+ ghemical
+ gromacs
+ pymol
+ r-other-bio3d
+ massxpert
+ rasmol
+ plasmidomics
+ gff2ps
+ ncbi-epcr
+ ncbi-tools-bin
+ ncbi-tools-x11
+ perlprimer
+ readseq
+ tigr-glimmer
+ melting
+ mipe
+ primer3
+ glam2
+ phyml
+ autodock
+ mustang
+ theseus
+ staden-io-lib-utils
+ samtools
+ r-bioc-hilbertvis
+ r-other-mott-happy
+ alien-hunter
+ ncoils
+ picard-tools
+ ballview
+
+Task: med-bio-dev
+Section: debian-med
+Description: Debian Med packages for development of micro-biology applications
+ This metapackage will install Debian packages which might be helpful
+ for development of applications for micro-biological research.
+Relevance: 10
+Key: 
+ med-bio-dev
+Packages: list
+ bioperl
+ bioperl-run
+ libncbi6-dev
+ mcl
+ biosquid
+ libvibrant6-dev
+ python-biopython
+ libbio-ruby
+ libbiojava-java
+ libqsearch-dev
+ libgenome-1.3-0-dev
+ libbio-mage-perl
+ libajax6-dev
+ libnucleus6-dev
+ libtfbs-perl
+ libgo-perl
+ r-cran-genetics
+ r-cran-haplo.stats
+ octave-bioinfo
+ libbio-graphics-perl
+ libbio-primerdesigner-perl
+ libace-perl
+ libstaden-read-dev
+ libsrf-dev
+ seqan-dev
+ libbio-mage-utils-perl
+
+Task: med-data
+Section: debian-med
+Description: Debian Med suggestions for medical databases
+ Currently Debian Med does not yet contain any medical data like drug
+ databases.  We just provide a list of Free Software that might be used
+ and which might be included into Debian at a later point in time
+ provided somebody is willing to take over the packaging work.
+Relevance: 10
+Key: 
+ med-data
+Packages: list
+ freediams
+
+Task: med-epi
+Section: debian-med
+Description: Debian Med epidemiology related packages
+ This metapackage will install tools that are useful in epidemiological
+ research.  Several packages making use of the GNU R data language for
+ statistical investigation.  It might be a good idea to read the paper
+ "A short introduction to R for Epidemiology" at
+ http://staff.pubhealth.ku.dk/%7Ebxc/Epi/R-intro.pdf
+Relevance: 10
+Key: 
+ med-epi
+Packages: list
+ epigrass
+ r-cran-epibasix
+ r-cran-epitools
+ r-cran-epi
+ r-cran-diagnosismed
+ r-cran-epicalc
+ r-cran-epir
+
+Task: med-imaging
+Section: debian-med
+Description: Cross-platform for visualizing, processing and analysing of bioimages
+ GoFigure2 is an open-source, cross-platform application for
+ visualizing, processing and analyzing of multidimensional microscopy
+ data. Users can visualize, segment and track cells through time,
+ detect cell-division and ultimately generate lineages.
+Relevance: 10
+Enhances: imagej
+Key: 
+ med-imaging
+Packages: list
+ amide
+ ctsim
+ ctn
+ dicomnifti
+ imagej
+ minc-tools
+ medcon
+ python-nifti
+ xmedcon
+ dcmtk
+ nifti-bin
+ aeskulap
+ fslview
+ via-bin
+ gwyddion
+ sofa-apps
+ python-mvpa
+ python-nipy
+ python-nipype
+ caret
+ libgdcm-tools
+ slicer
+ lipsia
+ dicom3tools
+ odin
+ dicomscope
+ pixelmed-java
+ voxbo
+ mrtrix
+ ants
+ itksnap
+ openmeeg-tools
+
+Task: med-imaging-dev
+Section: debian-med
+Description: Debian Med packages for medical image development
+ This metapackage will install Debian packages which might be useful
+ for developing applications for medical image processing.
+Relevance: 10
+Key: 
+ med-imaging-dev
+Packages: list
+ ctn-dev
+ cimg-dev
+ libminc-dev
+ libmdc2-dev
+ libinsighttoolkit3-dev
+ libvolpack1-dev
+ libgdcm2-dev
+ python-gdcm
+ python-mvpa
+ python-nipy
+ python-nipype
+ libvia-dev
+ odin
+ libcv-dev
+ libvxl1-dev
+ libteem1-dev
+ gmic
+ libgiftiio-dev
+ python-dicom
+ libopenmeeg-dev
+
+Task: med-pharmacy
+Section: debian-med
+Description: Debian Med packages for pharmaceutical research
+ This metapackage contains dependencies for a
+ collection of software and documentation which is useful for
+ pharmaceutical research.
+Relevance: 10
+Key: 
+ med-pharmacy
+Packages: list
+ chemtool
+
+Task: med-physics
+Section: debian-med
+Description: Debian Med packages for medical physicists
+ This metapackage contains dependencies for a
+ collection of software and documentation which is useful for
+ medical physicists in radiation oncology, diagnostics imaging
+ and related fields.
+Relevance: 10
+Key: 
+ med-physics
+Packages: list
+ paw++
+ paw
+ octave3.2
+ r-base
+
+Task: med-practice
+Section: debian-med
+Description: Debian Med packages for practice management
+ This metapackage contains dependencies for a collection of software
+ which might be helpful for practitioners to manage their practice.
+Relevance: 10
+Key: 
+ med-practice
+Packages: list
+ gnumed-client
+ gnumed-server
+ libchipcard-tools
+ aeskulap
+ freediams
+ r-cran-medadherence
+
+Task: med-psychology
+Section: debian-med
+Description: Debian Med packages for psychology
+ This metapackage contains dependencies for a collection of software
+ which might be helpful for psychological research.
+Relevance: 10
+Key: 
+ med-psychology
+Packages: list
+ python-pyepl
+ praat
+ r-cran-foreign
+ psignifit
+ r-cran-psy
+ psychopy
+
+Task: med-statistics
+Section: debian-med
+Description: Debian Med statistics
+ This metapackage will install packages which are helpful to do statistics
+ with a special focus on tasks in medical care.
+Relevance: 10
+Key: 
+ med-statistics
+Packages: list
+ r-cran-qvalue
+ r-cran-randomforest
+
+Task: med-tools
+Section: debian-med
+Description: Debian Med several tools
+ This metapackage will install tools for several purposes in health care.
+ Currently it contains some simple programs for Personal Health.
+Relevance: 10
+Key: 
+ med-tools
+Packages: list
+ mencal
+ cycle
+ pondus
+ wgerman-medical
+ hunspell-de-med
+ quitcount
+ workrave
+
+Task: med-typesetting
+Section: debian-med
+Description: Debian Med support for typesetting and publishing
+ This metapackage will install Debian packages that might be helpful
+ for typesetting and publishing in medical care and structural
+ biology.
+Relevance: 10
+Key: 
+ med-typesetting
+Packages: list
+ texlive-science
+ texlive-latex-extra
+

@@ -1,0 +1,13 @@
+MedCon Development: Medical Image Conversion development
+
+Some information about libmdc-dev from the Debian Med project.
+
+We are sorry that we can not present a more detailed description to this
+development package.  We suggest further reading at the xmedcon homepage
+
+                http://xmedcon.sourceforge.net
+
+because it belongs to the XMedCon package.
+
+The following manpages might help you in getting started:
+  xmedcon-config medcon m-gif m-inw m-acr m-ecat m-anlz m-intf

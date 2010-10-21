@@ -1,0 +1,17 @@
+MedCon: MEDical image (DICOM, ECAT, ...) CONversion tool
+
+Some information about medcon from the Debian Med project.
+
+The homepage is at
+
+     http://xmedcon.sourceforge.net
+
+There exists a xmedcon tool which provides a nice graphical interface
+and might be a good start for beginners.
+
+Alternatively you can type
+
+     man medcon
+
+to learn how to use medcon.
+

@@ -1,0 +1,25 @@
+CTN: Runtime files for Central Test Node, a DICOM implementation
+
+Some information about ctn from the Debian Med project.
+
+The ctn package provides runtime files for Central Test Node,
+a DICOM implementation.
+DICOM is the standard for image storage, annotation, and networking.
+It is used widely for medical imaging.
+
+Information about the tools which are provided can be obtained by
+
+  man dcm_ctnto10
+  man dcm_diff
+  man dcm_dump_element
+  man dcm_dump_file
+  man dcm_make_object
+  man dcm_map_to_8
+  man dcm_rm_element
+  man dcm_verify
+  man dcm_add_fragments
+  man dcm_create_object
+
+The homepage is http://www.erl.wustl.edu/DICOM/ctn.html.
+
+Extensive documentation is provided in the Debian package ctn-doc.

@@ -1,0 +1,9 @@
+Task: graphics 
+Description: Openstudio pro audio synth packages
+ This metapackage will install pro audio synth packages for openstudio.
+
+Depends: gimp gimp-data gimp-data-extras gimp-gap gimp-plugin-registry gimp-ufraw
+#Suggests: agave blender enblend f-spot fontforge fontmatrix gnome-raw-thumbnailer hugin inkscape nautilus-image-converter pstoedit scribus xsane yafray
+  
+
+

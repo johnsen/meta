@@ -1,0 +1,15 @@
+CTN Development: CTN-Dicom support
+
+Some information about ctn from the Debian Med project.
+
+The ctn package provides runtime files for Central Test Node,
+a DICOM implementation.
+DICOM is the standard for image storage, annotation, and networking.
+It is used widely for medical imaging.
+
+This is the development package.
+
+For further information have a look into the extensive documentation
+which is in the Debian package ctn-doc.
+
+The homepage is http://www.erl.wustl.edu/DICOM/ctn.html.

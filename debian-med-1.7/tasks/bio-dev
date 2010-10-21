@@ -1,0 +1,200 @@
+Task: Biology Development
+Description: Debian Med packages for development of micro-biology applications
+ This metapackage will install Debian packages which might be helpful
+ for development of applications for micro-biological research.
+
+Depends: bioperl, bioperl-run, libncbi6-dev
+
+Depends: mcl
+X-Category: Analysis of network structure
+X-Importance: Clustering of graphs
+
+Comment: biomode is removed from Debian because it is orphaned upstream, outdated
+         and doese not work with recent Emacs any more
+
+Depends: biosquid
+
+Depends: libvibrant6-dev
+Why: libmotif-dev conflicts lesstif-dev, so if someone wants to install
+     libmotif-dev it must be possible to deinstall libvibrant6-dev without
+     beeing forced to deinstall med-bio-dev as well
+
+Depends: python-biopython
+Published-Authors: P.J. Cock, T. Antao, J.T. Chang, B.A. Chapman, C.J. Cox, A. Dalke, I. Friedberg, T. Hamelryck, F. Kauff, B. Wilczynski, M.J. de Hoon
+Published-Title: Biopython: freely available Python tools for computational molecular biology and bioinformatics
+Published-In: Bioinformatics, 25(11):1422-1423
+Published-Year: 2009
+Published-URL: http://www.ncbi.nlm.nih.gov/pubmed/19304878
+
+Depends: libbio-ruby
+
+Depends: libbiojava-java
+Published-Authors: R.C.G. Holland, T. Down, M. Pocock, A. Prlić, D. Huen, K. James, S. Foisy, A. Dräger, A. Yates, M. Heuer, M.J. Schreiber
+Published-Title: BioJava: an Open-Source Framework for Bioinformatics
+Published-In: Bioinformatics 24(18):2096-2097
+Published-Year: 2008
+Published-URL: http://bioinformatics.oxfordjournals.org/cgi/content/abstract/btn397
+Published-DOI: 10.1093/bioinformatics/btn397
+
+Depends: libqsearch-dev
+
+Depends: libgenome-1.3-0-dev
+
+Depends: libbio-mage-perl
+Why: Useful for the submission of microarray data to public repositories.
+
+Depends: libajax6-dev | libajax5-dev
+
+Depends: libnucleus6-dev | libnucleus5-dev
+
+Depends: libtfbs-perl
+
+Depends: libgo-perl 
+
+Depends: r-cran-genetics, r-cran-haplo.stats
+
+Depends: octave-bioinfo
+
+Depends: libbio-graphics-perl
+
+Depends: libbio-primerdesigner-perl
+
+Depends: libace-perl
+
+Depends: libbiococoa-dev
+
+Depends: libstaden-read-dev
+
+Depends: libsrf-dev
+
+Suggests: r-cran-rocr
+Why: Even if this package is not directly connected to biology it is maintained by
+     Debian Med team and should be in our focus and it is not wrong to suggest this
+     package for development of biological applications based on R
+
+Depends: seqan-dev
+
+Depends: libbio-mage-utils-perl
+
+Depends: libace-perl
+
+Depends: bioconductor
+Homepage: http://www.bioconductor.org/
+Responsible: Debian CRAN/BioConductor/Omegahat packaging team <pkg-bioc-devel@lists.alioth.debian.org>
+License: GPL/LGPL
+Pkg-URL: http://wiki.debian.org/AliothPkgBioc
+Pkg-Description: analysis and comprehension of genomic data
+ Bioconductor is an open source and open development software project
+ to provide tools for the analysis and comprehension of genomic data.
+ .
+ The Bioconductor core team is based primarily at the Biostatistics Unit of
+ the Dana Farber Cancer Institute at the Harvard Medical School/Harvard School
+ of Public Health. Other members come from various US and international
+ institutions.
+ .
+ The broad goals of the projects are to
+  * provide access to a wide range of powerful statistical and graphical methods
+    for the analysis of genomic data;
+  * facilitate the integration of biological metadata in the analysis of
+    experimental data: e.g. literature data from PubMed, annotation data from
+    LocusLink;
+  * allow the rapid development of extensible, scalable, and interoperable
+    software;
+  * promote high-quality documentation and reproducible research;
+  * provide training in computational and statistical methods for the analysis
+    of genomic data.
+ .
+ A nice overview about all modules of BioDonductor is given at
+ http://www.bioconductor.org/packages/release/bioc/
+
+Depends: bioclipse
+Homepage: http://www.bioclipse.net/
+License: Eclipse Public License (EPL) + exception
+Pkg-Description: platform for chemo- and bioinformatics based on Eclipse
+ The Bioclipse project is aimed at creating a Java-based, open source,
+ visual platform for chemo- and bioinformatics based on the Eclipse
+ Rich Client Platform (RCP). Bioclipse, as any RCP application, is based
+ on a plugin architecture that inherits basic functionality and visual
+ interfaces from Eclipse, such as help system, software updates,
+ preferences, cross-platform deployment etc.
+ .
+ Bioclipse will provide functionality for chemo- and bioinformatics,
+ and extension points that easily can be extended by plugins to provide
+ added functionality. The first version of Bioclipse includes a
+ CDK-plugin (bc_cdk) to provide a chemoinformatic backend, a Jmol-plugin
+ (bc_jmol) for 3D-visualization and a general logging plugin. To stay
+ updated on upcoming features, releases, new plugins etc, please register
+ for the mailing list bioclipse-announce. The development is best
+ followed on the Bioclipse Wiki where we document the progress and
+ ideas of the development on a daily basis.
+
+Depends: libgff-perl
+Homepage: http://www.sanger.ac.uk/Software/formats/GFF/
+Responsible: David Paleino <d.paleino@gmail.com>
+License: GPL-1+
+WNPP: 468826
+Pkg-Description: Perl bindings for GFF Annotation Protocol
+ GFF (Gene Finding Feature) is a format for describing genes and other
+ features associated with DNA, RNA and Protein sequences.
+ .
+ This package provides a Perl module to use GFF objects.
+
+Depends: libmems-1.5-1
+Homepage: http://asap.ahabs.wisc.edu/software/software-development-libraries/libmems.html
+Responsible: Andreas Tille <tille@debian.org>
+License: GPL
+Pkg-URL: http://people.debian.org/~tille/packages/libmems/
+Pkg-Description: library to support DNA string matching and comparative genomics
+ libMems is a freely available software development library to support DNA
+ string matching and comparative genomics. Among other things, libMems
+ implements an algorithm to perform approximate multi-MUM and multi-MEM
+ identification. The algorithm uses spaced seed patterns in conjunction
+ with a seed-and-extend style hashing method to identify matches. The method
+ is efficient, requiring a maximum of only 16 bytes per base of the largest
+ input sequence, and this data can be stored externally (i.e. on disk) to
+ further reduce memory requirements.
+
+Depends: libbio-das-perl
+Homepage: http://www.biodas.org/
+Responsible: Steffen Moeller <moeller@debian.org>
+License: Perl Artistic License
+Vcs-Svn: svn://svn.debian.org/svn/debian-med/trunk/packages/libbio-das-perl/trunk
+Pkg-Description: interface to Distributed Annotation System (DAS)
+ Bio::Das provides access to genome sequencing and annotation databases
+ that export their data in Distributed Annotation System (DAS) format
+ version 1.5. Both unencrypted (http:) and SSL-encrypted (https:)
+ DAS servers are supported.
+
+Depends: limma
+Homepage: http://bioinf.wehi.edu.au/limma
+Responsible: Steffen Moeller <moeller@debian.org>
+WNPP: 293320
+License: LGPL
+Pkg-Description: library for linear models and differential gene expression analysis
+ Limma is an essential package of the bioconductor.org effort to
+ investigate gene expression data from microarrays with the
+ statistical package R.
+
+Depends: libsbml1
+Homepage: http://www.sbml.org/
+License: LGPL
+Vcs-Svn: svn://svn.debian.org/svn/debian-med/trunk/packages/libsbml/trunk/
+Responsible: Moriyoshi Koizumi <mozo@sfc.keio.ac.jp>
+Pkg-URL: http://www.e-cell.org/ecell/software/downloads
+Pkg-Description:  System Biology Markup Language Library
+ LibSBML is a library designed to help you read, write, manipulate,
+ translate, and validate SBML files and data streams. It is not an
+ application itself (though it does come with many example programs),
+ but rather a library you can embed in your own applications.
+ .
+ LibSBML is written in ISO C and C++ but as a library it may be
+ used from all the programming languages listed to the left. In fact,
+ we strive to adhere to the natural idioms of each particular language
+ to make the libSBML programming experience seamless. For example, SBML
+ <listOf> elements behave like lists and sequences in Python, but
+ vectors in Matlab. Also, the C and C++ interfaces are completely
+ distinct (it's possible to program in pure C), but in C++ the C APIs
+ may be called without sacrifcing type safety.
+ .
+ The LibSBML code is very portable and is supported on Linux, Windows
+ (native), and Mac OS X.

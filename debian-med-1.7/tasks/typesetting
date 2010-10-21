@@ -1,0 +1,31 @@
+Task: Typesetting
+Description: Debian Med support for typesetting and publishing
+ This metapackage will install Debian packages that might be helpful
+ for typesetting and publishing in medical care and structural
+ biology.
+
+Depends: texlive-science
+Remark: For biologists specifically biotex.sty and textopo.sty are interesting
+ The texlive-science package contains a lot of interesting LaTeX styles for
+ different sciences.  As a biologist you are most probably interested in
+ .
+  TeXTopo: http://www.uni-kiel.de/Pharmazie/chem/Prof_Beitz/textopo.htm
+ .
+ You might like to install texlive-science-doc as well and read the documents
+ in
+  /usr/share/doc/texlive-science-doc/latex/textopo/
+
+Depends: texlive-latex-extra
+Remark: For biologists specifically texshade.sty is interesting
+ The texlive-latex-extra package contains a lot of interesting LaTeX styles for
+ different purposes.  As a biologist you are most probably interested in
+ .
+  TeXShade: http://www.uni-kiel.de/Pharmazie/chem/Prof_Beitz/texshade.htm
+ .
+ You might like to install texlive-latex-extra-doc as well and read the documents
+ in
+  /usr/share/doc/texlive-latex-extra-doc/latex/texshade/
+
+Suggests: kbibtex
+
+Suggests: bibus

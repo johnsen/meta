@@ -1,0 +1,8 @@
+Task: Fluxbox
+Description: Openstudio metapackage for installing Fluxbox Window Manager.
+ This metapackage will install fluxbox WM and filebrowser thunar. If you don't want to have thunar, don't install this package and do 'sudo apt-get install fluxbox'.
+
+Depends: fluxbox thunar
+
+
+

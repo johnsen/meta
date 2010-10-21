@@ -1,0 +1,16 @@
+# 3D, Vector and Raster application
+
+# Raster
+gimp
+
+# Vector
+inkscape
+
+# CLI
+imagemagick
+
+# RT
+fluxus
+
+# need Java so it's installed in the hook
+#puredyne-processing

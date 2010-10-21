@@ -1,0 +1,14 @@
+# Streaming software
+
+icecast2
+
+ffmpeg2theora
+oggfwd
+darksnow
+ices2
+gstreamer-tools
+dvswitch
+
+gstreamer0.10-plugins-good
+gstreamer0.10-x
+

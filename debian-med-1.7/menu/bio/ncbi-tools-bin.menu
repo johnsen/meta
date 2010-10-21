@@ -1,0 +1,43 @@
+# The lot of entries just blast the menu to much
+?package(libvibrant6):command="/usr/bin/vibrate /usr/bin/asn2asn" needs="X11" \
+	section="Med/Biology/ncbi-tools-bin" title="asn2asn" hints="Biology" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6):command="/usr/bin/vibrate /usr/bin/asn2ff" needs="X11" \
+	section="Med/Biology/ncbi-tools-bin" title="asn2ff" hints="Biology" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6):command="/usr/bin/vibrate /usr/bin/asn2gb" needs="X11" \
+	section="Med/Biology/ncbi-tools-bin" title="asn2gb" hints="Biology" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6):command="/usr/bin/vibrate /usr/bin/asn2xml" needs="X11" \
+	section="Med/Biology/ncbi-tools-bin" title="asn2xml" hints="Biology" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6):command="/usr/bin/vibrate /usr/bin/asndhuff" needs="X11" \
+	section="Med/Biology/ncbi-tools-bin" title="asndhuff" hints="Biology" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6):command="/usr/bin/vibrate /usr/bin/checksub" needs="X11" \
+	section="Med/Biology/ncbi-tools-bin" title="checksub" hints="Biology" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6):command="/usr/bin/vibrate /usr/bin/debruijn" needs="X11" \
+	section="Med/Biology/ncbi-tools-bin" title="debruijn" hints="Biology" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6):command="/usr/bin/vibrate /usr/bin/entrcmd" needs="X11" \
+	section="Med/Biology/ncbi-tools-bin" title="entrcmd" hints="Biology" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6):command="/usr/bin/vibrate /usr/bin/fa2htgs" needs="X11" \
+	section="Med/Biology/ncbi-tools-bin" title="fa2htgs" hints="Biology" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6):command="/usr/bin/vibrate /usr/bin/fastamerge" needs="X11" \
+	section="Med/Biology/ncbi-tools-bin" title="fastamerge" hints="Biology" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6):command="/usr/bin/vibrate /usr/bin/findspl" needs="X11" \
+	section="Med/Biology/ncbi-tools-bin" title="findspl" hints="Biology" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6):command="/usr/bin/vibrate /usr/bin/gbseqget" needs="X11" \
+	section="Med/Biology/ncbi-tools-bin" title="gbseqget" hints="Biology" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6):command="/usr/bin/vibrate /usr/bin/getfeat" needs="X11" \
+	section="Med/Biology/ncbi-tools-bin" title="getfeat" hints="Biology" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6):command="/usr/bin/vibrate /usr/bin/getmesh" needs="X11" \
+	section="Med/Biology/ncbi-tools-bin" title="getmesh" hints="Biology" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6):command="/usr/bin/vibrate /usr/bin/getpub" needs="X11" \
+	section="Med/Biology/ncbi-tools-bin" title="getpub" hints="Biology" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6):command="/usr/bin/vibrate /usr/bin/gil2bin" needs="X11" \
+	section="Med/Biology/ncbi-tools-bin" title="gil2bin" hints="Biology" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6):command="/usr/bin/vibrate /usr/bin/idfetch" needs="X11" \
+	section="Med/Biology/ncbi-tools-bin" title="idfetch" hints="Biology" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6):command="/usr/bin/vibrate /usr/bin/indexpub" needs="X11" \
+	section="Med/Biology/ncbi-tools-bin" title="indexpub" hints="Biology" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6):command="/usr/bin/vibrate /usr/bin/makeset" needs="X11" \
+	section="Med/Biology/ncbi-tools-bin" title="makeset" hints="Biology" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6):command="/usr/bin/vibrate /usr/bin/tbl2asn" needs="X11" \
+	section="Med/Biology/ncbi-tools-bin" title="tbl2asn" hints="Biology" icon="/usr/share/pixmaps/ncbilogo.xpm"
+?package(libvibrant6):command="/usr/bin/vibrate /usr/bin/vecscreen" needs="X11" \
+	section="Med/Biology/ncbi-tools-bin" title="vecscreen" hints="Biology" icon="/usr/share/pixmaps/ncbilogo.xpm"

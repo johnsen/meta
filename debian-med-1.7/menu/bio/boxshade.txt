@@ -1,0 +1,12 @@
+Pretty-printing of multiple sequence alignments
+
+Some information about boxshade from the Debian Med project.
+
+ Boxshade reads a sequence alignment as input (e.g. from ClustalW) and
+ outputs files that may be incorporated to text processing software
+ (TeX via xfig, Word and OpenOffice via RTF). The post script format
+ is also supported.
+
+See also: man boxshade
+
+Homepage: http://www.ch.embnet.org/software/BOX_form.html

@@ -1,0 +1,58 @@
+The OFFIS DICOM toolkit command line utilities
+
+Some information about dcmtk from the Debian Med project.
+
+ DCMTK includes a collection of libraries and applications for examining,
+ constructing and converting DICOM image files, handling offline media,
+ sending and receiving images over a network connection, as well as
+ demonstrative image storage and worklist servers.
+ 
+Homepage: http://dicom.offis.de/
+
+The package contains a set of utilities.  They are described in the
+relevant man pages which are:
+
+	man dbregimg
+	man dcm2pnm
+	man dcm2xml
+	man dcmcjpeg
+	man dcmconv
+	man dcmcrle
+	man dcmdjpeg
+	man dcmdrle
+	man dcmdspfn
+	man dcmdump
+	man dcmftest
+	man dcmgpdir
+	man dcmj2pnm
+	man dcmmkcrv
+	man dcmmkdir
+	man dcmmklut
+	man dcmodify
+	man dcmp2pgm
+	man dcmprscp
+	man dcmprscu
+	man dcmpschk
+	man dcmpsmk
+	man dcmpsprt
+	man dcmpsrcv
+	man dcmpssnd
+	man dcmquant
+	man dcmscale
+	man dcmsign
+	man dcod2lum
+	man dconvlum
+	man dsr2html
+	man dsr2xml
+	man dsrdump
+	man dump2dcm
+	man echoscu
+	man findscu
+	man imagectn
+	man movescu
+	man storescp
+	man storescu
+	man ti
+	man wlmscpfs
+	man xml2dcm
+	man xml2dsr

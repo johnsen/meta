@@ -1,0 +1,10 @@
+Task: Proaudio-DJ
+Description: Openstudio pro audio DJ packages
+ This metapackage will install pro audio LADSPA, DSSI and LV2 plugins packages for openstudio.
+
+Depends: mixxx xwax 
+#Suggests: xwax jackeq terminatorx
+
+
+
+

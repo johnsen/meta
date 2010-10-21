@@ -1,0 +1,14 @@
+Task: Pharmacy
+Description: Debian Med packages for pharmaceutical research
+ This metapackage contains dependencies for a
+ collection of software and documentation which is useful for
+ pharmaceutical research.
+
+Depends: chemtool
+
+Comment: Several related R packages are listed at CRAN:
+         http://cran.r-project.org/web/views/Pharmacokinetics.html
+         Specifically these might be of interest:
+           http://cran.r-project.org/web/packages/PK/index.html
+           http://cran.r-project.org/web/packages/PKfit/index.html
+           http://cran.r-project.org/web/packages/PKtools/index.html

@@ -1,0 +1,33 @@
+Task: Medical data
+Description: Debian Med suggestions for medical databases
+ Currently Debian Med does not yet contain any medical data like drug
+ databases.  We just provide a list of Free Software that might be used
+ and which might be included into Debian at a later point in time
+ provided somebody is willing to take over the packaging work.
+
+Depends: freediams
+
+Depends: drugref.org
+Homepage: http://savannah.nongnu.org/projects/php-drugref/
+License: GPL2+
+Pkg-Description: pharmaceutical reference database
+ Important note: The project seems to be dead and the domain drugref.org
+ does not exist any more.  Thanks to the GNU Savannah project the code was
+ kept for the past but there is no guarantee at all that the project is
+ of any use.
+ .
+ The aim to to allow the collaborative construction of a free,
+ peer-reviewed pharmaceutical reference.
+ .
+ The primary motivation is to support the gnumed project -- a free software
+ medical information system, but it may have other uses.
+ .
+ It will support logging and versioning of all data, changes made by
+ contributors can be audited and reverted if necessary. The data can
+ be peer-reviewed by several authorities, end-users can opt to have
+ only data which is peer-reviewed.
+ .
+ Drug names, indications, interactions, contra-indications, adverse
+ reactions and side-effects are supported. Product information for
+ multiple countries can be entered.
+

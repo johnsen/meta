@@ -1,0 +1,68 @@
+# system stuff
+
+zsh
+
+vim 
+
+synaptic
+
+#needed for scvim
+vim-addon-manager
+unhtml 		
+nano
+
+man-db
+most
+
+acpid
+acpi-support
+acpi
+acpitool
+
+ssh
+rsync
+screen
+less
+
+powertop
+
+# filesystem and disks
+reiserfsprogs
+ntfsprogs
+dosfstools
+hfsprogs
+parted
+gparted
+pysdm
+
+ntfs-3g
+sysfsutils
+
+dvd+rw-tools
+
+module-assistant
+jockey-gtk
+
+lilo
+syslinux
+# see https://bugs.launchpad.net/ubuntu/+source/syslinux/+bug/75765
+mtools 
+grub2
+
+ubiquity
+ubiquity-frontend-gtk
+
+# provides add-apt-repository CLI and GUI
+python-software-properties
+software-properties-gtk
+
+# needed by sced (sc3 gedit)
+python-gconf  
+
+rtirq-init
+das-watchdog
+
+# power manager does a couple of important things (with the default settings we provide):
+# disables cpufreq scaling, makes poweroffbutton safer
+xfce4-power-manager
+

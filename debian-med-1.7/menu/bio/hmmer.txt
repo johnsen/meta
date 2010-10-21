@@ -1,0 +1,17 @@
+Hmmer: Biological sequence analysis using profile hidden Markov models 
+
+Some information about Hmmer from the Debian Med project.
+
+ Hmmer is a suite of programs which use profile hidden Markov models
+ (profile HMMs) to model the primary structure consensus of a family of
+ protein or nucleic acid sequences.
+
+Homepage:  http://hmmer.wustl.edu/
+
+You can get a good overview by the main manpage:
+
+       man hmmer
+
+The Hmmer users guide is available at
+
+       http://localhost/doc/hmmer/hmmer-html/index.html

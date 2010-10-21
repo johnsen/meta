@@ -1,0 +1,11 @@
+Task: openstudio-openstudio-audio
+Section: debian-openstudio-audio
+Description: Metapackage for openstudio audio
+  This metapackage will install audio packages for use in 
+ task1 of openstudio.
+Relevance: 10
+Key: 
+ openstudio-openstudio-audio
+Packages: list
+ qjackctl
+

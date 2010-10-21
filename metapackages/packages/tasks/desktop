@@ -1,0 +1,10 @@
+Task: Desktop
+Description: Openstudio Desktop optimization
+ This metapackage will install additional Desktop software. 
+
+Depends: wget shutter gtk-recordmydesktop htop sysv-rc-conf pidgin nautilus-open-terminal grsync
+#Suggests: thunderbird xchat epiphany-browser 
+
+
+
+

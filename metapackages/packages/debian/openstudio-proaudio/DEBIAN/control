@@ -1,0 +1,13 @@
+Package: openstudio-proaudio
+Source: openstudio
+Version: 0.1
+Architecture: all
+Maintainer: Rosea Grammostola
+Installed-Size: 28
+Depends: openstudio-tasks (= 0.1)
+Recommends: qjackctl
+Suggests: a2jmidid, lv2rack, non-mixer
+Section: misc
+Priority: optional
+Description: Openstudio pro audio packages
+ This metapackage will install pro audio packages for openstudio.

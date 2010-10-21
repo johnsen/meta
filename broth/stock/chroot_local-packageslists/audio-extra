@@ -1,0 +1,67 @@
+# Extra packages for non-CD live releases
+
+# JACK
+meterbridge
+patchage
+jackeq
+freqtweak
+
+# ecasound
+ecamegapedal
+
+# Hydrogen
+hydrogen
+hydrogen-drumkits
+
+# MIDI
+timidity
+rosegarden
+
+# Trackers
+schism
+
+
+# Sampling
+#linuxsampler
+qsampler
+
+# CDrip
+icedax
+
+# DAW's
+traverso
+qtractor
+
+# compression tools
+wavpack
+aften
+
+vorbis-tools
+
+boxar
+din
+tuxguitar
+
+abcm2ps
+
+praat
+
+whysynth
+
+#qmidi apps
+qmidiarp
+qmidiroute
+qmidicontrol
+
+# 9.11 additions
+wsola
+freepats
+phasex
+jcgui
+autotalent
+sineshaper
+nekobee
+bristol
+
+puredata-source
+

@@ -1,0 +1,16 @@
+Produce PostScript graphical output from GFF-files
+
+Some information about gff2ps from the Debian Med project.
+
+ gff2ps is a script program developed with the aim of converting gff-formatted
+ records into high quality one-dimensional plots in PostScript. Such plots
+ maybe useful for comparing genomic structures and to visualizing outputs from
+ genome annotation programs.
+ It can be used in a very simple way, because it assumes that the GFF file
+ itself carries enough formatting information, but it also allows through a
+ number of options and/or a configuration file, for a great degree of
+ customization.
+
+See also: man gff2ps
+
+Homepage: http://genome.imim.es/software/gfftools/GFF2PS.html

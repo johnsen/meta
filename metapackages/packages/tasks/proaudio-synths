@@ -1,0 +1,8 @@
+Task: Proaudio-audiosynthesis
+Description: Openstudio pro audio synth packages
+ This metapackage will install pro audio synth packages for openstudio.
+
+Depends: yoshimi phasex ams bristol whysynth qsynth linuxsampler specimen puredata
+#Suggests: amsynth aeolus zynaddsubfx zynadd qsampler supercollider csound
+
+

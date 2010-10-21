@@ -1,0 +1,14 @@
+FastLink: Faster Pedigree
+
+Some information about fastlink from the Debian Med project.
+
+   A faster version of pedigree programs of Linkage
+   Fastlink is much faster than the original Linkage but does not
+   implement all the programs.
+
+Unfortunately there is no manpage for the included tools which are
+   ilink, linkmap, lodscore, mlink
+
+Extensive documentation inclusive PostScript formatted papers are provided under
+
+    /usr/share/doc/fastlink

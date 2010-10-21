@@ -1,0 +1,17 @@
+ReadSeq: Conversion between sequence formats
+
+Some information about readseq from the Debian Med project.
+
+   Reads and writes nucleic/protein sequences in various formats. Data
+   files may have multiple sequences.  Readseq is particularly useful as it
+   automatically detects many sequence formats, and converts between them.
+   
+Please read the manual for this program by
+
+   man readseq
+   
+To test the program you could also test the examples under 
+
+   /usr/share/doc/readseq/tests
+ 
+using the provided Makefile.

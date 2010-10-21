@@ -1,0 +1,36 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Tue, 31 Aug 2010 18:07:49 +0200
+Source: openstudio-audio
+Binary: openstudio-audio
+Architecture: source
+Version: 0.1-1
+Distribution: unstable
+Urgency: low
+Maintainer: Rosea Grammostola <rosea.grammostola@gmail.com>
+Changed-By: Rosea Grammostola <rosea.grammostola@gmail.com>
+Description: 
+ openstudio-audio - Metapackage for openstudio audio
+Changes: 
+ openstudio-audio (0.1-1) unstable; urgency=low
+ .
+   * Initial release
+Checksums-Sha1: 
+ 3266414fca79a67ee027414a68c0899626fb7979 771 openstudio-audio_0.1-1.dsc
+ 238f7f569784598c512d4da05e37c39105b9022f 1480 openstudio-audio_0.1-1.tar.gz
+Checksums-Sha256: 
+ d92895d5e65d7de41e9fe951e0d1aa89b6be32b627b5d0d62a452edff482f037 771 openstudio-audio_0.1-1.dsc
+ 8d2c7d87a143b1c33af74a63e928f010240fc73d6521e59384d3e9b992134622 1480 openstudio-audio_0.1-1.tar.gz
+Files: 
+ 48499e52015c25c781a4af2334fb8786 771 sound optional openstudio-audio_0.1-1.dsc
+ f546fd0646dfc4ef32212285a11994a6 1480 sound optional openstudio-audio_0.1-1.tar.gz
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+
+iEYEARECAAYFAkx+n70ACgkQebOwkgjKEYFUdgCeIPthd6wae5F/q83CLad5temV
+l1cAoJnnYBZjdIrYNva+QRed7LcstPnI
+=rX93
+-----END PGP SIGNATURE-----

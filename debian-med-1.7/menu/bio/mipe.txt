@@ -1,0 +1,44 @@
+Tools to store PCR-derived data
+
+Some information about mipe from the Debian Med project.
+
+ MIPE provides a standard format to exchange and/or storage of all
+ information associated with PCR experiments using a flat text file. This will:
+  * allow for exchange of PCR data between researchers/laboratories
+  * enable traceability of the data
+  * prevent problems when submitting data to dbSTS or dbSNP
+  * enable the writing of standard scripts to extract data (e.g. a
+    list of PCR primers, SNP positions or haplotypes for different animals)
+
+ Although this tool can be used for data storage, it's primary focus
+ should be data exchange. For larger reporisitories, relational databases
+ are more appropriate for storage of these data. The MIPE format could
+ then be used as a standard format to import into and/or export from
+ these databases.
+
+Homepage: http://mipe.sourceforge.net
+
+You should also read the relevant man pages:
+
+   man mipe06to07
+   man mipe08to09
+   man mipe0_9to1_0
+   man mipe2dbSTS
+   man mipe2fas
+   man mipe2html
+   man mipe2pcroverview
+   man mipe2pcrprimers
+   man mipe2putativesbeprimers
+   man mipe2sbeprimers
+   man mipe2snps
+   man mipeCheckSanity
+   man removePcrFromMipe
+   man removeSbeFromMipe
+   man sbe2mipe
+   man snp2mipe
+   man snpPosOnDesign
+   man snpPosOnSource
+   man csv2mipe
+   man genotype2mipe
+   man mipe2genotypes
+   man removeSnpFromMipe

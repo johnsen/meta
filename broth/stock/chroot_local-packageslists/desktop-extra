@@ -1,0 +1,22 @@
+# Desktop non-CD packages
+
+moc
+xmp-audacious
+
+# needed for f-spot to burn images to cd
+# rob needs to check if this is still needed
+nautilus-cd-burner
+
+xsane
+
+gdmap
+
+# File viewer
+eog
+
+grsync
+
+# xflock4 (xfce screen lock tool) needs this:
+xlockmore
+
+vim-gnome

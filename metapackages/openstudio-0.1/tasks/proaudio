@@ -1,0 +1,13 @@
+Task: Proaudio
+Description: Openstudio pro audio packages
+ This metapackage will install pro audio packages for openstudio.
+
+Depends: qjackctl, a2jmidid
+Suggests: lv2rack, non-mixer
+
+Depends: a2jmidid
+Why:     JACK MIDI Is better then ALSA midi
+Responsible: Rosea Grammostola
+NeedConfig:  no 
+
+

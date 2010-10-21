@@ -1,0 +1,37 @@
+# net app
+
+# ssh, ftp & telnet
+openssh-server
+telnet
+lftp
+
+# browser
+firefox
+
+# IRC
+irssi
+
+# Browsers and plugins
+links2
+gecko-mediaplayer
+
+# Connectivity
+network-manager
+network-manager-gnome
+modemmanager
+wireless-tools
+pppoeconf
+
+# Network Share
+nfs-common
+
+# /mode +v noise 
+python-irclib
+python-liblo
+
+# Misc
+unarchive
+
+# supercollider emacs mode uses w3m-el for documentation browsing; normally a 'recommends' therefore we missed it
+w3m-el
+

@@ -1,0 +1,10 @@
+Task: Multimedia-nonfree-32bit
+Description: Openstudio multimedia optimization for 32bit computers.
+ This metapackage will install additional Desktop software for using non-free stuff like mp3's, sun java, adobe flash etc. It installs non-free software. You need the medibunt repo.
+ 
+ More info about medibuntu here: https://help.ubuntu.com/community/Medibuntu
+
+Depends: w32codecs non-free-codecs libdvdcss2 ubuntu-restricted-extras
+
+
+

@@ -1,0 +1,32 @@
+Tigr Glimmer: Gene detection in archea and bacteria
+
+Some information about tigr-glimmer from the Debian Med project.
+
+ Developed by the TIGR institute this software detects coding sequences in
+ bacteria and archea.
+ 
+ Glimmer is a system for finding genes in microbial DNA, especially the
+ genomes of bacteria and archaea. Glimmer (Gene Locator and Interpolated
+ Markov Modeler) uses interpolated Markov models (IMMs) to identify the
+ coding regions and distinguish them from noncoding DNA.
+
+ Homepage: http://www.tigr.org/software/glimmer/
+
+An overview about the various tools are given by the following manpages:
+
+     man glimmer2      (start with this)
+     man build-icm
+     man extract
+     man long-orfs
+     
+More or less simple syntax help without detailed information is given by
+
+     man adjust
+     man anomaly
+     man check
+     man codon-usage
+     man compare-lists
+     man generate
+     man get-len
+     man run-glimmer2
+     man get-putative

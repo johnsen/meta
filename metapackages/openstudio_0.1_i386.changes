@@ -1,0 +1,39 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Thu, 02 Sep 2010 12:49:12 +0200
+Source: openstudio
+Binary: openstudio-tasks
+Architecture: source all
+Version: 0.1
+Distribution: unstable
+Urgency: low
+Maintainer: Rosea Grammostola
+Changed-By: Rosea Grammostola <rosea.grammostola@gmail.com>
+Description: 
+ openstudio-tasks - Openstudio tasks for tasksel
+Changes: 
+ openstudio (0.1) unstable; urgency=low
+ .
+   * Initial release.
+Checksums-Sha1: 
+ beff77888dcccc8128c9da117dcbfdd57770bf73 709 openstudio_0.1.dsc
+ 62c021a6f31b6bb016115ba4be9af03a92d3e01e 8561 openstudio_0.1.tar.gz
+ 85f6ab50bfde4906de27cbadd648fff8a000c238 1050 openstudio-tasks_0.1_all.deb
+Checksums-Sha256: 
+ b80ffa49b670073b542ab233c28f6fbfb1d4e69b099b2ec74af42db6ef804d6d 709 openstudio_0.1.dsc
+ 8666616044fc0465a0cd291cb759d57151659d79f3d4f81ce1c075404e90d2c7 8561 openstudio_0.1.tar.gz
+ 8d9079f6a642a9d9b5781f5837c7e43c39b75d534209b1a70fd823feb5658f57 1050 openstudio-tasks_0.1_all.deb
+Files: 
+ 869d56199207c2afebb100d812a16b39 709 misc optional openstudio_0.1.dsc
+ 6e849050f3dcf3a9850e5f0d09ddf217 8561 misc optional openstudio_0.1.tar.gz
+ 033fda24ad4a1e566588494191bd3f52 1050 misc optional openstudio-tasks_0.1_all.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+
+iEYEARECAAYFAkyA2mgACgkQebOwkgjKEYHKHACfchqoITVHgmGOTTz3c9qiRQYH
+i2YAnjZHMQaQ0pKjeixvVCC4drDxfAGN
+=WrYu
+-----END PGP SIGNATURE-----
