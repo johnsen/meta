@@ -1,0 +1,24 @@
+Task: proaudio-recording
+Description: Proaudio packages for recording music, sounds, audio.
+ 
+Depends: ardour 
+
+Depends: qtractor 
+
+Depends: audacity 
+
+Depends: jack-capture 
+
+Depends: meterbridge 
+
+Depends: qjackctl
+
+Depends: jackd
+
+Suggests: traverso 
+
+Suggests: rezound 
+
+Suggests: mhwaveedit    
+
+

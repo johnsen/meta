@@ -1,0 +1,10 @@
+Task: Proaudio-plugins-mixing
+Description: Openstudio pro audio plugins packages
+ This metapackage will install pro audio LADSPA, DSSI and LV2 plugins packages for openstudio.
+
+Depends: blop calf-plugins caps cmt dssi-example-plugins wsynth-dssi ghostess dssi-host-jack dssi-utils fil-plugins fluidsynth-dssi hexter zynaddsubfx-dssi ladspa-sdk mcp-plugins omins swh-plugins tap-plugins xsynth-dssi whysynth invada-studio-plugins-lv2 invada-studio-plugins-ladspa swh-lv2 slv2-jack lv2vocoder lv2fil lv2core libslv2-dev libslv2-9 liblv2dynparamplugin1-0 liblv2dynparamhost1-1 rubberband-ladspa csladspa wah-plugins jamin meterbridge jkmeter japa jdelay jack-rack jack-mixer gcdmaster jconvolver lv2vocoder vocproc
+#Suggests: zynadd non-mixer
+
+
+
+
